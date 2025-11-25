@@ -1,0 +1,113 @@
+/* TEAM */
+
+Project: NordicLeads
+Site: https://nordicleads.dk
+Purpose: Lead generation og outreach til danske virksomheder
+Language: Danish (da-DK)
+Built: November 2025
+Standards: HTML5, CSS3 (Tailwind), ES6+, WCAG 2.2 AA
+Location: Denmark 🇩🇰
+
+/* THANKS */
+
+WordPress Community
+Tailwind CSS Team
+Google Fonts (Inter)
+Open Source Contributors
+
+/* SITE */
+
+Platform: WordPress (Twenty Twenty-Five Child Theme)
+Framework: Tailwind CSS 3.4.1
+Typography: Inter (Google Fonts)
+Analytics: Google Analytics 4, Meta Pixel, LinkedIn Insight
+Hosting: Simply.com (Denmark)
+Consent: Consent Mode v2 (GDPR-compliant)
+Accessibility: WCAG 2.2 AA
+Performance Target: Lighthouse ≥ 95
+
+/* TECH STACK */
+
+Backend: PHP 8.x + WordPress 6.x
+Frontend: HTML5, Tailwind CSS, Vanilla JavaScript
+Optimization: Lazy loading, WebP/AVIF, Prefetch, Prerender
+Security: CSP headers, XSS protection, HTTPS
+SEO: Structured data (JSON-LD), Open Graph, Twitter Cards
+AI-friendly: llms.txt, open robots.txt, semantic HTML
+
+/* STANDARDS */
+
+Performance:
+- LCP ≤ 1.5s
+- INP ≤ 150ms
+- CLS ≤ 0.05
+- TTFB ≤ 0.5s
+
+Accessibility:
+- Keyboard navigation
+- Screen reader support
+- High contrast mode
+- Reduced motion support
+- ARIA labels
+- Skip links
+
+Privacy:
+- GDPR compliant
+- Consent Mode v2
+- Cookie banner
+- Privacy policy
+- Data protection
+
+/* FEATURES */
+
+✓ GDPR-compliant lead generation
+✓ Danish language support
+✓ Responsive design (mobile-first)
+✓ Fast loading (< 2s)
+✓ Modern gradients & animations
+✓ Contact form with validation
+✓ FAQ accordion
+✓ Pricing tables
+✓ Testimonials
+✓ Trust badges
+✓ Analytics tracking
+✓ Event tracking
+✓ Scroll tracking
+✓ Form conversion tracking
+
+/* COLORS */
+
+Primary: #003366 (Deep Blue)
+Secondary: #0066cc (Accent Blue)
+Accent: #f0f0f0 (Light Gray)
+Text: #1a1a1a (Dark)
+Background: #ffffff (White)
+Gradients: Blue-to-Blue, Clean & Modern
+
+/* FONTS */
+
+Headings: Inter (700)
+Body: Inter (400, 500, 600)
+Fallback: System UI, -apple-system, BlinkMacSystemFont
+
+/* CONTACT */
+
+Email: info@nordicleads.dk
+Website: https://nordicleads.dk
+Support: Dansk support
+Location: Danmark 🇩🇰
+
+/* LICENSE */
+
+Theme: GPL v2 or later
+Content: © 2025 NordicLeads. All rights reserved.
+
+/* NOTES */
+
+Built with ❤️ in Denmark for Danish businesses.
+Focused on conversion, performance, and GDPR compliance.
+Designed for cold outreach traffic with high trust signals.
+Optimized for AI/answer engines with llms.txt.
+
+Last updated: 2025-11-24
+

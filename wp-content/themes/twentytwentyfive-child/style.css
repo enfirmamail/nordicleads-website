@@ -1,0 +1,829 @@
+/*
+Theme Name: Twenty Twenty-Five Child
+Theme URI: https://nordicleads.dk
+Description: NordicLeads - Ultra-professional, modern design with Tailwind CSS. Clean, minimalist, high-contrast layout inspired by leading SaaS companies.
+Author: NordicLeads
+Author URI: https://nordicleads.dk
+Template: twentytwentyfive
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfive-child
+Tags: business, lead-generation, tailwind, gdpr, responsive, modern, minimal
+*/
+
+/* =================================================================
+   Tailwind CSS Integration
+   ================================================================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =================================================================
+   Google Fonts - Inter (Professional Sans-Serif)
+   ================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* =================================================================
+   Base Styles & Resets
+   ================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #111827;
+    background-color: #ffffff;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/* =================================================================
+   Typography - Premium & Clean
+   ================================================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #111827;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 3vw, 1.875rem);
+}
+
+p {
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+/* Focus States - Accessibility */
+*:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* =================================================================
+   Header - Fixed, Clean, Minimal with Shadow on Scroll
+   ================================================================= */
+#site-header {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+}
+
+#site-header.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(229, 231, 235, 0.8);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+/* =================================================================
+   FAQ Accordion - Smooth Transitions
+   ================================================================= */
+.faq-item {
+    transition: all 200ms ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* =================================================================
+   Form Styles - Modern & Clean
+   ================================================================= */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #003366;
+}
+
+input.error,
+textarea.error {
+    border-color: #ef4444;
+}
+
+.form-error {
+    display: none;
+}
+
+.form-error.active {
+    display: block;
+}
+
+#form-success {
+    display: none;
+}
+
+#form-success.active {
+    display: block;
+}
+
+/* =================================================================
+   Cookie Consent Banner
+   ================================================================= */
+#cookie-consent {
+    transform: translateY(100%);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#cookie-consent.show {
+    display: block;
+    transform: translateY(0);
+}
+
+/* =================================================================
+   Animations & Transitions
+   ================================================================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-delay-1 {
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+.animate-delay-2 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.animate-delay-3 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.animation-delay-100 {
+    animation-delay: 100ms;
+    opacity: 0;
+}
+
+.animation-delay-200 {
+    animation-delay: 200ms;
+    opacity: 0;
+}
+
+.animation-delay-300 {
+    animation-delay: 300ms;
+    opacity: 0;
+}
+
+.animation-delay-400 {
+    animation-delay: 400ms;
+    opacity: 0;
+}
+
+/* Smooth Hover Transitions */
+.transition-all {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =================================================================
+   Hero-Specific Utilities
+   ================================================================= */
+
+/* =================================================================
+   Aurora Borealis Background Effect
+   ================================================================= */
+.aurora-container {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.aurora {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    filter: blur(80px);
+    opacity: 0.6;
+    mix-blend-mode: screen;
+}
+
+.aurora-1 {
+    top: -50%;
+    left: -25%;
+    background: radial-gradient(ellipse 80% 50% at 50% 50%, 
+        rgba(34, 211, 238, 0.4) 0%, 
+        rgba(6, 182, 212, 0.2) 30%, 
+        transparent 70%);
+    animation: aurora-drift-1 15s ease-in-out infinite;
+}
+
+.aurora-2 {
+    top: -30%;
+    right: -25%;
+    background: radial-gradient(ellipse 60% 80% at 60% 40%, 
+        rgba(59, 130, 246, 0.5) 0%, 
+        rgba(37, 99, 235, 0.2) 40%, 
+        transparent 70%);
+    animation: aurora-drift-2 18s ease-in-out infinite;
+}
+
+.aurora-3 {
+    bottom: -40%;
+    left: 10%;
+    background: radial-gradient(ellipse 70% 60% at 40% 60%, 
+        rgba(139, 92, 246, 0.3) 0%, 
+        rgba(124, 58, 237, 0.15) 35%, 
+        transparent 70%);
+    animation: aurora-drift-3 20s ease-in-out infinite;
+}
+
+.aurora-4 {
+    top: 20%;
+    right: -10%;
+    background: radial-gradient(ellipse 50% 70% at 70% 30%, 
+        rgba(20, 184, 166, 0.35) 0%, 
+        rgba(13, 148, 136, 0.15) 40%, 
+        transparent 70%);
+    animation: aurora-drift-4 22s ease-in-out infinite;
+}
+
+/* Floating orbs */
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 10%;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.4) 0%, transparent 70%);
+    animation: orb-float-1 12s ease-in-out infinite;
+}
+
+.orb-2 {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    right: 15%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.35) 0%, transparent 70%);
+    animation: orb-float-2 15s ease-in-out infinite;
+}
+
+.orb-3 {
+    width: 250px;
+    height: 250px;
+    bottom: 20%;
+    left: 30%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
+    animation: orb-float-3 18s ease-in-out infinite;
+}
+
+/* Aurora animations */
+@keyframes aurora-drift-1 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    25% { transform: translate(5%, 10%) rotate(5deg) scale(1.05); }
+    50% { transform: translate(-5%, 5%) rotate(-3deg) scale(0.98); }
+    75% { transform: translate(8%, -5%) rotate(4deg) scale(1.02); }
+}
+
+@keyframes aurora-drift-2 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    33% { transform: translate(-8%, 8%) rotate(-4deg) scale(1.03); }
+    66% { transform: translate(6%, -6%) rotate(6deg) scale(0.97); }
+}
+
+@keyframes aurora-drift-3 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    25% { transform: translate(-6%, -8%) rotate(3deg) scale(1.04); }
+    50% { transform: translate(10%, 5%) rotate(-5deg) scale(0.96); }
+    75% { transform: translate(-4%, 10%) rotate(2deg) scale(1.02); }
+}
+
+@keyframes aurora-drift-4 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    50% { transform: translate(-10%, 10%) rotate(-6deg) scale(1.05); }
+}
+
+/* Orb floating animations */
+@keyframes orb-float-1 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+    50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.6; }
+}
+
+@keyframes orb-float-2 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+    50% { transform: translate(-25px, 15px) scale(0.9); opacity: 0.5; }
+}
+
+@keyframes orb-float-3 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.35; }
+    50% { transform: translate(20px, 25px) scale(1.15); opacity: 0.45; }
+}
+
+/* Stars/particles effect */
+.hero-stars {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.3), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.2), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.4), transparent),
+        radial-gradient(2px 2px at 130px 80px, rgba(255,255,255,0.2), transparent),
+        radial-gradient(1px 1px at 160px 120px, rgba(255,255,255,0.3), transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 8s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Hero CTA Glow Effect */
+.hero-cta-glow {
+    position: relative;
+}
+
+.hero-cta-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #8b5cf6, #22d3ee);
+    background-size: 300% 100%;
+    border-radius: inherit;
+    opacity: 0;
+    z-index: -1;
+    filter: blur(15px);
+    transition: opacity 0.3s ease;
+    animation: glow-shift 3s linear infinite;
+}
+
+.hero-cta-glow:hover::before {
+    opacity: 0.6;
+}
+
+@keyframes glow-shift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}
+
+/* Ping animation for badge */
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Enhanced Shadow for Hero CTAs */
+.shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Bullet Card Hover Effect */
+.hero-bullet-card {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-bullet-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Trust Chip Hover */
+.trust-chip {
+    transition: all 200ms ease;
+}
+
+.trust-chip:hover {
+    transform: translateY(-1px);
+}
+
+/* Hero CTA Enhanced Hover */
+.hero-cta-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cta-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 600ms ease;
+}
+
+.hero-cta-primary:hover::before {
+    left: 100%;
+}
+
+/* Enhanced Gradient Background */
+.hero-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+}
+
+/* Hero Pattern Overlay */
+.hero-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.15) 1px, transparent 0);
+    background-size: 50px 50px;
+}
+
+/* Icon Animation on Hover */
+.icon-bounce {
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-bounce:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Animated Gradient for Rotating Words */
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+/* Rotating Word Animation States */
+#rotating-word {
+    display: inline-flex;
+    position: relative;
+}
+
+#rotating-word.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#rotating-word.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =================================================================
+   Custom Utilities - Tailwind Extensions
+   ================================================================= */
+
+/* Premium Gradients */
+.gradient-blue {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+}
+
+.gradient-blue-dark {
+    background: linear-gradient(135deg, #001f3f 0%, #003366 50%, #0066cc 100%);
+}
+
+/* Text Gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Premium Shadows */
+.shadow-premium {
+    box-shadow: 0 10px 40px -10px rgba(0, 51, 102, 0.2);
+}
+
+.shadow-premium-lg {
+    box-shadow: 0 20px 60px -15px rgba(0, 51, 102, 0.3);
+}
+
+/* Backdrop Blur */
+.backdrop-blur-xl {
+    backdrop-filter: blur(20px);
+}
+
+/* =================================================================
+   Responsive Design
+   ================================================================= */
+
+/* Container Max Widths */
+.max-w-7xl {
+    max-width: 1280px;
+}
+
+.max-w-6xl {
+    max-width: 1152px;
+}
+
+.max-w-5xl {
+    max-width: 1024px;
+}
+
+.max-w-4xl {
+    max-width: 896px;
+}
+
+.max-w-3xl {
+    max-width: 768px;
+}
+
+.max-w-2xl {
+    max-width: 672px;
+}
+
+/* Mobile-First Breakpoints (matches Tailwind defaults) */
+/* sm: 640px */
+/* md: 768px */
+/* lg: 1024px */
+/* xl: 1280px */
+/* 2xl: 1536px */
+
+/* =================================================================
+   WordPress Specific Overrides
+   ================================================================= */
+
+/* Remove WordPress admin bar margin when logged in */
+body.admin-bar #site-header {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar #site-header {
+        top: 46px;
+    }
+}
+
+/* WordPress Blocks (if needed) */
+.wp-block {
+    max-width: 1280px;
+}
+
+/* =================================================================
+   Print Styles
+   ================================================================= */
+@media print {
+    header,
+    footer,
+    .sticky,
+    #cookie-consent {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* =================================================================
+   High Contrast Mode Support (Accessibility)
+   ================================================================= */
+@media (prefers-contrast: high) {
+    * {
+        border-color: #000 !important;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    button,
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* =================================================================
+   Reduced Motion Support (Accessibility)
+   ================================================================= */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =================================================================
+   Dark Mode Support (Optional - Future Enhancement)
+   ================================================================= */
+@media (prefers-color-scheme: dark) {
+    /* Currently light mode only - can add dark mode later if needed */
+}
+
+/* =================================================================
+   Custom Component Styles
+   ================================================================= */
+
+/* Pricing Cards Hover Effect */
+.pricing-card {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px -15px rgba(0, 51, 102, 0.2);
+}
+
+/* Step Cards Hover */
+.step-card {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.step-card:hover {
+    transform: translateY(-2px);
+}
+
+/* CTA Button Hover Effects */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 600ms ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+/* =================================================================
+   Loading States (for future enhancement)
+   ================================================================= */
+.loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =================================================================
+   Browser-Specific Fixes
+   ================================================================= */
+
+/* Safari */
+@supports (-webkit-appearance: none) {
+    input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+
+/* =================================================================
+   Performance Optimizations
+   ================================================================= */
+
+/* GPU Acceleration for Transforms */
+.gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Contain Paint for Better Performance */
+.contain-paint {
+    contain: paint;
+}
+
+/* =================================================================
+   End of Stylesheet
+   ================================================================= */

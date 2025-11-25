@@ -1,0 +1,87 @@
+# =================================================================
+# NordicLeads WordPress Child Theme - Git Ignore
+# =================================================================
+
+# WordPress Core (don't commit - install separately)
+wp-admin/
+wp-includes/
+wp-*.php
+!wp-content/
+xmlrpc.php
+license.txt
+readme.html
+index.php
+
+# WordPress Config (contains sensitive data)
+wp-config.php
+wp-config-local.php
+
+# WordPress Uploads (user content - too large for git)
+wp-content/uploads/
+
+# WordPress Cache & Backup
+wp-content/cache/
+wp-content/backup*/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/object-cache.php
+
+# WordPress Plugins (install via WordPress admin)
+wp-content/plugins/
+
+# Other WordPress Themes (we only need our child theme)
+wp-content/themes/twentytwentyfive/
+wp-content/themes/index.php
+
+# WordPress Debug
+wp-content/debug.log
+
+# Docker
+docker-compose.override.yml
+
+# MySQL Data (Docker volume)
+mysql_data/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Build files (can be regenerated)
+# Keep tailwind.min.css since it's needed for the theme to work
+# wp-content/themes/twentytwentyfive-child/assets/tailwind.min.css
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar

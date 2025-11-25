@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  # WordPress container
+  wordpress:
+    image: wordpress:latest
+    container_name: nordicleads_wordpress
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - wordpress_data:/var/www/html
+      - ./wp-content/themes/twentytwentyfive-child:/var/www/html/wp-content/themes/twentytwentyfive-child
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # MySQL database
+  db:
+    image: mysql:8.0
+    container_name: nordicleads_db
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+
+  # phpMyAdmin for database management
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: nordicleads_phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    depends_on:
+      - db
+    restart: unless-stopped
+
+volumes:
+  wordpress_data:
+  db_data:
+

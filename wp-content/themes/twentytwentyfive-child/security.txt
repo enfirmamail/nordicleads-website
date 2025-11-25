@@ -1,0 +1,85 @@
+Contact: mailto:info@nordicleads.dk
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: da, en
+Canonical: https://nordicleads.dk/.well-known/security.txt
+
+# Security Policy for NordicLeads
+
+## Reporting Security Issues
+
+If you discover a security vulnerability on nordicleads.dk, please report it to us at:
+- Email: info@nordicleads.dk
+- Subject: [SECURITY] Vulnerability Report
+
+We take all security reports seriously and will respond within 48 hours.
+
+## What to Include
+
+Please include the following in your report:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if available)
+- Your contact information
+
+## Our Commitment
+
+- We will acknowledge your report within 48 hours
+- We will provide an estimated timeline for a fix
+- We will notify you when the vulnerability is resolved
+- We will credit you (if desired) for responsible disclosure
+
+## Scope
+
+In scope:
+- nordicleads.dk (main website)
+- Contact forms and data submission
+- Authentication mechanisms
+- Data privacy issues
+- XSS, CSRF, SQL injection vulnerabilities
+- WordPress core and theme vulnerabilities
+
+Out of scope:
+- Third-party services (Google Analytics, etc.)
+- Social engineering attacks
+- Physical security
+- Denial of service attacks
+
+## Safe Harbor
+
+We support responsible disclosure. If you follow these guidelines, we will not pursue legal action:
+- Do not access or modify user data without permission
+- Do not perform attacks that degrade service
+- Report vulnerabilities promptly
+- Do not publicly disclose vulnerabilities before we have had time to fix them
+
+## Security Measures
+
+We implement the following security measures:
+- HTTPS/TLS encryption
+- Content Security Policy (CSP)
+- Regular security updates
+- GDPR-compliant data handling
+- EU-hosted data storage
+- Regular backups
+- Input validation and sanitization
+- SQL injection prevention
+- XSS protection
+- CSRF protection
+
+## Privacy & GDPR
+
+For privacy concerns or GDPR-related issues:
+- Email: info@nordicleads.dk
+- Subject: [PRIVACY] Data Protection Request
+
+## Acknowledgments
+
+We appreciate responsible security researchers who help keep our users safe.
+
+Thank you for helping us maintain a secure service.
+
+---
+NordicLeads Team
+Denmark
+
