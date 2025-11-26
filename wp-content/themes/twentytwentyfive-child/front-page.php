@@ -79,7 +79,9 @@ get_header();
         <div class="nl-trusted-inner">
             <div class="nl-trusted-slider">
                 <div class="nl-trusted-track">
-                    <!-- Dmify -->
+                    <!-- Set 1: Dmify, DentalDesk, Auto Specialisterne, Dmify, DentalDesk, Nordisk Rengøring, Dmify, DentalDesk, FinanceHub, Dmify, DentalDesk, TechVenture -->
+                    
+                    <!-- Dmify 1 -->
                     <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
@@ -87,15 +89,13 @@ get_header();
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
-                    <!-- DentalDesk -->
+                    <!-- DentalDesk 1 -->
                     <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
                                 <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
-                                <g transform="translate(-2,0)">
-                                    <path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/>
-                                </g>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
                             </svg>
                             <span class="nl-logo-name">DentalDesk.dk</span>
                         </div>
@@ -113,6 +113,26 @@ get_header();
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
+                    <!-- Dmify 2 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 2 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
                     <!-- Nordisk Rengøring A/S -->
                     <a href="#cases" class="nl-logo-item">
                         <div class="nl-logo-content">
@@ -121,6 +141,26 @@ get_header();
                                 <path d="M20 44V20h6l10 16V20h6v24h-6L26 28v16h-6z" fill="#ffffff"/>
                             </svg>
                             <span class="nl-logo-name">Nordisk Rengøring A/S</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Dmify 3 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 3 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
@@ -140,6 +180,26 @@ get_header();
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
+                    <!-- Dmify 4 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 4 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
                     <!-- TechVenture ApS -->
                     <a href="#cases" class="nl-logo-item">
                         <div class="nl-logo-content">
@@ -151,24 +211,136 @@ get_header();
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
-                    <!-- Duplicate for seamless loop -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                </div>
+                <!-- Duplicate track for seamless infinite loop -->
+                <div class="nl-trusted-track" aria-hidden="true">
+                    <!-- Dmify 1 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <!-- DentalDesk 1 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
                                 <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
-                                <g transform="translate(-2,0)">
-                                    <path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/>
-                                </g>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
                             </svg>
                             <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Auto Specialisterne ApS -->
+                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Auto Specialisterne ApS" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="12" fill="#003366"/>
+                                <text x="32" y="38" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">AS</text>
+                                <rect x="12" y="48" width="40" height="3" rx="1.5" fill="#ffffff" opacity="0.6"/>
+                            </svg>
+                            <span class="nl-logo-name">Auto Specialisterne ApS</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Dmify 2 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 2 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Nordisk Rengøring A/S -->
+                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nordisk Rengøring" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="12" fill="#059669"/>
+                                <path d="M20 44V20h6l10 16V20h6v24h-6L26 28v16h-6z" fill="#ffffff"/>
+                            </svg>
+                            <span class="nl-logo-name">Nordisk Rengøring A/S</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Dmify 3 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 3 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- FinanceHub DK -->
+                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FinanceHub" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="12" fill="#1e40af"/>
+                                <rect x="16" y="36" width="8" height="12" rx="2" fill="#ffffff"/>
+                                <rect x="28" y="28" width="8" height="20" rx="2" fill="#ffffff"/>
+                                <rect x="40" y="20" width="8" height="28" rx="2" fill="#ffffff"/>
+                                <circle cx="20" cy="24" r="3" fill="#ffffff" opacity="0.6"/>
+                                <circle cx="32" cy="18" r="3" fill="#ffffff" opacity="0.6"/>
+                                <circle cx="44" cy="14" r="3" fill="#ffffff" opacity="0.6"/>
+                            </svg>
+                            <span class="nl-logo-name">FinanceHub DK</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- Dmify 4 -->
+                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <span class="nl-logo-name">Dmify.net</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- DentalDesk 4 -->
+                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="14" fill="#ffffff"/>
+                                <path d="M20 24c0-5 4-9 9-9 3 0 5.7 1.7 7 4 1.4-2.3 4.1-4 7-4 5 0 9 4 9 9 0 10-8 22-14 26-1 .6-2.3 .6-3.3 0-6-4-14-16-14-26z" fill="#0ea5e9"/>
+                                <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
+                            </svg>
+                            <span class="nl-logo-name">DentalDesk.dk</span>
+                        </div>
+                        <span class="nl-logo-cta">Læs mere om denne case →</span>
+                    </a>
+                    <!-- TechVenture ApS -->
+                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                        <div class="nl-logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TechVenture" class="nl-logo-svg">
+                                <rect width="64" height="64" rx="12" fill="#7c3aed"/>
+                                <path d="M18 20h28v6H36v18h-8V26H18v-6z" fill="#ffffff"/>
+                            </svg>
+                            <span class="nl-logo-name">TechVenture ApS</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
