@@ -12,127 +12,161 @@ get_header();
 
 <main id="main-content" role="main" class="bg-white">
 
-    <!-- Hero Section - Animated, Lead-Focused, Premium 2025 Style -->
-    <section class="relative overflow-hidden bg-slate-950 py-20 lg:py-32" aria-labelledby="hero-heading">
+    <!-- Hero Section - Professional B2B Corporate Style -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 py-24 lg:py-32" aria-labelledby="hero-heading">
         
-        <!-- Aurora Borealis Background Effect -->
-        <div class="aurora-container absolute inset-0">
-            <!-- Base gradient -->
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950"></div>
-            
-            <!-- Aurora layers -->
-            <div class="aurora aurora-1"></div>
-            <div class="aurora aurora-2"></div>
-            <div class="aurora aurora-3"></div>
-            <div class="aurora aurora-4"></div>
-            
-            <!-- Floating orbs for depth -->
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
+        <!-- Subtle professional pattern -->
+        <div class="absolute inset-0 opacity-[0.03]">
+            <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
         </div>
         
-        <!-- Subtle stars/particles -->
-        <div class="hero-stars"></div>
-        
-        <!-- Subtle grid pattern overlay -->
-        <div class="absolute inset-0 opacity-[0.02]">
-            <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 80px 80px;"></div>
-        </div>
-        
-        <!-- Top fade for header blend -->
-        <div class="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-slate-950 to-transparent"></div>
-        
-        <!-- Bottom fade -->
-        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <!-- Bottom fade to white -->
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         
         <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex gap-8 items-center justify-center flex-col max-w-4xl mx-auto">
+            
+            <!-- TL;DR for SEO/AI -->
+            <div class="sr-only">
+                <strong>TL;DR:</strong> NordicLeads leverer 50-250 relevante B2B-leads (emails, telefoner, adresser) 
+                fra offentlige kilder som CVR og Google Maps. GDPR-sikker via legitimate interest, download på minutter.
+            </div>
+            
+            <!-- Two Column Layout -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 
-                <!-- TL;DR for SEO/AI -->
-                <div class="sr-only">
-                    <strong>TL;DR:</strong> NordicLeads leverer 50-250 relevante B2B-leads (emails, telefoner, adresser) 
-                    fra offentlige kilder som CVR og Google Maps. GDPR-sikker via legitimate interest, download på minutter.
-                </div>
-                
-                <!-- Top Badge - Success Story Link -->
-                <div class="fade-in-up">
-                    <a href="#success-stories" class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium text-white/90 border border-white/20 shadow-lg hover:bg-white/20 hover:scale-105 hover:border-cyan-400/40 transition-all duration-300 group">
-                        <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
-                        </span>
-                        <span>Læs vores seneste succeshistorie</span>
-                        <svg class="w-4 h-4 text-cyan-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                        </svg>
-                    </a>
-                </div>
-                
-                <!-- Main Headline with Animated Rotating Words -->
-                <div class="flex flex-col gap-4 text-center fade-in-up animation-delay-100">
-                    <h1 id="hero-heading" class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight max-w-2xl">
-                        <span class="text-blue-100">Få adgang til</span>
-                        <span class="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1 min-h-[1.3em]">
-                            &nbsp;
-                            <span 
-                                id="rotating-word" 
-                                class="absolute font-extrabold bg-gradient-to-r from-cyan-300 via-blue-200 to-cyan-300 text-transparent bg-clip-text"
-                                style="transition: opacity 0.4s ease, transform 0.4s ease;"
-                            >
-                                hurtige
-                            </span>
-                        </span>
-                        <span>B2B-leads på minutter</span>
+                <!-- Left Column - Text Content -->
+                <div class="text-left">
+                    
+                    <!-- Eyebrow / Category -->
+                    <p class="text-blue-300 font-semibold text-sm uppercase tracking-widest mb-4">
+                        B2B Lead Generation
+                    </p>
+                    
+                    <!-- Main Headline -->
+                    <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Kvalificerede leads til din virksomhed
                     </h1>
                     
                     <!-- Subheadline -->
-                    <p class="text-lg md:text-xl leading-relaxed tracking-tight text-blue-100 max-w-2xl">
-                        Compliant leads (emails, tlf, adresser) fra offentlige kilder—GDPR-sikker via legitimate interest, DNC-screening og gensidig forretningsfordel.
+                    <p class="text-lg lg:text-xl text-slate-300 leading-relaxed mb-8 max-w-xl">
+                        Vi leverer 50–250 verificerede B2B-kontakter fra offentlige kilder som CVR-registret. Emails, telefonnumre og adresser – klar til brug samme dag.
                     </p>
+                    
+                    <!-- Key Benefits List -->
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-200 text-lg">GDPR-compliant via legitimate interest</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-200 text-lg">Kun offentligt tilgængelige data</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-200 text-lg">Levering inden for 24 timer</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#kontakt" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            Kontakt os i dag
+                        </a>
+                        <a href="tel:+4512345678" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-slate-500 hover:border-white hover:bg-white/5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/50">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            Ring til os
+                        </a>
+                    </div>
                 </div>
                 
-                <!-- CTA Buttons Row -->
-                <div class="flex flex-col sm:flex-row gap-4 fade-in-up animation-delay-200 w-full sm:w-auto">
-                    <a href="tel:+4512345678" class="inline-flex items-center justify-center gap-2 px-6 py-3 lg:px-8 lg:py-4 bg-white/5 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/10 hover:border-cyan-400/40 transition-all duration-300 shadow-lg hover:shadow-cyan-500/20 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 w-full sm:w-auto group">
-                        <svg class="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                        Ring og book opkald
-                    </a>
-                    <a href="#kontakt" class="hero-cta-glow inline-flex items-center justify-center gap-2 px-6 py-3 lg:px-8 lg:py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold rounded-xl hover:from-cyan-300 hover:to-blue-400 transition-all duration-300 shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-400/50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 w-full sm:w-auto group">
-                        <span>Få dine første leads</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                        </svg>
-                    </a>
-                </div>
-                
-                <!-- Trust Chips - Sleek & Minimal with Aurora Glow -->
-                <div class="flex flex-wrap items-center justify-center gap-3 fade-in-up animation-delay-300">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-emerald-400/30 hover:border-emerald-400/50 hover:bg-emerald-400/10 transition-all duration-200 group">
-                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                        </svg>
-                        <span class="text-sm font-medium text-white/90">GDPR-sikker</span>
+                <!-- Right Column - Trust & Stats Card -->
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 lg:p-10">
+                    
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-white/5 rounded-xl">
+                            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">50-250</div>
+                            <div class="text-sm text-slate-400">Leads pr. levering</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl">
+                            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">24t</div>
+                            <div class="text-sm text-slate-400">Leveringstid</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl">
+                            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">100%</div>
+                            <div class="text-sm text-slate-400">GDPR-compliant</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl">
+                            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">CVR</div>
+                            <div class="text-sm text-slate-400">Verificerede data</div>
+                        </div>
                     </div>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400/50 hover:bg-cyan-400/10 transition-all duration-200 group">
-                        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                        </svg>
-                        <span class="text-sm font-medium text-white/90">CVR-data</span>
+                    
+                    <!-- Divider -->
+                    <div class="border-t border-white/10 my-6"></div>
+                    
+                    <!-- Trust Signals -->
+                    <div class="space-y-4">
+                        <h3 class="text-white font-semibold text-lg mb-4">Derfor vælger virksomheder os:</h3>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Juridisk sikkerhed</p>
+                                <p class="text-sm text-slate-400">Legitimate interest dokumentation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Offentlige kilder</p>
+                                <p class="text-sm text-slate-400">CVR-registret & virksomhedsdata</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium">Dansk support</p>
+                                <p class="text-sm text-slate-400">Personlig rådgivning på dansk</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-amber-400/30 hover:border-amber-400/50 hover:bg-amber-400/10 transition-all duration-200 group">
-                        <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    
+                    <!-- Guarantee Badge -->
+                    <div class="mt-8 p-4 bg-green-500/10 border border-green-500/20 rounded-xl flex items-center gap-3">
+                        <svg class="w-8 h-8 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        <span class="text-sm font-medium text-white/90">Instant levering</span>
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-violet-400/30 hover:border-violet-400/50 hover:bg-violet-400/10 transition-all duration-200 group">
-                        <svg class="w-4 h-4 text-violet-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                        </svg>
-                        <span class="text-sm font-medium text-white/90">Verificeret</span>
+                        <div>
+                            <p class="text-green-400 font-semibold">30 dages tilfredshedsgaranti</p>
+                            <p class="text-sm text-slate-400">Ikke tilfreds? Vi finder en løsning.</p>
+                        </div>
                     </div>
                 </div>
             </div>
