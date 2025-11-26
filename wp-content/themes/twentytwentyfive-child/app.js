@@ -710,49 +710,6 @@ const CookieHandlers = {
 };
 
 // =================================================================
-// Hero Rotating Words Animation
-// =================================================================
-const HeroAnimation = {
-    words: ['hurtige', 'sikre', 'relevante', 'kvalificerede', 'målrettede'],
-    currentIndex: 0,
-    wordElement: null,
-    
-    init: function() {
-        this.wordElement = document.getElementById('rotating-word');
-        
-        if (this.wordElement) {
-            // Start the rotation after initial delay
-            setTimeout(() => this.rotateWord(), 2000);
-        }
-    },
-    
-    rotateWord: function() {
-        if (!this.wordElement) return;
-        
-        // Fade out current word
-        this.wordElement.classList.add('fade-out');
-        
-        setTimeout(() => {
-            // Update to next word
-            this.currentIndex = (this.currentIndex + 1) % this.words.length;
-            this.wordElement.textContent = this.words[this.currentIndex];
-            
-            // Fade in new word
-            this.wordElement.classList.remove('fade-out');
-            this.wordElement.classList.add('fade-in');
-            
-            // Remove fade-in class after animation
-            setTimeout(() => {
-                this.wordElement.classList.remove('fade-in');
-            }, 400);
-            
-            // Schedule next rotation
-            setTimeout(() => this.rotateWord(), 2000);
-        }, 400);
-    }
-};
-
-// =================================================================
 // Initialization
 // =================================================================
 document.addEventListener('DOMContentLoaded', function() {
@@ -770,7 +727,6 @@ document.addEventListener('DOMContentLoaded', function() {
     ClickTracking.init();
     Accessibility.init();
     CookieHandlers.init();
-    HeroAnimation.init();
     
     // Track page view
     Analytics.trackEvent('page_view', {
@@ -793,8 +749,7 @@ if (typeof window !== 'undefined') {
         FAQ,
         MobileMenu,
         ScrollTracking,
-        ClickTracking,
-        HeroAnimation
+        ClickTracking
     };
 }
 
