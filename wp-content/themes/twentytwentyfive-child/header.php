@@ -34,7 +34,16 @@
     <div class="nl-header-inner">
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="nl-logo" aria-label="NordicLeads">
-            <div class="nl-logo-icon">NL</div>
+            <svg class="nl-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36">
+                <defs>
+                    <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#0066cc"/>
+                        <stop offset="100%" stop-color="#003366"/>
+                    </linearGradient>
+                </defs>
+                <rect width="64" height="64" rx="14" fill="url(#logo-bg)"/>
+                <text x="32" y="46" font-family="Inter, -apple-system, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">NL</text>
+            </svg>
             <span class="nl-logo-text">NordicLeads</span>
         </a>
         

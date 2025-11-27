@@ -151,14 +151,7 @@ img {
 .nl-logo-icon {
     width: 40px;
     height: 40px;
-    background: var(--nl-accent);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--nl-white);
-    font-weight: 700;
-    font-size: 14px;
+    flex-shrink: 0;
 }
 
 .nl-logo-text {
