@@ -16,10 +16,6 @@
     <link rel="alternate" hreflang="da-DK" href="<?php echo esc_url(home_url('/')); ?>">
     <?php endif; ?>
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/favicon.svg'); ?>">
-    <link rel="apple-touch-icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/favicon.svg'); ?>">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -38,10 +34,7 @@
     <div class="nl-header-inner">
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="nl-logo" aria-label="NordicLeads">
-            <svg class="nl-logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <rect width="40" height="40" rx="8" fill="#003366"/>
-                <path d="M10 30V10h4.5l11 14V10H30v20h-4.5L14 16v14H10z" fill="#ffffff"/>
-            </svg>
+            <div class="nl-logo-icon">NL</div>
             <span class="nl-logo-text">NordicLeads</span>
         </a>
         

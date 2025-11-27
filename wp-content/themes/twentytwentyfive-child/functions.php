@@ -36,15 +36,6 @@ function twentytwentyfive_child_setup() {
 add_action('after_setup_theme', 'twentytwentyfive_child_setup');
 
 /**
- * Custom Favicon - Override WordPress site icon
- */
-function nordicleads_custom_favicon() {
-    // Remove default WordPress site icon
-    remove_action('wp_head', 'wp_site_icon', 99);
-}
-add_action('init', 'nordicleads_custom_favicon');
-
-/**
  * Enqueue Parent and Child Theme Styles and Scripts
  */
 function twentytwentyfive_child_enqueue_assets() {

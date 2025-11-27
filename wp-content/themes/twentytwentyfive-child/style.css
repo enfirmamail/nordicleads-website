@@ -51,7 +51,7 @@ body {
     line-height: 1.6;
     color: var(--nl-gray-900);
     background: var(--nl-white);
-}
+    }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--nl-font);
@@ -149,14 +149,16 @@ img {
 }
 
 .nl-logo-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-.nl-logo:hover .nl-logo-icon {
-    transform: scale(1.05);
+    width: 40px;
+    height: 40px;
+    background: var(--nl-accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nl-white);
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .nl-logo-text {
@@ -315,11 +317,11 @@ img {
     66% {
         transform: translate(-2%, 1%) scale(0.99);
         opacity: 0.85;
-    }
+}
     100% {
         transform: translate(1%, 2%) scale(1.01);
         opacity: 0.95;
-    }
+}
 }
 
 @media (min-width: 1024px) {
@@ -345,7 +347,7 @@ img {
     .nl-hero-inner {
         margin-left: auto;
         margin-right: auto;
-    }
+}
 }
 
 @media (min-width: 1024px) {
@@ -612,8 +614,8 @@ img {
 @media (max-width: 639px) {
     .nl-trusted-track {
         animation-duration: 20s;
-    }
-    
+}
+
     .nl-logo-item {
         min-width: 200px;
         padding: 1rem 1.25rem;
@@ -869,12 +871,12 @@ img {
     font-weight: 600;
     padding: 4px 16px;
     border-radius: 20px;
-}
-
+    }
+    
 .nl-pricing-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-}
+    }
 
 .nl-pricing-price {
     margin-bottom: 1.5rem;
@@ -888,13 +890,13 @@ img {
 
 .nl-pricing-period {
     color: var(--nl-gray-600);
-}
-
+    }
+    
 .nl-pricing-features {
     list-style: none;
     margin-bottom: 2rem;
-}
-
+    }
+    
 .nl-pricing-features li {
     display: flex;
     align-items: flex-start;
@@ -928,7 +930,7 @@ img {
 .nl-pricing-btn:hover {
     background: var(--nl-gray-200);
     color: var(--nl-gray-900);
-}
+    }
 
 .nl-pricing-btn-primary {
     background: var(--nl-primary);
@@ -1075,7 +1077,7 @@ img {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
-}
+    }
 
 .nl-form-submit:hover {
     transform: translateY(-2px);
