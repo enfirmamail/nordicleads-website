@@ -513,13 +513,24 @@ img {
     overflow: hidden;
 }
 
-.nl-trusted-heading {
+.nl-trusted-headline {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
     color: var(--nl-gray-500);
     margin-bottom: 2rem;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .nl-trusted-headline {
+        font-size: 1.0625rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 /* Slider Container */
@@ -629,8 +640,8 @@ img {
    STATS SECTION
    ================================================================= */
 .nl-stats {
-    background: var(--nl-white);
-    padding: 4rem 2rem;
+    background: linear-gradient(180deg, var(--nl-white) 0%, var(--nl-gray-100) 100%);
+    padding: 5rem 2rem;
     border-bottom: 1px solid var(--nl-gray-200);
 }
 
@@ -645,12 +656,40 @@ img {
 @media (min-width: 768px) {
     .nl-stats-inner {
         grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
     }
 }
 
 .nl-stat {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    background: var(--nl-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.nl-stat:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.nl-stat-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, var(--nl-accent) 0%, var(--nl-primary) 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.25);
+}
+
+.nl-stat-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--nl-white);
 }
 
 .nl-stat-number {
@@ -658,17 +697,23 @@ img {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
     color: var(--nl-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     line-height: 1.2;
 }
 
 .nl-stat-label {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--nl-text-dark);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.nl-stat-desc {
+    display: block;
     font-size: 0.8125rem;
     color: var(--nl-gray-500);
-    font-weight: 400;
     line-height: 1.5;
-    max-width: 200px;
-    margin: 0 auto;
 }
 
 /* =================================================================

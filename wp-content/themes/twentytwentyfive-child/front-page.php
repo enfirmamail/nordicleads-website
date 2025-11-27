@@ -77,7 +77,7 @@ get_header();
     <!-- Trusted By Section - Clean B2B Social Proof with Auto-scroll -->
     <section class="nl-trusted">
         <div class="nl-trusted-inner">
-            <p class="nl-trusted-heading">Her er nogle af de virksomheder, vi allerede hjælper med kvalificerede leads</p>
+            <p class="nl-trusted-headline">Her er nogle af de virksomheder, vi allerede hjælper med kvalificerede leads</p>
             <div class="nl-trusted-slider">
                 <div class="nl-trusted-track">
                     <!-- Set 1: Dmify, DentalDesk, Auto Specialisterne, Dmify, DentalDesk, Nordisk Rengøring, Dmify, DentalDesk, FinanceHub, Dmify, DentalDesk, TechVenture -->
@@ -354,20 +354,50 @@ get_header();
     <section class="nl-stats">
         <div class="nl-stats-inner">
             <div class="nl-stat">
+                <div class="nl-stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
                 <span class="nl-stat-number">10.000+</span>
-                <span class="nl-stat-label">Leads tilgængelige (mails, tlf. m.m.)</span>
+                <span class="nl-stat-label">Leads klar til dig</span>
+                <span class="nl-stat-desc">E-mails, telefonnumre & adresselister – alt i ét</span>
             </div>
             <div class="nl-stat">
+                <div class="nl-stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                </div>
                 <span class="nl-stat-number">Høj kvalitet</span>
-                <span class="nl-stat-label">Verificerede e-mails & telefonnumre med høj svarprocent</span>
+                <span class="nl-stat-label">Verificerede kontakter</span>
+                <span class="nl-stat-desc">Gyldige e-mails & telefonnumre – høj svarrate & bookingrate</span>
             </div>
             <div class="nl-stat">
-                <span class="nl-stat-number">&lt; 1 dag</span>
-                <span class="nl-stat-label">Lynhurtig levering – vores team kører 24/7</span>
+                <div class="nl-stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                </div>
+                <span class="nl-stat-number">&lt;24 timer</span>
+                <span class="nl-stat-label">Lynhurtig levering</span>
+                <span class="nl-stat-desc">Vores teams & systemer kører 24/7 – få leads samme dag</span>
             </div>
             <div class="nl-stat">
+                <div class="nl-stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                </div>
                 <span class="nl-stat-number">100%</span>
-                <span class="nl-stat-label">GDPR-sikker (legitim interesse)</span>
+                <span class="nl-stat-label">GDPR-sikker</span>
+                <span class="nl-stat-desc">Legitim interesse (Art. 6(1)(f)) – trygt & lovligt</span>
             </div>
         </div>
     </section>
