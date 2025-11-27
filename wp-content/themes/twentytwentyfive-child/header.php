@@ -16,6 +16,10 @@
     <link rel="alternate" hreflang="da-DK" href="<?php echo esc_url(home_url('/')); ?>">
     <?php endif; ?>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/favicon.svg'); ?>">
+    <link rel="apple-touch-icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/favicon.svg'); ?>">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
