@@ -77,6 +77,7 @@ get_header();
     <!-- Trusted By Section - Clean B2B Social Proof with Auto-scroll -->
     <section class="nl-trusted">
         <div class="nl-trusted-inner">
+            <p class="nl-trusted-heading">Her er nogle af de virksomheder, vi allerede hjælper med kvalificerede leads</p>
             <div class="nl-trusted-slider">
                 <div class="nl-trusted-track">
                     <!-- Set 1: Dmify, DentalDesk, Auto Specialisterne, Dmify, DentalDesk, Nordisk Rengøring, Dmify, DentalDesk, FinanceHub, Dmify, DentalDesk, TechVenture -->
@@ -353,20 +354,20 @@ get_header();
     <section class="nl-stats">
         <div class="nl-stats-inner">
             <div class="nl-stat">
-                <span class="nl-stat-number">40%</span>
-                <span class="nl-stat-label">Flere kunder i snit</span>
-                </div>
+                <span class="nl-stat-number">10.000+</span>
+                <span class="nl-stat-label">Leads tilgængelige (mails, tlf. m.m.)</span>
+            </div>
             <div class="nl-stat">
-                <span class="nl-stat-number">50-250</span>
-                <span class="nl-stat-label">Nye leads/måned</span>
-                </div>
+                <span class="nl-stat-number">Høj kvalitet</span>
+                <span class="nl-stat-label">Verificerede e-mails & telefonnumre med høj svarprocent</span>
+            </div>
             <div class="nl-stat">
-                <span class="nl-stat-number">2 uger</span>
-                <span class="nl-stat-label">Til første resultater</span>
-                </div>
+                <span class="nl-stat-number">&lt; 1 dag</span>
+                <span class="nl-stat-label">Lynhurtig levering – vores team kører 24/7</span>
+            </div>
             <div class="nl-stat">
                 <span class="nl-stat-number">100%</span>
-                <span class="nl-stat-label">GDPR-compliant</span>
+                <span class="nl-stat-label">GDPR-sikker (legitim interesse)</span>
             </div>
         </div>
     </section>
