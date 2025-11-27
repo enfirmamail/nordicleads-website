@@ -15,7 +15,7 @@ get_header();
     <!-- HERO SECTION - Clean B2B Trust, Premium 2025 -->
     <section id="hero" class="nl-hero">
         <div class="nl-hero-inner">
-            
+
             <!-- Left Column: Content (55%) -->
             <div class="nl-hero-content">
                 
@@ -70,7 +70,7 @@ get_header();
                     alt="Professionelt B2B-team arbejder med leads og data"
                     loading="eager"
                 >
-            </div>
+        </div>
         </div>
     </section>
 
@@ -110,7 +110,7 @@ get_header();
                                 <rect x="12" y="48" width="40" height="3" rx="1.5" fill="#ffffff" opacity="0.6"/>
                             </svg>
                             <span class="nl-logo-name">Auto Specialisterne ApS</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 2 -->
@@ -118,7 +118,7 @@ get_header();
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 2 -->
@@ -143,13 +143,13 @@ get_header();
                             <span class="nl-logo-name">Nordisk Rengøring A/S</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
-                    </a>
+                        </a>
                     <!-- Dmify 3 -->
                     <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 3 -->
@@ -208,7 +208,7 @@ get_header();
                                 <path d="M18 20h28v6H36v18h-8V26H18v-6z" fill="#ffffff"/>
                             </svg>
                             <span class="nl-logo-name">TechVenture ApS</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                 </div>
@@ -310,7 +310,7 @@ get_header();
                                 <circle cx="44" cy="14" r="3" fill="#ffffff" opacity="0.6"/>
                             </svg>
                             <span class="nl-logo-name">FinanceHub DK</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 4 -->
@@ -318,7 +318,7 @@ get_header();
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 4 -->
@@ -330,7 +330,7 @@ get_header();
                                 <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
                             </svg>
                             <span class="nl-logo-name">DentalDesk.dk</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- TechVenture ApS -->
@@ -341,7 +341,7 @@ get_header();
                                 <path d="M18 20h28v6H36v18h-8V26H18v-6z" fill="#ffffff"/>
                             </svg>
                             <span class="nl-logo-name">TechVenture ApS</span>
-                        </div>
+                    </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                 </div>
@@ -355,15 +355,15 @@ get_header();
             <div class="nl-stat">
                 <span class="nl-stat-number">40%</span>
                 <span class="nl-stat-label">Flere kunder i snit</span>
-            </div>
+                </div>
             <div class="nl-stat">
                 <span class="nl-stat-number">50-250</span>
                 <span class="nl-stat-label">Nye leads/måned</span>
-            </div>
+                </div>
             <div class="nl-stat">
                 <span class="nl-stat-number">2 uger</span>
                 <span class="nl-stat-label">Til første resultater</span>
-            </div>
+                </div>
             <div class="nl-stat">
                 <span class="nl-stat-number">100%</span>
                 <span class="nl-stat-label">GDPR-compliant</span>
@@ -405,8 +405,8 @@ get_header();
             <div class="nl-section-header">
                 <h2>Hvorfor er vi GDPR-sikre?</h2>
                 <p>Vi tager databeskyttelse alvorligt og følger alle retningslinjer</p>
-            </div>
-            
+                </div>
+                
             <div class="nl-trust-grid">
                 <div class="nl-trust-card">
                     <div class="nl-trust-icon">
@@ -414,21 +414,21 @@ get_header();
                     </div>
                     <h3>Legitim interesse</h3>
                     <p>Vi anvender GDPR Artikel 6(1)(f) til B2B-outreach med gensidig forretningsmæssig fordel for begge parter.</p>
-                </div>
+                        </div>
                 <div class="nl-trust-card">
                     <div class="nl-trust-icon">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                     </div>
                     <h3>Kun offentlige kilder</h3>
                     <p>Alle data fra CVR-registret, Google Maps og offentlige firmahjemmesider. Ingen køb af tredjeparts-data.</p>
-                </div>
+                        </div>
                 <div class="nl-trust-card">
                     <div class="nl-trust-icon">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
                     </div>
                     <h3>DNC-screening</h3>
                     <p>Løbende screening mod Do-Not-Contact-lister og compliance-assessments. Unsubscribe i hver email.</p>
-                </div>
+                        </div>
                 <div class="nl-trust-card">
                     <div class="nl-trust-icon">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -595,7 +595,7 @@ get_header();
             
             <p class="nl-contact-email">
                 Eller kontakt os direkte: <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a>
-            </p>
+                </p>
         </div>
     </section>
 
