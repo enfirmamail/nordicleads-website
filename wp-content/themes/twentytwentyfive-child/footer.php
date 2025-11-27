@@ -13,7 +13,7 @@
                             </linearGradient>
                         </defs>
                         <rect width="64" height="64" rx="14" fill="url(#footerBg)"/>
-                        <text x="32" y="44" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">NL</text>
+                        <text x="32" y="32" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">NL</text>
                     </svg>
                     <span class="text-xl font-semibold text-white">NordicLeads</span>
                 </div>
