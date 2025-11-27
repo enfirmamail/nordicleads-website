@@ -4,15 +4,16 @@
         <div class="grid md:grid-cols-4 gap-12 mb-12">
             <!-- Company Info -->
             <div class="md:col-span-2">
-                <div class="flex items-center gap-2 mb-4">
-                    <svg class="w-8 h-8 text-white" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-                        <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
-                        <circle cx="16" cy="16" r="3" fill="currentColor"/>
-                        <line x1="16" y1="2" x2="16" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="16" y1="24" x2="16" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="2" y1="16" x2="8" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="24" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <div class="flex items-center gap-3 mb-4">
+                    <svg class="w-10 h-10" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0066cc"/>
+                                <stop offset="100%" stop-color="#003366"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="64" height="64" rx="14" fill="url(#footerBg)"/>
+                        <text x="32" y="44" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">NL</text>
                     </svg>
                     <span class="text-xl font-semibold text-white">NordicLeads</span>
                 </div>
