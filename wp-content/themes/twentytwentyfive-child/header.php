@@ -34,7 +34,10 @@
     <div class="nl-header-inner">
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="nl-logo" aria-label="NordicLeads">
-            <div class="nl-logo-icon">NL</div>
+            <svg class="nl-logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#003366"/>
+                <path d="M10 30V10h4.5l11 14V10H30v20h-4.5L14 16v14H10z" fill="#ffffff"/>
+            </svg>
             <span class="nl-logo-text">NordicLeads</span>
         </a>
         

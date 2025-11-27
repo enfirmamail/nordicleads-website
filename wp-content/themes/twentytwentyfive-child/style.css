@@ -149,16 +149,14 @@ img {
 }
 
 .nl-logo-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--nl-accent);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--nl-white);
-    font-weight: 700;
-    font-size: 14px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.nl-logo:hover .nl-logo-icon {
+    transform: scale(1.05);
 }
 
 .nl-logo-text {
