@@ -354,7 +354,7 @@ get_header();
     <section class="nl-features">
         <div class="nl-features-inner">
             <div class="nl-feature" data-index="0">
-                <div class="nl-feature-badge">Mest valgt</div>
+                <div class="nl-feature-badge">Vores styrke</div>
                 <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
