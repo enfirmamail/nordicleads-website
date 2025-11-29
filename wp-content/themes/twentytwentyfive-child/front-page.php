@@ -395,7 +395,7 @@ get_header();
                     <div class="nl-feature-indicator"></div>
                     <span>Levering på under 24 timer</span>
                 </div>
-                <p class="nl-feature-desc">Vores teams og programmer kører døgnet rundt. Få dine leads leveret på under en dag – klar til eksport i CSV eller Excel-format.</p>
+                <p class="nl-feature-desc">Vores teams og programmer kører døgnet rundt. Få dine leads leveret på under en dag.</p>
             </div>
 
             <div class="nl-feature" data-index="3">

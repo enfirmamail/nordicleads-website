@@ -676,7 +676,11 @@ img {
 
 /* Highlight first feature */
 .nl-feature[data-index="0"] {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 51, 102, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08) 0%, rgba(0, 51, 102, 0.05) 100%);
+    box-shadow: 0 6px 24px rgba(0, 102, 204, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 0 1px rgba(0, 102, 204, 0.1);
+    transform: scale(1.02);
+    z-index: 2;
+    padding: 2.75rem 2.5rem;
 }
 
 .nl-feature[data-index="0"]::after {
@@ -685,27 +689,38 @@ img {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 4px;
+    width: 6px;
     background: linear-gradient(180deg, var(--nl-primary) 0%, var(--nl-accent) 100%);
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 3px 3px 0;
     z-index: 1;
+    box-shadow: 0 0 12px rgba(0, 102, 204, 0.4);
 }
 
 .nl-feature-badge {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    padding: 0.375rem 0.75rem;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
     background: linear-gradient(135deg, var(--nl-primary) 0%, var(--nl-accent) 100%);
     color: var(--nl-white);
-    font-size: 0.75rem;
-    font-weight: 600;
-    border-radius: 6px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    border-radius: 8px;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+    letter-spacing: 0.08em;
+    box-shadow: 0 4px 16px rgba(0, 102, 204, 0.35), 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
     font-family: 'Inter', sans-serif;
+    animation: pulse-badge 3s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(0, 102, 204, 0.35), 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(0, 102, 204, 0.5), 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
 }
 
 /* Desktop: 4 columns - borders */
@@ -820,7 +835,16 @@ img {
 /* First feature icon more prominent */
 .nl-feature[data-index="0"] .nl-feature-icon {
     color: var(--nl-primary);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    filter: drop-shadow(0 2px 8px rgba(0, 102, 204, 0.3));
+}
+
+.nl-feature[data-index="0"] .nl-feature-title {
+    color: var(--nl-primary);
+}
+
+.nl-feature[data-index="0"] .nl-feature-title span {
+    font-weight: 700;
 }
 
 .nl-feature-icon svg {
