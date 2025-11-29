@@ -350,11 +350,11 @@ get_header();
         </div>
     </section>
 
-    <!-- Social Proof / Stats Section -->
-    <section class="nl-stats">
-        <div class="nl-stats-inner">
-            <div class="nl-stat">
-                <div class="nl-stat-icon">
+    <!-- Features Section with Hover Effects -->
+    <section class="nl-features">
+        <div class="nl-features-inner">
+            <div class="nl-feature" data-index="0">
+                <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                         <circle cx="9" cy="7" r="4"/>
@@ -362,42 +362,111 @@ get_header();
                         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                     </svg>
                 </div>
-                <span class="nl-stat-number">10.000+</span>
-                <span class="nl-stat-label">Leads klar til dig</span>
-                <span class="nl-stat-desc">E-mails, telefonnumre & adresselister – alt i ét</span>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Tusindvis af kvalificerede leads</span>
+                </div>
+                <p class="nl-feature-desc">Vi finder titusindvis af e-mails, telefonnumre og adresser fra branchen og nichen der passer præcis til din virksomhed. Mængden og kvaliteten skræddersyes til dine specifikke behov.</p>
             </div>
-            <div class="nl-stat">
-                <div class="nl-stat-icon">
+
+            <div class="nl-feature" data-index="1">
+                <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                         <polyline points="22 4 12 14.01 9 11.01"/>
                     </svg>
                 </div>
-                <span class="nl-stat-number">Høj kvalitet</span>
-                <span class="nl-stat-label">Verificerede kontakter</span>
-                <span class="nl-stat-desc">Gyldige e-mails & telefonnumre – høj svarrate & bookingrate</span>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Verificerede kontakter af højeste kvalitet</span>
+                </div>
+                <p class="nl-feature-desc">Alle e-mails og telefonnumre er verificerede og aktive. Kvaliteten varierer naturligvis med branche og niche, men vi garanterer kun kontakter der leverer resultater.</p>
             </div>
-            <div class="nl-stat">
-                <div class="nl-stat-icon">
+
+            <div class="nl-feature" data-index="2">
+                <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"/>
                         <polyline points="12 6 12 12 16 14"/>
                     </svg>
                 </div>
-                <span class="nl-stat-number">&lt;24 timer</span>
-                <span class="nl-stat-label">Lynhurtig levering</span>
-                <span class="nl-stat-desc">Vores teams & systemer kører 24/7 – få leads samme dag</span>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Levering på under 24 timer</span>
+                </div>
+                <p class="nl-feature-desc">Vores teams og programmer kører døgnet rundt. Få dine leads leveret på under en dag – klar til eksport i CSV eller Excel-format.</p>
             </div>
-            <div class="nl-stat">
-                <div class="nl-stat-icon">
+
+            <div class="nl-feature" data-index="3">
+                <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         <polyline points="9 12 11 14 15 10"/>
                     </svg>
                 </div>
-                <span class="nl-stat-number">100%</span>
-                <span class="nl-stat-label">GDPR-sikker</span>
-                <span class="nl-stat-desc">Legitim interesse (Art. 6(1)(f)) – trygt & lovligt</span>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>100% GDPR-sikker via legitim interesse</span>
+                </div>
+                <p class="nl-feature-desc">Alle leads er fra offentlige kilder som CVR og Google Maps. 100% GDPR-compliant via legitim interesse (Art. 6(1)(f)) – trygt og lovligt.</p>
+            </div>
+
+            <div class="nl-feature" data-index="4">
+                <div class="nl-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                </div>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Klar til eksport på sekunder</span>
+                </div>
+                <p class="nl-feature-desc">Alle leads leveres i rene, strukturerede lister. CSV eller Excel-format klar til import i dit CRM, mail-system eller hvor du har brug for dem.</p>
+            </div>
+
+            <div class="nl-feature" data-index="5">
+                <div class="nl-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Skræddersyet til din branche</span>
+                </div>
+                <p class="nl-feature-desc">Vi finder leads baseret på præcise søgekriterier og filtre. Fra start-ups til enterprise – vi matcher din målgruppe perfekt.</p>
+            </div>
+
+            <div class="nl-feature" data-index="6">
+                <div class="nl-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>DNC-screenet og opt-out-klar</span>
+                </div>
+                <p class="nl-feature-desc">Alle leads er screenet mod Do-Not-Contact-lister. Unsubscribe-links inkluderet i hver kampagne – fuld compliance garanteret.</p>
+            </div>
+
+            <div class="nl-feature" data-index="7">
+                <div class="nl-feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <div class="nl-feature-title">
+                    <div class="nl-feature-indicator"></div>
+                    <span>Brugt af 80+ danske virksomheder</span>
+                </div>
+                <p class="nl-feature-desc">Over 80 danske virksomheder stoler allerede på os til at levere kvalificerede B2B-leads. Bliv en del af et vækstfællesskab der faktisk virker.</p>
             </div>
         </div>
     </section>
