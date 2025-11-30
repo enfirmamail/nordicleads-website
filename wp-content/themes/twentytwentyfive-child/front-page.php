@@ -21,29 +21,32 @@ get_header();
                 
                 <!-- H1 -->
                 <h1 class="nl-hero-title">
-                    Kvalificerede B2B-leads<br>
-                    <span>– leveret på få dage</span>
+                    50–5.000 nye kunder.<br>
+                    <span>Leveret på under 24 timer.</span>
                 </h1>
                 
                 <!-- Subline -->
                 <p class="nl-hero-subtitle">
-                    50–250 verificerede virksomhedskontakter med direkte e-mails og telefonnumre. 
-                    Alt fra CVR og offentlige kilder – 100 % GDPR-sikker via legitim interesse.
+                    Vi finder titusindvis af verificerede virksomhedskontakter fra din branche og niche. 
+                    Direkte e-mails, telefonnumre og adresser – skræddersyet til dine behov, klar til at skaffe flere kunder.
                 </p>
+                
+                <!-- Emotional Line -->
+                <p class="nl-hero-emotional">Stop med at lede, start med at sælge</p>
                 
                 <!-- Check Bullets -->
                 <ul class="nl-hero-checks">
                     <li>
                         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                        Verificerede e-mails
+                        Verificerede e-mails & telefonnumre
                     </li>
                     <li>
                         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                        Direkte telefonnumre
+                        Skræddersyet til din branche
                     </li>
                     <li>
                         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                        DNC-screenet
+                        100% GDPR-sikker
                     </li>
                     <li>
                         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -53,13 +56,18 @@ get_header();
                 
                 <!-- CTAs -->
                 <div class="nl-hero-ctas">
-                    <a href="#kontakt" class="nl-btn-primary">Få leads nu</a>
-                    <a href="#priser" class="nl-btn-secondary">Se priser</a>
+                    <a href="#kontakt" class="nl-btn-primary">Bestil leads</a>
+                    <a href="#hvordan" class="nl-btn-secondary">Sådan virker det</a>
                 </div>
                 
                 <!-- Trust Line -->
                 <p class="nl-hero-trust">
-                    GDPR Art. 6(1)(f) · Legitim interesse · EU-baseret · Brugt af 80+ danske virksomheder
+                    GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af 80+ virksomheder
+                </p>
+                
+                <!-- Outreach Link -->
+                <p class="nl-hero-outreach">
+                    <a href="/outreach">Har du også brug for outreach? <span>→</span></a>
                 </p>
             </div>
             
@@ -77,7 +85,7 @@ get_header();
     <!-- Trusted By Section - Clean B2B Social Proof with Auto-scroll -->
     <section class="nl-trusted">
         <div class="nl-trusted-inner">
-            <p class="nl-trusted-headline">Her er nogle af de virksomheder, vi allerede hjælper med kvalificerede leads</p>
+            <p class="nl-trusted-headline">Her er nogle af de virksomheder, vi allerede hjælper med at skaffe flere kunder</p>
             <div class="nl-trusted-slider">
                 <div class="nl-trusted-track">
                     <!-- Set 1: Dmify, DentalDesk, Auto Specialisterne, Dmify, DentalDesk, Nordisk Rengøring, Dmify, DentalDesk, FinanceHub, Dmify, DentalDesk, TechVenture -->
@@ -354,7 +362,7 @@ get_header();
     <section class="nl-features">
         <div class="nl-features-inner">
             <div class="nl-feature" data-index="0">
-                <div class="nl-feature-badge">Vores styrke</div>
+                <div class="nl-feature-badge">Vores styrker</div>
                 <div class="nl-feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -477,24 +485,25 @@ get_header();
         <div class="nl-container">
             <div class="nl-section-header">
                 <h2>Sådan virker det</h2>
-                <p>Tre enkle trin fra leads til bookinger – vi håndterer det hele</p>
+                <p>Tre enkle trin til nye kunder</p>
             </div>
             
             <div class="nl-steps">
                 <div class="nl-step">
                     <div class="nl-step-number">1</div>
-                    <h3>Vi finder leads</h3>
-                    <p>Fra offentlige kilder som CVR, Google Maps og firmahjemmesider. 100% GDPR-compliant og målrettet din branche.</p>
+                    <h3>Vi finder og verificerer leads</h3>
+                    <p>Fra offentlige kilder som CVR-registret, Google Maps, firmahjemmesider og brancheregistre. Alt bliver DNC-screenet og verificeret – kun gyldige kontakter, 100 % GDPR-sikker via legitim interesse.</p>
                 </div>
                 <div class="nl-step">
                     <div class="nl-step-number">2</div>
-                    <h3>Sender personaliserede emails</h3>
-                    <p>Professionelle kolde emails på dansk med DNC-screening, compliance-checks og unsubscribe-funktionalitet.</p>
+                    <h3>Ønsker du, at vi kontakter dem for dig?</h3>
+                    <p>Vi kan sende professionelle, personaliserede e-mails på dansk med unsubscribe og fuld compliance – eller du bruger bare listen selv. Vælger du outreach, klarer vi alt fra A-Z.</p>
+                    <a href="#kontakt" class="nl-outreach-link">→ Læs mere om vores outreach-pakker</a>
                 </div>
                 <div class="nl-step">
                     <div class="nl-step-number">3</div>
-                    <h3>Du får bookede leads</h3>
-                    <p>Varme leads leveret direkte til dig. Alt du skal gøre er at lukke salget – vi klarer resten.</p>
+                    <h3>Sig velkommen til dine nye kunder</h3>
+                    <p>Du modtager dine leads i CSV eller Excel-format – klar til brug med det samme. Alle kontakter er verificerede, kvalificerede og klar til at blive kontaktet.</p>
                 </div>
             </div>
         </div>
@@ -535,69 +544,55 @@ get_header();
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
                     <h3>EU-hosting & support</h3>
-                    <p>Data gemmes sikkert på EU-servere i Danmark. Dansk support der forstår lokal lovgivning.</p>
+                    <p>Når en ny ordre kommer ind, kreerer vi leadlisten og samler de potentielle kunder. I det sekund listen er færdig, bliver den sendt direkte til dig – og aldrig opbevaret hos os. Vi opbevarer aldrig data vi ikke har lov til, og alt håndteres på EU-servere i Danmark.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="priser" class="nl-section nl-section-light">
+    <!-- Contact Form Section -->
+    <section id="kontakt" class="nl-section nl-section-dark">
         <div class="nl-container">
-            <div class="nl-section-header">
-                <h2>Transparente priser</h2>
-                <p>Vælg den pakke der passer til din virksomhed. Ingen skjulte omkostninger.</p>
-            </div>
-            
-            <div class="nl-pricing">
-                <!-- Starter -->
-                <div class="nl-pricing-card">
-                    <h3>Starter</h3>
-                    <div class="nl-pricing-price">
-                        <span class="nl-pricing-amount">2.500 kr</span>
-                        <span class="nl-pricing-period">/måned</span>
-                    </div>
-                    <ul class="nl-pricing-features">
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> 50-100 leads/måned</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> GDPR-compliant outreach</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Email support</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Månedlig rapport</li>
-                    </ul>
-                    <a href="#kontakt" class="nl-pricing-btn">Kom i gang</a>
+            <div class="nl-contact-grid">
+                <div class="nl-contact-text">
+                    <h2>Få et skræddersyet tilbud – inden for 24 timer</h2>
+                    <p>Vi prissætter efter din branche, niche, ønsket antal leads og kvalitet. Priser og antal leads varierer alt efter hvad du har brug for – fra små specialiserede lister til store volumen-indsamlinger.</p>
+                    <p>Fortæl os kort hvad du leder efter – så sender vi et uforpligtende tilbud. Vores salgsteam finder den bedste løsning der passer præcist til dine behov.</p>
+                    <p class="nl-contact-email">
+                        Eller kontakt os direkte:<br>
+                        <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a>
+                    </p>
                 </div>
                 
-                <!-- Pro -->
-                <div class="nl-pricing-card nl-pricing-featured">
-                    <div class="nl-pricing-badge">Mest populær</div>
-                    <h3>Pro</h3>
-                    <div class="nl-pricing-price">
-                        <span class="nl-pricing-amount">4.500 kr</span>
-                        <span class="nl-pricing-period">/måned</span>
+                <div class="nl-contact-form-wrapper">
+                    <form id="contact-form" class="nl-contact-form">
+                        <div class="nl-form-row">
+                            <div class="nl-form-group">
+                                <label for="name">Navn <span>*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Dit navn">
+                            </div>
+                            <div class="nl-form-group">
+                                <label for="company">Virksomhed <span>*</span></label>
+                                <input type="text" id="company" name="company" required placeholder="Din virksomhed">
+                            </div>
+                        </div>
+                        <div class="nl-form-row">
+                            <div class="nl-form-group">
+                                <label for="email">E-mail <span>*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="din@email.dk">
                     </div>
-                    <ul class="nl-pricing-features">
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> 150-250 leads/måned</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Alt fra Starter +</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Personaliserede kampagner</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> 30 dages garanti</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Prioriteret support</li>
-                    </ul>
-                    <a href="#kontakt" class="nl-pricing-btn nl-pricing-btn-primary">Vælg Pro</a>
+                            <div class="nl-form-group">
+                                <label for="phone">Telefon <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+45 XX XX XX XX">
+                    </div>
                 </div>
-                
-                <!-- Enterprise -->
-                <div class="nl-pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="nl-pricing-price">
-                        <span class="nl-pricing-amount">Custom</span>
+                        <div class="nl-form-group">
+                            <label for="message">Besked (valgfri)</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Fortæl os om din branche, niche, ønsket antal leads og eventuelle særlige krav. Jo mere vi ved, jo bedre kan vi tilpasse løsningen til dig..."></textarea>
                     </div>
-                    <ul class="nl-pricing-features">
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> 250+ leads/måned</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Alt fra Pro +</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Dedikeret account manager</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Multi-kanal outreach</li>
-                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> Custom integrations</li>
-                    </ul>
-                    <a href="#kontakt" class="nl-pricing-btn">Kontakt os</a>
+                        <button type="submit" class="nl-form-submit">Få uforpligtende tilbud</button>
+                        <p class="nl-form-disclaimer">Ved at indsende accepterer du vores <a href="#">privatlivspolitik</a>. Vi behandler dine data i henhold til GDPR.</p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -608,17 +603,17 @@ get_header();
         <div class="nl-container nl-container-narrow">
             <div class="nl-section-header">
                 <h2>Ofte stillede spørgsmål</h2>
-                <p>Få svar på dine spørgsmål om GDPR, resultater og processen</p>
+                <p>Få svar på dine spørgsmål om leads, GDPR, priser og levering</p>
             </div>
             
             <div class="nl-faq">
                 <div class="nl-faq-item">
                     <button class="nl-faq-question">
-                        <span>Er det spam at sende kolde emails?</span>
+                        <span>Hvor kommer jeres leads fra?</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
                     <div class="nl-faq-answer">
-                        <p>Nej, ikke når det gøres rigtigt. Vi sender kun B2B-emails baseret på legitim interesse (GDPR Art. 6(1)(f)) med gensidig forretningsmæssig fordel. Alle emails inkluderer unsubscribe, og vi screener mod DNC-lister. Det er professionel business development.</p>
+                        <p>Alle leads er fra offentlige kilder som CVR-registret, Google Maps, firmahjemmesider og brancheregistre. Vi køber aldrig data fra tredjeparter – alt er scrapet fra offentligt tilgængelige kilder. Alle leads bliver verificeret og DNC-screenet før levering.</p>
                     </div>
                 </div>
                 
@@ -628,75 +623,60 @@ get_header();
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
                     <div class="nl-faq-answer">
-                        <p>Vi bruger legitim interesse (GDPR Art. 6(1)(f)) for B2B med mutual benefit. Alle leads er fra offentlige kilder (CVR, Google Maps), screenet mod DNC-lister, med compliance-assessments og unsubscribe i hver email. Data gemmes sikkert på EU-servere.</p>
+                        <p>Vi bruger legitim interesse (GDPR Art. 6(1)(f)) baseret på gensidig forretningsmæssig fordel. Alle leads er fra offentlige kilder, screenet mod Do-Not-Contact-lister, og vi opbevarer aldrig data efter levering – listen sendes direkte til dig og slettes fra vores systemer. Data håndteres på EU-servere i Danmark.</p>
                     </div>
                 </div>
                 
                 <div class="nl-faq-item">
                     <button class="nl-faq-question">
-                        <span>Hvor hurtigt kan jeg forvente resultater?</span>
+                        <span>Hvor hurtigt får jeg mine leads?</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
                     <div class="nl-faq-answer">
-                        <p>De fleste kunder ser første leads inden for 2-3 uger. Vi starter med at scrape og kvalificere leads, sender kampagner og optimerer baseret på respons. Pro-pakken har 30 dages garanti.</p>
+                        <p>Når ordren er bekræftet, kreerer vi din skræddersyede leadliste og sender den direkte til dig – typisk inden for 24-48 timer. Jo mere specifikke kriterier du giver (branche, geografi, størrelse), jo hurtigere kan vi levere.</p>
                     </div>
                 </div>
                 
                 <div class="nl-faq-item">
                     <button class="nl-faq-question">
-                        <span>Kan jeg opsige når som helst?</span>
+                        <span>Hvad koster det?</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
                     <div class="nl-faq-answer">
-                        <p>Ja, alle pakker er månedlige uden binding. Du kan opsige eller pause med 30 dages varsel. Vi tror på at du bliver fordi du ser resultater – ikke fordi du er låst fast.</p>
+                        <p>Priserne afhænger af din branche, niche, antal leads og kvalitetsniveau. Vi tilpasser prisen præcist til dine behov – fra små specialiserede lister til store volumen-indsamlinger. Kontakt os for et uforpligtende tilbud skræddersyet til din virksomhed.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="kontakt" class="nl-section nl-section-dark">
-        <div class="nl-container nl-container-narrow">
-            <div class="nl-section-header nl-section-header-light">
-                <h2>Book et gratis opkald</h2>
-                <p>Vi kontakter dig inden for 24 timer og hjælper dig med at komme i gang</p>
-            </div>
-            
-            <div class="nl-contact-form-wrapper">
-                <form id="contact-form" class="nl-contact-form">
-                    <div class="nl-form-row">
-                        <div class="nl-form-group">
-                            <label for="name">Navn <span>*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="Dit navn">
-                        </div>
-                        <div class="nl-form-group">
-                            <label for="company">Virksomhed <span>*</span></label>
-                            <input type="text" id="company" name="company" required placeholder="Din virksomhed">
-                        </div>
+                
+                <div class="nl-faq-item">
+                    <button class="nl-faq-question">
+                        <span>Kan I også kontakte leads'ene for mig?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="nl-faq-answer">
+                        <p>Ja, det er en valgfri service. Du kan købe kun lead-listen og kontakte dem selv, eller vælge vores outreach-service hvor vi sender professionelle, personaliserede B2B-emails på vegne af dig. Outreach-pakker inkluderer fuld GDPR-compliance, unsubscribe-links og DNC-screening. Læs mere om vores outreach-pakker når du får tilbud.</p>
                     </div>
-                    <div class="nl-form-row">
-                        <div class="nl-form-group">
-                            <label for="email">E-mail <span>*</span></label>
-                            <input type="email" id="email" name="email" required placeholder="din@email.dk">
-                        </div>
-                        <div class="nl-form-group">
-                            <label for="phone">Telefon <span>*</span></label>
-                            <input type="tel" id="phone" name="phone" required placeholder="+45 XX XX XX XX">
-                        </div>
+                </div>
+                
+                <div class="nl-faq-item">
+                    <button class="nl-faq-question">
+                        <span>Hvor gode er jeres leads?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="nl-faq-answer">
+                        <p>Alle leads bliver verificeret før levering. Vi tjekker at e-mails er aktive, telefonnumre er gyldige, og at virksomhederne matcher dine kriterier. Kvaliteten varierer naturligvis med branche og niche, men vi garanterer kun kontakter der leverer resultater. Mange af vores kunder rapporterer høj svarrate og bookingrate.</p>
                     </div>
-                    <div class="nl-form-group">
-                        <label for="message">Besked (valgfri)</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Fortæl os kort om din virksomhed og dine mål..."></textarea>
+                        </div>
+                        
+                <div class="nl-faq-item">
+                    <button class="nl-faq-question">
+                        <span>Har du et specifikt behov eller spørgsmål?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="nl-faq-answer">
+                        <p>Vi laver skræddersyede løsninger til alle slags behov – fra små specialiserede lister til store volumen-indsamlinger. Har du et specifikt krav, en unik niche eller bare et spørgsmål? Kontakt os via formularen herover, og vi finder den bedste løsning til din virksomhed.</p>
                     </div>
-                    <button type="submit" class="nl-form-submit">Send besked</button>
-                    <p class="nl-form-disclaimer">Ved at indsende accepterer du vores <a href="#">privatlivspolitik</a>. Vi behandler dine data i henhold til GDPR.</p>
-                </form>
             </div>
-            
-            <p class="nl-contact-email">
-                Eller kontakt os direkte: <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a>
-                </p>
+            </div>
         </div>
     </section>
 

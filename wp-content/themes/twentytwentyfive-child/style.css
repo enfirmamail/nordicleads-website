@@ -468,6 +468,33 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* Outreach Link */
+.nl-hero-outreach {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.nl-hero-outreach a {
+    color: var(--nl-gray-300);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nl-hero-outreach a:hover {
+    color: var(--nl-white);
+}
+
+.nl-hero-outreach a span {
+    transition: transform 0.2s ease;
+}
+
+.nl-hero-outreach a:hover span {
+    transform: translateX(4px);
+}
+
 /* Hero Image */
 .nl-hero-image {
     order: 1;
@@ -516,20 +543,20 @@ img {
 .nl-trusted-headline {
     text-align: center;
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--nl-gray-500);
-    margin-bottom: 2rem;
-    letter-spacing: 0.02em;
-    max-width: 600px;
+    font-weight: 600;
+    color: var(--nl-text-dark);
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.01em;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 @media (min-width: 768px) {
     .nl-trusted-headline {
-        font-size: 1.0625rem;
-        margin-bottom: 2.5rem;
+        font-size: 1.125rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -1032,6 +1059,21 @@ img {
     line-height: 1.6;
 }
 
+.nl-outreach-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--nl-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nl-outreach-link:hover {
+    color: var(--nl-accent);
+    transform: translateX(4px);
+}
+
 /* =================================================================
    TRUST GRID
    ================================================================= */
@@ -1264,6 +1306,61 @@ img {
 /* =================================================================
    CONTACT FORM
    ================================================================= */
+.nl-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .nl-contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.nl-contact-text {
+    color: var(--nl-white);
+}
+
+.nl-contact-text h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--nl-white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.nl-contact-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.25rem;
+}
+
+.nl-contact-text .nl-contact-email {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.nl-contact-text .nl-contact-email a {
+    color: var(--nl-white);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.2s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.nl-contact-text .nl-contact-email a:hover {
+    opacity: 0.8;
+}
+
 .nl-contact-form-wrapper {
     background: var(--nl-white);
     padding: 2.5rem;

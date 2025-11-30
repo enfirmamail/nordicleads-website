@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <?php if (is_front_page()): ?>
-    <meta name="description" content="Få adgang til 50-250 kvalificerede B2B-leads på få dage. Verificerede emails, telefonnumre og adresser fra CVR. 100% GDPR-compliant.">
+    <meta name="description" content="Tusindvis af kvalificerede B2B-leads leveret på under 24 timer. Verificerede emails, telefonnumre og adresser skræddersyet til din branche. 100% GDPR-compliant.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="<?php echo esc_url(home_url('/')); ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
-    <meta property="og:title" content="NordicLeads – Kvalificerede B2B-leads leveret på få dage">
-    <meta property="og:description" content="50-250 verificerede B2B-leads med emails og telefonnumre. GDPR-compliant via legitimate interest.">
+    <meta property="og:title" content="NordicLeads – Tusindvis af kvalificerede B2B-leads på under 24 timer">
+    <meta property="og:description" content="Tusindvis af verificerede B2B-leads skræddersyet til din branche. Leveret på under 24 timer, 100% GDPR-compliant.">
     <meta property="og:locale" content="da_DK">
     <link rel="alternate" hreflang="da-DK" href="<?php echo esc_url(home_url('/')); ?>">
     <?php endif; ?>
@@ -50,7 +50,6 @@
         <!-- Desktop Nav - Centered -->
         <nav class="nl-nav-desktop" role="navigation">
             <a href="#hvordan">Sådan virker det</a>
-            <a href="#priser">Priser</a>
             <a href="#faq">FAQ</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
@@ -71,7 +70,6 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="nl-mobile-menu">
         <a href="#hvordan">Sådan virker det</a>
-        <a href="#priser">Priser</a>
         <a href="#faq">FAQ</a>
         <a href="#kontakt">Kontakt</a>
     </div>
