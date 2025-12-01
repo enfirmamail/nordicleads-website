@@ -21,8 +21,8 @@ get_header();
                 
                 <!-- H1 -->
                 <h1 class="nl-hero-title">
-                    50–5.000 nye kunder.<br>
-                    <span>Leveret på under 24 timer.</span>
+                    Stop med at lede.<br>
+                    <span>Start med at sælge.</span>
                 </h1>
                 
                 <!-- Subline -->
@@ -32,7 +32,7 @@ get_header();
                 </p>
                 
                 <!-- Emotional Line -->
-                <p class="nl-hero-emotional">Stop med at lede, start med at sælge</p>
+                <p class="nl-hero-emotional">Sig velkommen til dine nye kunder.</p>
                 
                 <!-- Check Bullets -->
                 <ul class="nl-hero-checks">
