@@ -1506,3 +1506,338 @@ body.admin-bar #site-header {
         color: #000;
     }
 }
+
+/* =================================================================
+   CASES PAGE - Clean Nordic Minimalism
+   ================================================================= */
+
+/* Cases Hero - Clean Gradient */
+.nl-cases-hero {
+    background: linear-gradient(135deg, var(--nl-primary) 0%, var(--nl-dark) 100%);
+    color: var(--nl-white);
+    padding: 5rem 0 4rem;
+    margin-top: 80px;
+}
+
+.nl-cases-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nl-cases-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--nl-white);
+}
+
+.nl-cases-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Cases Main Section - White Background */
+.nl-cases-section {
+    padding: 5rem 0;
+    background: var(--nl-white);
+}
+
+.nl-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Case Card - Clean & Professional */
+.nl-case-card {
+    background: var(--nl-white);
+    border: 1px solid var(--nl-gray-200);
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+.nl-case-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Case Logo */
+.nl-case-logo-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--nl-gray-100);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.nl-case-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nl-case-logo-svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Case Title */
+.nl-case-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--nl-gray-900);
+    margin-bottom: 2rem;
+}
+
+/* Case Content */
+.nl-case-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nl-case-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.nl-case-section-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--nl-primary);
+    margin-bottom: 0.5rem;
+}
+
+.nl-case-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--nl-gray-600);
+}
+
+/* Case Quote */
+.nl-case-quote {
+    margin: 0;
+    padding: 1.5rem;
+    background: var(--nl-gray-100);
+    border-left: 3px solid var(--nl-primary);
+    border-radius: 6px;
+}
+
+.nl-case-quote p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--nl-gray-700);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.nl-case-quote-author {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--nl-gray-900);
+    font-style: normal;
+    display: block;
+}
+
+/* Case CTA */
+.nl-case-cta {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--nl-gray-200);
+}
+
+.nl-case-cta-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--nl-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nl-case-cta-link:hover {
+    color: var(--nl-accent);
+}
+
+/* Blog Integration Section */
+.nl-cases-blog {
+    padding: 5rem 0;
+    background: var(--nl-gray-100);
+}
+
+.nl-cases-blog-content {
+    text-align: center;
+}
+
+.nl-cases-blog-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--nl-gray-900);
+    margin-bottom: 3rem;
+}
+
+.nl-cases-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+}
+
+.nl-cases-blog-item {
+    background: var(--nl-white);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--nl-gray-200);
+}
+
+.nl-cases-blog-item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--nl-gray-900);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.nl-cases-blog-item-excerpt {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--nl-gray-600);
+    margin-bottom: 1rem;
+}
+
+.nl-cases-blog-item-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--nl-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nl-cases-blog-item-link:hover {
+    color: var(--nl-accent);
+}
+
+/* Cases CTA Section - Clean Gradient */
+.nl-cases-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--nl-primary) 0%, var(--nl-dark) 100%);
+    color: var(--nl-white);
+}
+
+.nl-cases-cta-content {
+    text-align: center;
+}
+
+.nl-cases-cta-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--nl-white);
+}
+
+.nl-cases-cta-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nl-cases-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nl-cases-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 700px;
+    }
+    
+    .nl-cases-blog-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nl-cases-hero {
+        padding: 4rem 0 3rem;
+        margin-top: 70px;
+    }
+    
+    .nl-cases-title {
+        font-size: 2rem;
+    }
+    
+    .nl-cases-subtitle {
+        font-size: 1rem;
+    }
+    
+    .nl-cases-section {
+        padding: 3rem 0;
+    }
+    
+    .nl-case-card {
+        padding: 2rem;
+    }
+    
+    .nl-case-title {
+        font-size: 1.5rem;
+    }
+    
+    .nl-cases-blog {
+        padding: 3rem 0;
+    }
+    
+    .nl-cases-blog-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .nl-cases-cta {
+        padding: 4rem 0;
+    }
+    
+    .nl-cases-cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .nl-cases-cta-text {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .nl-cases-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .nl-cases-cta-buttons .nl-btn-primary,
+    .nl-cases-cta-buttons .nl-btn-secondary {
+        width: 100%;
+    }
+}

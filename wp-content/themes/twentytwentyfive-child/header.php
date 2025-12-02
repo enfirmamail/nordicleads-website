@@ -49,9 +49,26 @@
         
         <!-- Desktop Nav - Centered -->
         <nav class="nl-nav-desktop" role="navigation">
-            <a href="#hvordan">Sådan virker det</a>
-            <a href="#faq">FAQ</a>
-            <a href="#kontakt">Kontakt</a>
+            <?php if (is_page_template('page-cases.php')): ?>
+                <a href="<?php echo esc_url(home_url('/')); ?>">Tilbage til forsiden</a>
+            <?php else: ?>
+                <a href="#hvordan">Sådan virker det</a>
+                <?php 
+                // Find cases page dynamically
+                $cases_page = get_pages(array(
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'page-cases.php'
+                ));
+                if (!empty($cases_page)) {
+                    $cases_url = get_permalink($cases_page[0]->ID);
+                } else {
+                    $cases_url = home_url('/cases');
+                }
+                ?>
+                <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontakt">Kontakt</a>
+            <?php endif; ?>
         </nav>
         
         <!-- CTA -->
@@ -69,9 +86,26 @@
     
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="nl-mobile-menu">
-        <a href="#hvordan">Sådan virker det</a>
-        <a href="#faq">FAQ</a>
-        <a href="#kontakt">Kontakt</a>
+        <?php if (is_page_template('page-cases.php')): ?>
+            <a href="<?php echo esc_url(home_url('/')); ?>">Tilbage til forsiden</a>
+        <?php else: ?>
+            <a href="#hvordan">Sådan virker det</a>
+            <?php 
+            // Find cases page dynamically
+            $cases_page = get_pages(array(
+                'meta_key' => '_wp_page_template',
+                'meta_value' => 'page-cases.php'
+            ));
+            if (!empty($cases_page)) {
+                $cases_url = get_permalink($cases_page[0]->ID);
+            } else {
+                $cases_url = home_url('/cases');
+            }
+            ?>
+            <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontakt">Kontakt</a>
+        <?php endif; ?>
     </div>
 </header>
 
