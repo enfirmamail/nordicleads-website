@@ -24,7 +24,7 @@ Vores service hjælper restauranter, frisører, butikker og håndværkere med at
 # Target Audience
 Primær: Ejere af små danske B2B-virksomheder (restauranter, frisører, butikker, håndværkere)
 Sekundær: Marketing-ansvarlige og ejere der selv håndterer kundehenvendelser
-Geografi: Danmark
+Geografi: Danmark, Sverige, Norge og resten af EU
 
 # Unique Value Proposition
 "Få 50-250 nye kunder hver måned med 100% GDPR-sikre leads fra offentlige kilder."

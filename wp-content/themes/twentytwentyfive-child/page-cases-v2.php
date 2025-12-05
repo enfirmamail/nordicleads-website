@@ -17,7 +17,7 @@ get_header();
         <div class="nl-container">
             <div class="nl-cases-hero-content-v2">
                 <span class="nl-cases-badge">Success Stories</span>
-                <h1 class="nl-cases-title-v2">Udvalgte success cases</h1>
+                <h1 class="nl-cases-title-v2">Virksomheder vi har hjulpet</h1>
                 <p class="nl-cases-subtitle-v2">
                     Fra danske startups til etablerede virksomheder. Her er historien om hvordan vi hjalp dem med at finde deres kunder.
                 </p>
@@ -53,11 +53,15 @@ get_header();
                     <div class="nl-case-stats-v2">
                         <div class="nl-stat-item-v2">
                             <span class="nl-stat-number-v2">50+</span>
-                            <span class="nl-stat-label-v2">nordiske bookninger</span>
+                            <span class="nl-stat-label-v2">bookinger</span>
                         </div>
                         <div class="nl-stat-item-v2">
                             <span class="nl-stat-number-v2">300+</span>
-                            <span class="nl-stat-label-v2">demoer udsendt</span>
+                            <span class="nl-stat-label-v2">klinikker</span>
+                        </div>
+                        <div class="nl-stat-item-v2">
+                            <span class="nl-stat-number-v2">18%</span>
+                            <span class="nl-stat-label-v2">conversion</span>
                         </div>
                     </div>
                     <a href="<?php echo esc_url(get_page_link(get_page_by_path('dentaldesk-case')->ID ?? '#')); ?>" class="nl-case-link-v2">
@@ -76,7 +80,7 @@ get_header();
                 <article class="nl-case-card-v2">
                     <div class="nl-case-visual">
                         <div class="nl-case-image-placeholder dmify">
-                            <span class="nl-case-text-logo">Dmify.net</span>
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify" class="nl-case-logo-v2">
                         </div>
                     </div>
                     <div class="nl-case-content-v2">
@@ -84,19 +88,23 @@ get_header();
                             <span class="nl-case-industry">SaaS & Tech</span>
                             <span class="nl-case-time">3 måneder</span>
                         </div>
-                    <h2 class="nl-case-title-v2">Dmify</h2>
-                    <p class="nl-case-headline">Fra "hvem er vores kunde?" til 120+ SaaS kunder</p>
-                    <p class="nl-case-excerpt-v2">
-                        En dansk SaaS-virksomhed med et fleksibelt produkt kunne ikke finde ud af hvem de skulle sælge til. Vi testede 10.000+ leads på tværs af 6 segmenter og fandt deres sweet spot: Growth agencies.
-                    </p>
+                        <h2 class="nl-case-title-v2">Dmify</h2>
+                        <p class="nl-case-headline">Fra "hvem er vores kunde?" til 120+ SaaS kunder</p>
+                        <p class="nl-case-excerpt-v2">
+                            En dansk SaaS-virksomhed med et fleksibelt produkt kunne ikke finde ud af hvem de skulle sælge til. Vi testede 10.000+ leads på tværs af 6 segmenter og fandt deres sweet spot: Growth agencies.
+                        </p>
                         <div class="nl-case-stats-v2">
                             <div class="nl-stat-item-v2">
-                            <span class="nl-stat-number-v2">120+</span>
-                            <span class="nl-stat-label-v2">SaaS kunder</span>
+                                <span class="nl-stat-number-v2">127</span>
+                                <span class="nl-stat-label-v2">kunder</span>
                             </div>
                             <div class="nl-stat-item-v2">
-                            <span class="nl-stat-number-v2">10.000+</span>
-                            <span class="nl-stat-label-v2">leads testet</span>
+                                <span class="nl-stat-number-v2">1200+</span>
+                                <span class="nl-stat-label-v2">leads testet</span>
+                            </div>
+                            <div class="nl-stat-item-v2">
+                                <span class="nl-stat-number-v2">41%</span>
+                                <span class="nl-stat-label-v2">open rate</span>
                             </div>
                         </div>
                         <a href="<?php echo esc_url(get_page_link(get_page_by_path('dmify-case')->ID ?? '#')); ?>" class="nl-case-link-v2">
@@ -112,10 +120,12 @@ get_header();
                 <article class="nl-case-card-v2">
                     <div class="nl-case-visual">
                         <div class="nl-case-image-placeholder auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Auto Specialisterne ApS" class="nl-case-icon">
-                                <rect width="64" height="64" rx="12" fill="#003366"/>
-                                <text x="32" y="38" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">AS</text>
-                                <rect x="12" y="48" width="40" height="3" rx="1.5" fill="#ffffff" opacity="0.6"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" class="nl-case-icon">
+                                <rect width="120" height="120" rx="20" fill="#003366"/>
+                                <path d="M30 55c0-5 4-9 9-9h42c5 0 9 4 9 9v20c0 3-2 5-5 5h-5v6c0 2-1.5 3.5-3.5 3.5S73 88 73 86v-6H47v6c0 2-1.5 3.5-3.5 3.5S40 88 40 86v-6h-5c-3 0-5-2-5-5V55z" fill="#ffffff"/>
+                                <circle cx="43" cy="67" r="4" fill="#003366"/>
+                                <circle cx="77" cy="67" r="4" fill="#003366"/>
+                                <path d="M36 55l6-8h36l6 8" stroke="#003366" stroke-width="2" fill="none"/>
                             </svg>
                         </div>
                     </div>
@@ -124,19 +134,23 @@ get_header();
                             <span class="nl-case-industry">B2B & Automotive</span>
                             <span class="nl-case-time">4 måneder</span>
                         </div>
-                    <h2 class="nl-case-title-v2">Auto Specialisterne</h2>
-                    <p class="nl-case-headline">20 nye autoværksteder på 4 måneder</p>
-                    <p class="nl-case-excerpt-v2">
-                        Et marketing bureau ville sælge til autoværksteder, men fandt kun 5-10 om måneden. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 til nye kunder.
-                    </p>
+                        <h2 class="nl-case-title-v2">Auto Specialisterne</h2>
+                        <p class="nl-case-headline">20 nye autoværksteder på 4 måneder</p>
+                        <p class="nl-case-excerpt-v2">
+                            Et marketing bureau ville sælge til autoværksteder, men fandt kun 5-10 om måneden. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 til nye kunder.
+                        </p>
                         <div class="nl-case-stats-v2">
                             <div class="nl-stat-item-v2">
-                            <span class="nl-stat-number-v2">20</span>
-                            <span class="nl-stat-label-v2">nye værksteder</span>
+                                <span class="nl-stat-number-v2">127</span>
+                                <span class="nl-stat-label-v2">salg</span>
                             </div>
                             <div class="nl-stat-item-v2">
-                            <span class="nl-stat-number-v2">1000+</span>
+                                <span class="nl-stat-number-v2">800+</span>
                                 <span class="nl-stat-label-v2">leads</span>
+                            </div>
+                            <div class="nl-stat-item-v2">
+                                <span class="nl-stat-number-v2">22%</span>
+                                <span class="nl-stat-label-v2">booking rate</span>
                             </div>
                         </div>
                         <a href="<?php echo esc_url(get_page_link(get_page_by_path('auto-specialisterne-case')->ID ?? '#')); ?>" class="nl-case-link-v2">
@@ -154,10 +168,10 @@ get_header();
     </section>
 
     <!-- Social Proof Section -->
-    <section class="nl-cases-proof-v2">
+    <section class="nl-cases-proof">
         <div class="nl-container">
-            <p class="nl-cases-proof-text-v2">
-                Vær blandt danske og internationale virksomheder, der allerede booker flere møder og får flere kunder
+            <p class="nl-cases-proof-text">
+                Over <strong>300+</strong> danske virksomheder har brugt vores leads til at vokse
             </p>
         </div>
     </section>
@@ -165,13 +179,13 @@ get_header();
     <!-- CTA Section - Simple & Direct -->
     <section class="nl-cases-cta-v2">
         <div class="nl-container">
-            <div class="nl-cases-cta-box">
+            <div class="nl-cases-cta-content-v2">
                 <h2 class="nl-cases-cta-title-v2">Klar til at få din egen case?</h2>
                 <p class="nl-cases-cta-text-v2">
-                    Vi hjælper danske virksomheder med at finde deres kunder gennem GDPR-sikker lead generation og professionel outreach. Klar til at se, hvad vi kan gøre for jer?
+                    Vi hjælper danske virksomheder med at finde deres kunder gennem GDPR-sikker lead generation og professionel outreach.
                 </p>
                 <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-btn-primary nl-btn-large">
-                    <span class="nl-mobile-hide">Book et uforpligtende opkald</span>
+                    Book et uforpligtende opkald
                 </a>
             </div>
         </div>

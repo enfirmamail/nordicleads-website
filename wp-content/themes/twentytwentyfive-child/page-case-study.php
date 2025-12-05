@@ -54,13 +54,13 @@ get_header();
                     <div class="nl-case-hero-content">
                         
                         <!-- Company Logo/Name -->
-                        <?php if (get_field('case_company_logo')) : ?>
+                        <?php if (function_exists('get_field') && get_field('case_company_logo')) : ?>
                             <div class="nl-case-logo">
                                 <img src="<?php echo esc_url(get_field('case_company_logo')); ?>" 
                                      alt="<?php echo esc_attr(get_field('case_company_name')); ?> logo"
                                      itemprop="image">
                             </div>
-                        <?php elseif (get_field('case_company_name')) : ?>
+                        <?php elseif (function_exists('get_field') && get_field('case_company_name')) : ?>
                             <div class="nl-case-company-name">
                                 <?php echo esc_html(get_field('case_company_name')); ?>
                             </div>
@@ -79,7 +79,7 @@ get_header();
                         <?php endif; ?>
                         
                         <!-- Stats Bar -->
-                        <?php if (get_field('case_stats')) : ?>
+                        <?php if (function_exists('get_field') && get_field('case_stats')) : ?>
                             <div class="nl-case-stats">
                                 <?php 
                                 $stats = get_field('case_stats');
@@ -114,7 +114,7 @@ get_header();
             </section>
             
             <!-- Customer Quote (if exists) -->
-            <?php if (get_field('case_quote') && get_field('case_quote_author')) : ?>
+            <?php if (function_exists('get_field') && get_field('case_quote') && get_field('case_quote_author')) : ?>
                 <section class="nl-case-quote-section">
                     <div class="nl-container nl-case-container">
                         <blockquote class="nl-case-quote-large">
@@ -130,7 +130,7 @@ get_header();
             <?php endif; ?>
             
             <!-- Results Section -->
-            <?php if (get_field('case_results')) : ?>
+            <?php if (function_exists('get_field') && get_field('case_results')) : ?>
                 <section class="nl-case-results-section">
                     <div class="nl-container nl-case-container">
                         <h2 class="nl-case-section-title">Resultater</h2>

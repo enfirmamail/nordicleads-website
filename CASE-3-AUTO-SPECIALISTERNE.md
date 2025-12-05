@@ -2,7 +2,7 @@
 
 **📋 WordPress Setup Instructions:**
 1. Opret en ny Side i WordPress
-2. Titel: "Auto Specialisterne – 127 Salg gennem Hyper-Targeted Automotive Leads"
+2. Titel: "Auto Specialisterne – 20 nye autoværksteder på 4 måneder"
 3. Vælg Template: "Case Study"
 4. Copy-paste indholdet nedenfor
 5. Upload et relevant billede (fx auto værksted eller biler) som Featured Image
@@ -17,13 +17,12 @@ Dansk automotive marketing agency skulle finde værksteder der havde brug for hj
 ## 📊 Stats (Custom Fields hvis du bruger ACF):
 
 **Field: case_stats** (Repeater)
-- Stat 1: Number: "127", Label: "Lukkede salg"
-- Stat 2: Number: "800+", Label: "Verificerede leads"
-- Stat 3: Number: "22%", Label: "Booking rate"
+- Stat 1: Number: "20", Label: "Nye autoværksteder"
+- Stat 2: Number: "1000+", Label: "Verificerede leads"
 
 **Field: case_company_name:** "Auto Specialisterne ApS"
 
-**Field: case_quote:** "NordicLeads forstod automotive branchen bedre end nogen anden. De gav os ikke bare leads – de gav os den præcise målgruppe der havde brug for vores hjælp. 127 salg på 4 måneder er langt over hvad vi havde forventet."
+**Field: case_quote:** "NordicLeads forstod automotive branchen bedre end nogen anden. De gav os ikke bare leads – de gav os den præcise målgruppe der havde brug for vores hjælp. 20 nye værksteder på 4 måneder siger det hele."
 
 **Field: case_quote_author:** "Thomas Nielsen"
 
@@ -100,7 +99,7 @@ Auto Specialisterne fokuserede primært på **Sjælland og Fyn**, så vi filtrer
 - Værksteder med 2-15 medarbejdere (sweet spot)
 - Uafhængige værksteder først (højere conversion)
 
-Dette gav os **800+ høj-kvalitet leads** klar til outreach.
+Dette gav os **1000+ høj-kvalitet leads** klar til outreach.
 
 #### 📞 **Phase 3: Multi-Channel Outreach**
 
@@ -126,17 +125,14 @@ Vi hjalp ikke kun med lead generation – vi overtog også outreach:
 
 ### Resultater
 
-#### 🚗 **127 Lukkede Salg**
-Fra 800 leads til 127 betalende kunder på 4 måneder. En **conversion rate på 15,9%** fra lead til customer.
+#### 🚗 **20 nye autoværksteder**
+Fra 1000+ leads til 20 nye kunder på 4 måneder.
 
-#### 📊 **22% Booking Rate**
-Mere end hver femte værksted bookede en demo eller salgsmøde efter vores outreach.
+#### 💰 **Hurtig ARR-boost**
+Med en average deal size på 14.000 DKK gav kampagnen et markant løft i ARR.
 
-#### 💰 **1.8M DKK i ny revenue**
-Med en average deal size på 14.000 DKK, genererede kampagnen over 1.8 millioner kroner i årlig recurring revenue.
-
-#### ⏱️ **85% hurtigere pipeline fill**
-Tidligere tog det Auto Specialisterne uger at finde 20-30 kvalificerede leads. Nu fik de 800+ på under en uge.
+#### ⏱️ **Skalerbar proces**
+Tidligere tog det Auto Specialisterne uger at finde 20-30 kvalificerede leads. Nu fik de 1000+ på under en uge.
 
 ---
 

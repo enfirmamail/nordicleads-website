@@ -91,7 +91,7 @@ get_header();
                     <!-- Set 1: Dmify, DentalDesk, Auto Specialisterne, Dmify, DentalDesk, Nordisk Rengøring, Dmify, DentalDesk, FinanceHub, Dmify, DentalDesk, TechVenture -->
                     
                     <!-- Dmify 1 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -99,7 +99,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 1 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -111,7 +111,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Auto Specialisterne ApS -->
-                    <a href="#cases" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Auto Specialisterne ApS" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#003366"/>
@@ -123,7 +123,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 2 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -131,7 +131,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 2 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -143,7 +143,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Nordisk Rengøring A/S -->
-                    <a href="#cases" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nordisk Rengøring" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#059669"/>
@@ -154,7 +154,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                         </a>
                     <!-- Dmify 3 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -162,7 +162,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 3 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -174,7 +174,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- FinanceHub DK -->
-                    <a href="#cases" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FinanceHub" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#1e40af"/>
@@ -190,7 +190,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 4 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -198,7 +198,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 4 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -210,7 +210,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- TechVenture ApS -->
-                    <a href="#cases" class="nl-logo-item">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TechVenture" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#7c3aed"/>
@@ -224,7 +224,7 @@ get_header();
                 <!-- Duplicate track for seamless infinite loop -->
                 <div class="nl-trusted-track" aria-hidden="true">
                     <!-- Dmify 1 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -232,7 +232,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 1 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -244,7 +244,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Auto Specialisterne ApS -->
-                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Auto Specialisterne ApS" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#003366"/>
@@ -256,7 +256,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 2 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -264,7 +264,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 2 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -276,7 +276,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Nordisk Rengøring A/S -->
-                    <a href="#cases" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nordisk Rengøring" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="12" fill="#059669"/>
@@ -287,7 +287,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- Dmify 3 -->
-                    <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
                             <span class="nl-logo-name">Dmify.net</span>
@@ -295,7 +295,7 @@ get_header();
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
                     </a>
                     <!-- DentalDesk 3 -->
-                    <a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
+                    <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-logo-svg">
                                 <rect width="64" height="64" rx="14" fill="#ffffff"/>

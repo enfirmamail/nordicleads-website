@@ -2,7 +2,7 @@
 
 **📋 WordPress Setup Instructions:**
 1. Opret en ny Side i WordPress
-2. Titel: "Dmify – 127 Nye Kunder gennem Strategisk Multi-Market Lead Generation"
+2. Titel: "Dmify – 120+ SaaS kunder gennem strategisk multi-market testing"
 3. Vælg Template: "Case Study"
 4. Copy-paste indholdet nedenfor
 5. Upload Dmify logo (ligger allerede i assets/logos/dmify.png) som Featured Image
@@ -17,15 +17,14 @@ Tech SaaS virksomhed med bred målgruppe kæmpede med at finde deres sweet spot.
 ## 📊 Stats (Custom Fields hvis du bruger ACF):
 
 **Field: case_stats** (Repeater)
-- Stat 1: Number: "127", Label: "Nye kunder"
-- Stat 2: Number: "1200+", Label: "Kvalificerede leads"
-- Stat 3: Number: "41%", Label: "Email open rate"
+- Stat 1: Number: "120+", Label: "SaaS kunder"
+- Stat 2: Number: "10.000+", Label: "Leads testet"
 
 **Field: case_company_name:** "Dmify.net"
 
 **Field: case_company_logo:** (upload dmify.png fra assets/logos/)
 
-**Field: case_quote:** "Vi anede ikke hvor vi skulle starte med lead generation. NordicLeads gjorde ikke bare research – de blev en del af vores go-to-market strategi. 127 nye kunder på 3 måneder taler for sig selv."
+**Field: case_quote:** "Vi anede ikke hvor vi skulle starte. Skulle vi gå efter e-commerce? Agencies? SaaS startups? NordicLeads testede det hele, fandt vores sweet spot og skaffede os 120+ SaaS-kunder. De blev en del af vores go-to-market strategi."
 
 **Field: case_quote_author:** "Dmify Team"
 
@@ -103,14 +102,11 @@ Vi **pivoterede hele strategien** til at fokusere på disse segmenter og skalere
 
 ### Resultater
 
-#### 🎯 **127 Nye Kunder**
-Fra 0 struktur til et systematisk sales-flow der levererede konsistent vækst.
+#### 🎯 **120+ SaaS kunder**
+Fra 0 struktur til et systematisk sales-flow der leverede konsistent vækst.
 
-#### 📊 **41% Email Open Rate**
-Langt over branchegennemsnittet (typisk 15-20%), takket være præcis targeting og personalisering.
-
-#### 💰 **3x ROI på 3 måneder**
-Hver krone investeret i lead generation gav 3 kroner tilbage i closed deals.
+#### 📊 **10.000+ leads testet**
+Datadrevet prioritering på tværs af seks segmenter.
 
 #### 🌍 **International Presence**
 Dmify gik fra at være en lokal dansk startup til at have kunder i 4 markeder.

@@ -575,9 +575,9 @@ function twentytwentyfive_child_case_study_seo() {
     $featured_image = get_the_post_thumbnail_url($post, 'full');
     
     // Get custom fields (if using ACF)
-    $company_name = get_field('case_company_name') ?: '';
-    $quote = get_field('case_quote') ?: '';
-    $quote_author = get_field('case_quote_author') ?: '';
+    $company_name = function_exists('get_field') ? get_field('case_company_name') : '';
+    $quote = function_exists('get_field') ? get_field('case_quote') : '';
+    $quote_author = function_exists('get_field') ? get_field('case_quote_author') : '';
     
     // Meta description
     echo '<meta name="description" content="' . esc_attr($excerpt) . '">' . "\n";

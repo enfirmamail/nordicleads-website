@@ -27,7 +27,13 @@
                         <a href="mailto:info@nordicleads.dk" class="text-blue-400 hover:text-blue-300 transition-colors">info@nordicleads.dk</a>
                     </p>
                     <p class="text-sm text-gray-400">
-                        <span class="font-semibold text-gray-300">CVR:</span> XX XX XX XX
+                        <span class="font-semibold text-gray-300">Akut kontakt:</span> 
+                        <a href="mailto:EnfirmaMail@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors"><strong>E</strong>nfirmaMail@gmail.com</a><br>
+                        <span class="text-xs text-gray-500 block mt-1"><strong>E</strong>nfirma's Mail</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-semibold text-gray-300">Samarbejde:</span> 
+                        <a href="mailto:sammarbejde@nordicleads.dk" class="text-blue-400 hover:text-blue-300 transition-colors">sammarbejde@nordicleads.dk</a>
                     </p>
                 </div>
             </div>
@@ -48,10 +54,10 @@
             <div>
                 <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Juridisk</h3>
                 <ul class="space-y-3">
-                    <li><a href="#privacy" class="text-sm text-gray-400 hover:text-white transition-colors">Privatlivspolitik</a></li>
-                    <li><a href="#terms" class="text-sm text-gray-400 hover:text-white transition-colors">Handelsbetingelser</a></li>
-                    <li><a href="#gdpr" class="text-sm text-gray-400 hover:text-white transition-colors">GDPR Information</a></li>
-                    <li><a href="#cookies" class="text-sm text-gray-400 hover:text-white transition-colors">Cookie Politik</a></li>
+                    <li><a href="/privacy-policy.php" class="text-sm text-gray-400 hover:text-white transition-colors">Privatlivspolitik</a></li>
+                    <li><a href="/terms-and-conditions.php" class="text-sm text-gray-400 hover:text-white transition-colors">Handelsbetingelser</a></li>
+                    <li><a href="/gdpr-info.php" class="text-sm text-gray-400 hover:text-white transition-colors">GDPR Information</a></li>
+                    <li><a href="/cookie-policy.php" class="text-sm text-gray-400 hover:text-white transition-colors">Cookie Politik</a></li>
                 </ul>
             </div>
         </div>
@@ -71,11 +77,11 @@
 </footer>
 
 <!-- Sticky CTA Button - Floating -->
-<a href="#kontakt" class="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-700 text-white text-sm font-semibold rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 lg:hidden" aria-label="Book gratis opkald">
+<a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-700 text-white text-sm font-semibold rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 lg:hidden" aria-label="Kontakt os">
     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
     </svg>
-    Book opkald
+    Kontakt os
 </a>
 
 <!-- Cookie Consent Banner - Modern -->

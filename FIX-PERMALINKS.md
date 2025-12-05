@@ -80,3 +80,4 @@ $cases_url = get_permalink($cases_page[0]->ID);
 Dette betyder at links virker uanset permalink-struktur, men `/cases` er stadig bedre for SEO og UX.
 
 
+

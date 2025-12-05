@@ -137,12 +137,20 @@ function Create-FtpDirectory {
     }
 }
 
-# Files that should go to ROOT
+# Files that should go to ROOT (from theme directory)
 $RootFiles = @(
     "robots.txt",
     "sitemap.xml",
     "humans.txt",
     "llms.txt"
+)
+
+# Legal PHP files that should go to ROOT (from project root)
+$LegalFiles = @(
+    "privacy-policy.php",
+    "terms-and-conditions.php",
+    "gdpr-info.php",
+    "cookie-policy.php"
 )
 
 # security.txt goes to .well-known/
@@ -186,6 +194,28 @@ if (Test-Path $SecurityLocal) {
     }
 } else {
     Write-Host "  Warning: security.txt not found locally" -ForegroundColor Yellow
+}
+
+# Upload legal PHP files from project root
+Write-Host "`nUploading LEGAL PHP files to root..." -ForegroundColor Yellow
+$LegalUploaded = 0
+$LegalFailed = 0
+
+foreach ($File in $LegalFiles) {
+    $LocalFile = Join-Path $PSScriptRoot $File
+    if (Test-Path $LocalFile) {
+        $RemoteFile = "$BasePath/$File"
+        Write-Host "  Uploading to root: $File" -ForegroundColor Yellow
+        if (Upload-File -LocalFile $LocalFile -RemoteFile $RemoteFile -FtpHost $FtpHost -FtpUser $FtpUser -FtpPass $FtpPass) {
+            $LegalUploaded++
+            Write-Host "    [OK] Success" -ForegroundColor Green
+        } else {
+            $LegalFailed++
+            Write-Host "    [FAILED]" -ForegroundColor Red
+        }
+    } else {
+        Write-Host "  Warning: $File not found locally" -ForegroundColor Yellow
+    }
 }
 
 # Create theme directory structure
@@ -249,6 +279,10 @@ Write-Host "Root files uploaded: $RootUploaded" -ForegroundColor $(if ($RootFail
 if ($RootFailed -gt 0) {
     Write-Host "Root files failed: $RootFailed" -ForegroundColor Red
 }
+Write-Host "Legal PHP files uploaded: $LegalUploaded" -ForegroundColor $(if ($LegalFailed -eq 0) { "Green" } else { "Yellow" })
+if ($LegalFailed -gt 0) {
+    Write-Host "Legal PHP files failed: $LegalFailed" -ForegroundColor Red
+}
 Write-Host "Theme files uploaded: $ThemeUploaded" -ForegroundColor $(if ($ThemeFailed -eq 0) { "Green" } else { "Yellow" })
 if ($ThemeFailed -gt 0) {
     Write-Host "Theme files failed: $ThemeFailed" -ForegroundColor Red
@@ -256,6 +290,7 @@ if ($ThemeFailed -gt 0) {
 Write-Host "=" * 60 -ForegroundColor Cyan
 Write-Host "`nFile Locations:" -ForegroundColor Cyan
 Write-Host "  Root files: $BasePath/" -ForegroundColor White
+Write-Host "  Legal PHP files: $BasePath/" -ForegroundColor White
 Write-Host "  security.txt: $BasePath/.well-known/security.txt" -ForegroundColor White
 Write-Host "  Theme files: $ThemePath/" -ForegroundColor White
 Write-Host "`nUpload complete!" -ForegroundColor Green
