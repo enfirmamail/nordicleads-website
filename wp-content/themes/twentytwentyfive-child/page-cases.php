@@ -12,13 +12,13 @@ get_header();
 
 <main id="main-content" role="main">
 
-    <!-- Hero Section - Clean & Minimal -->
+    <!-- Hero Section - Clean & Professional -->
     <section class="nl-cases-hero">
         <div class="nl-container">
             <div class="nl-cases-hero-content">
-                <h1 class="nl-cases-title">Se hvordan vi har hjulpet danske virksomheder med kvalificerede leads</h1>
+                <h1 class="nl-cases-title">Success Cases</h1>
                 <p class="nl-cases-subtitle">
-                    Fra 50 til tusindvis af leads – 100% GDPR-sikker. Verificerede kontakter fra CVR og offentlige kilder, skræddersyet til din branche.
+                    Se hvordan danske virksomheder har brugt vores leads til at vokse. Fra tech-startups til etablerede virksomheder – alle med samme mål: flere kvalificerede kunder.
                 </p>
             </div>
         </div>
@@ -27,50 +27,57 @@ get_header();
     <!-- Cases Grid -->
     <section class="nl-cases-section">
         <div class="nl-container">
-            <div class="nl-cases-grid">
+            <div class="nl-cases-grid" role="list">
                 
                 <!-- Case 1: Dmify.net -->
-                <article class="nl-case-card">
+                <article class="nl-case-card" role="listitem">
                     <div class="nl-case-logo-wrapper">
                         <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" class="nl-case-logo-img">
                     </div>
-                    <h2 class="nl-case-title">127 nye kunder på 3 måneder</h2>
+                    <h2 class="nl-case-title">Dmify – 127 nye kunder gennem multi-market lead generation</h2>
                     
                     <div class="nl-case-content">
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Udfordring</h3>
-                            <p class="nl-case-text">
-                                Tech-startup manglede strukturerede leads til software-salg. Ingen systematisk tilgang til at finde potentielle kunder.
-                            </p>
-                        </div>
+                        <p class="nl-case-text nl-case-excerpt">
+                            Tech SaaS virksomhed med bred målgruppe kæmpede med at finde deres sweet spot. Vi hjalp dem med at skaffe 127 nye kunder gennem data-driven segmentering og strategisk multi-market outreach.
+                        </p>
                         
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Løsning</h3>
-                            <p class="nl-case-text">
-                                Vi leverede 500 leads fra CVR-registret, filtreret efter virksomhedsstørrelse og branche. Alle kontakter verificerede og klar til kontakt.
-                            </p>
-                        </div>
-                        
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Resultater</h3>
-                            <p class="nl-case-text">
-                                +35% flere kunder. 41% konverteringsrate. Fra tom pipeline til struktureret salgsproces.
-                            </p>
+                        <div class="nl-case-stats-mini">
+                            <div class="nl-stat-mini">
+                                <strong>127</strong>
+                                <span>Nye kunder</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>1200+</strong>
+                                <span>Leads genereret</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>41%</strong>
+                                <span>Open rate</span>
+                            </div>
                         </div>
                         
                         <blockquote class="nl-case-quote">
-                            <p>"Vi leverede 1.200 leads fra CVR – resulterede i 41% konvertering. Systematisk tilgang gav os den struktur vi manglede."</p>
-                            <cite class="nl-case-quote-author">— Dmify.net</cite>
+                            <p>"Vi anede ikke hvor vi skulle starte. NordicLeads gjorde ikke bare research – de blev en del af vores go-to-market strategi."</p>
+                            <cite class="nl-case-quote-author">— Dmify Team</cite>
                         </blockquote>
                     </div>
                     
                     <div class="nl-case-cta">
-                        <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-case-cta-link">Kontakt os for lignende resultater →</a>
+                        <?php 
+                        // Find Dmify case page dynamically
+                        $dmify_page = get_page_by_path('dmify-127-nye-kunder');
+                        if ($dmify_page) {
+                            $dmify_url = get_permalink($dmify_page->ID);
+                        } else {
+                            $dmify_url = '#';
+                        }
+                        ?>
+                        <a href="<?php echo esc_url($dmify_url); ?>" class="nl-case-read-more">Læs fuld case →</a>
                     </div>
                 </article>
 
                 <!-- Case 2: DentalDesk.dk -->
-                <article class="nl-case-card">
+                <article class="nl-case-card" role="listitem">
                     <div class="nl-case-logo-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DentalDesk" class="nl-case-logo-svg">
                             <rect width="64" height="64" rx="14" fill="#ffffff"/>
@@ -78,43 +85,49 @@ get_header();
                             <g transform="translate(-2,0)"><path d="M35.2 24.2c1.8-2 4.8-2.1 6.7-.3 1.9-1.8 4.9-1.7 6.7.3 2 2.2 1.5 5.6-1 7.4l-5.7 4.1-5.7-4.1c-2.5-1.8-3-5.2-1-7.4z" fill="#ffffff" opacity=".9"/></g>
                         </svg>
                     </div>
-                    <h2 class="nl-case-title">+50 bookinger fra tandlægeklinikker</h2>
+                    <h2 class="nl-case-title">DentalDesk – Fra 0 til 50+ bookinger på 3 måneder</h2>
                     
                     <div class="nl-case-content">
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Udfordring</h3>
-                            <p class="nl-case-text">
-                                Tandlægeklinik manglede nye kunder. Ingen strukturerede leads til at nå ud til potentielle patienter.
-                            </p>
-                        </div>
+                        <p class="nl-case-text nl-case-excerpt">
+                            Dansk AI-powered receptionist startup skulle skalere hurtigt, men havde ingen systematisk måde at nå ud til klinikker. Vi hjalp dem med lead generation, professionel outreach og niche expansion.
+                        </p>
                         
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Løsning</h3>
-                            <p class="nl-case-text">
-                                Vi leverede 300 klinik-kontakter fra offentlige kilder. Alle verificerede, GDPR-sikre via legitim interesse. Vi kan også håndtere kontakten for dig.
-                            </p>
-                        </div>
-                        
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Resultater</h3>
-                            <p class="nl-case-text">
-                                +50 bookinger. Fra tom kalender til 40+ bookinger. Høj engagement fra relevante kontakter.
-                            </p>
+                        <div class="nl-case-stats-mini">
+                            <div class="nl-stat-mini">
+                                <strong>50+</strong>
+                                <span>Bookinger</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>300+</strong>
+                                <span>Klinikker</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>18%</strong>
+                                <span>Conversion</span>
+                            </div>
                         </div>
                         
                         <blockquote class="nl-case-quote">
-                            <p>"Fra tom kalender til fyldt pipeline. Vores leads var præcise og relevante – perfekt til vores målgruppe."</p>
-                            <cite class="nl-case-quote-author">— DentalDesk.dk</cite>
+                            <p>"Fra tom kalender til fyldt pipeline på under 3 måneder. Vi udvider nu til Norge og Sverige med deres hjælp."</p>
+                            <cite class="nl-case-quote-author">— DentalDesk Team</cite>
                         </blockquote>
                     </div>
                     
                     <div class="nl-case-cta">
-                        <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-case-cta-link">Kontakt os for lignende resultater →</a>
+                        <?php 
+                        $dentaldesk_page = get_page_by_path('dentaldesk-50-bookinger');
+                        if ($dentaldesk_page) {
+                            $dentaldesk_url = get_permalink($dentaldesk_page->ID);
+                        } else {
+                            $dentaldesk_url = '#';
+                        }
+                        ?>
+                        <a href="<?php echo esc_url($dentaldesk_url); ?>" class="nl-case-read-more">Læs fuld case →</a>
                     </div>
                 </article>
 
                 <!-- Case 3: Auto Specialisterne -->
-                <article class="nl-case-card">
+                <article class="nl-case-card" role="listitem">
                     <div class="nl-case-logo-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Auto Specialisterne ApS" class="nl-case-logo-svg">
                             <rect width="64" height="64" rx="12" fill="#003366"/>
@@ -122,38 +135,44 @@ get_header();
                             <rect x="12" y="48" width="40" height="3" rx="1.5" fill="#ffffff" opacity="0.6"/>
                         </svg>
                     </div>
-                    <h2 class="nl-case-title">+127 salg fra bilfirma-leads</h2>
+                    <h2 class="nl-case-title">Auto Specialisterne – 127 salg gennem hyper-targeted leads</h2>
                     
                     <div class="nl-case-content">
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Udfordring</h3>
-                            <p class="nl-case-text">
-                                Værksted manglede systematisk tilgang til at finde nye kunder. Ingen strukturerede leads til bilfirmaer og autoforhandlere.
-                            </p>
-                        </div>
+                        <p class="nl-case-text nl-case-excerpt">
+                            Dansk automotive marketing agency skulle finde værksteder der havde brug for hjælp. Vi leverede 800+ verificerede leads og hjalp dem med at lukke 127 salg på 4 måneder.
+                        </p>
                         
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Løsning</h3>
-                            <p class="nl-case-text">
-                                Vi leverede 800 bilfirma-leads fra CVR og Google Maps. Geografisk filtreret, verificerede kontakter, DNC-screenet. 100% GDPR-compliant.
-                            </p>
-                        </div>
-                        
-                        <div class="nl-case-section">
-                            <h3 class="nl-case-section-title">Resultater</h3>
-                            <p class="nl-case-text">
-                                +127 salg. Struktureret pipeline med relevante leads. Høj konverteringsrate fra kvalificerede kontakter.
-                            </p>
+                        <div class="nl-case-stats-mini">
+                            <div class="nl-stat-mini">
+                                <strong>127</strong>
+                                <span>Lukkede salg</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>800+</strong>
+                                <span>Verificerede leads</span>
+                            </div>
+                            <div class="nl-stat-mini">
+                                <strong>22%</strong>
+                                <span>Booking rate</span>
+                            </div>
                         </div>
                         
                         <blockquote class="nl-case-quote">
-                            <p>"800 leads fra CVR – alle relevante og verificerede. Systematisk tilgang gav os den struktur vi manglede til at vokse."</p>
-                            <cite class="nl-case-quote-author">— Auto Specialisterne ApS</cite>
+                            <p>"NordicLeads forstod automotive branchen bedre end nogen anden. 127 salg på 4 måneder er langt over hvad vi havde forventet."</p>
+                            <cite class="nl-case-quote-author">— Thomas Nielsen, Salgschef</cite>
                         </blockquote>
                     </div>
                     
                     <div class="nl-case-cta">
-                        <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-case-cta-link">Kontakt os for lignende resultater →</a>
+                        <?php 
+                        $auto_page = get_page_by_path('auto-specialisterne-127-salg');
+                        if ($auto_page) {
+                            $auto_url = get_permalink($auto_page->ID);
+                        } else {
+                            $auto_url = '#';
+                        }
+                        ?>
+                        <a href="<?php echo esc_url($auto_url); ?>" class="nl-case-read-more">Læs fuld case →</a>
                     </div>
                 </article>
 
@@ -205,7 +224,6 @@ get_header();
                 </p>
                 <div class="nl-cases-cta-buttons">
                     <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-btn-primary">Få leads nu</a>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="nl-btn-secondary">Tilbage til forsiden</a>
                 </div>
             </div>
         </div>

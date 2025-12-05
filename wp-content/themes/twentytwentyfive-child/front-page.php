@@ -506,6 +506,14 @@ get_header();
                     <p>Du modtager dine leads i CSV eller Excel-format – klar til brug med det samme. Alle kontakter er verificerede, kvalificerede og klar til at blive kontaktet.</p>
                 </div>
             </div>
+            
+            <!-- Pricing Explanation -->
+            <div class="nl-pricing-explanation">
+                <h3 class="nl-pricing-question">Kommer prisen an på hvor mange leads jeg modtager?</h3>
+                <p class="nl-pricing-answer">
+                    Nej, prisen afhænger ikke kun af antal leads. Vores team vurderer kvaliteten, responsraten, successraten og chancen for booking af demo og møder. Derfor vil nogle brancher kræve færre leads, fordi leadsne er højere kvalitet og har bedre konverteringspotentiale. I andre scenarier er det smartere at tage en større leadliste, fordi det er et sværere marked at trænge ind i. Vores team vurderer dette selvfølgelig og finder den bedste løsning til din specifikke situation.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -666,6 +674,16 @@ get_header();
                         <p>Alle leads bliver verificeret før levering. Vi tjekker at e-mails er aktive, telefonnumre er gyldige, og at virksomhederne matcher dine kriterier. Kvaliteten varierer naturligvis med branche og niche, men vi garanterer kun kontakter der leverer resultater. Mange af vores kunder rapporterer høj svarrate og bookingrate.</p>
                     </div>
                         </div>
+                
+                <div class="nl-faq-item">
+                    <button class="nl-faq-question">
+                        <span>Kommer prisen an på hvor mange leads jeg modtager?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="nl-faq-answer">
+                        <p>Nej, prisen afhænger ikke kun af antal leads. Vores team vurderer kvaliteten, responsraten, successraten og chancen for booking af demo og møder. Derfor vil nogle brancher kræve færre leads, fordi leadsne er højere kvalitet og har bedre konverteringspotentiale. I andre scenarier er det smartere at tage en større leadliste, fordi det er et sværere marked at trænge ind i. Vores team vurderer dette selvfølgelig og finder den bedste løsning til din specifikke situation.</p>
+                    </div>
+                </div>
                         
                 <div class="nl-faq-item">
                     <button class="nl-faq-question">

@@ -26,6 +26,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+
 <!-- Skip Link -->
 <a href="#main-content" class="nl-skip-link">Spring til indhold</a>
 
@@ -49,26 +50,26 @@
         
         <!-- Desktop Nav - Centered -->
         <nav class="nl-nav-desktop" role="navigation">
-            <?php if (is_page_template('page-cases.php')): ?>
-                <a href="<?php echo esc_url(home_url('/')); ?>">Tilbage til forsiden</a>
-            <?php else: ?>
-                <a href="#hvordan">Sådan virker det</a>
-                <?php 
-                // Find cases page dynamically
-                $cases_page = get_pages(array(
-                    'meta_key' => '_wp_page_template',
-                    'meta_value' => 'page-cases.php'
-                ));
-                if (!empty($cases_page)) {
-                    $cases_url = get_permalink($cases_page[0]->ID);
-                } else {
-                    $cases_url = home_url('/cases');
-                }
-                ?>
-                <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
-                <a href="#faq">FAQ</a>
-                <a href="#kontakt">Kontakt</a>
-            <?php endif; ?>
+            <a href="#hvordan">Sådan virker det</a>
+            <?php 
+            // Find cases page dynamically
+            $cases_page = get_pages(array(
+                'meta_key' => '_wp_page_template',
+                'meta_value' => 'page-cases.php'
+            ));
+            if (!empty($cases_page)) {
+                $cases_url = get_permalink($cases_page[0]->ID);
+            } else {
+                $cases_url = home_url('/cases');
+            }
+            ?>
+            <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
+            <?php 
+            $blog_url = get_permalink(get_option('page_for_posts')) ?: home_url('/blog');
+            ?>
+            <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
         
         <!-- CTA -->
@@ -86,51 +87,110 @@
     
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="nl-mobile-menu">
-        <?php if (is_page_template('page-cases.php')): ?>
-            <a href="<?php echo esc_url(home_url('/')); ?>">Tilbage til forsiden</a>
-        <?php else: ?>
-            <a href="#hvordan">Sådan virker det</a>
-            <?php 
-            // Find cases page dynamically
-            $cases_page = get_pages(array(
-                'meta_key' => '_wp_page_template',
-                'meta_value' => 'page-cases.php'
-            ));
-            if (!empty($cases_page)) {
-                $cases_url = get_permalink($cases_page[0]->ID);
-            } else {
-                $cases_url = home_url('/cases');
-            }
-            ?>
-            <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
-            <a href="#faq">FAQ</a>
-            <a href="#kontakt">Kontakt</a>
-        <?php endif; ?>
+        <a href="#hvordan">Sådan virker det</a>
+        <?php 
+        // Find cases page dynamically
+        $cases_page = get_pages(array(
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'page-cases.php'
+        ));
+        if (!empty($cases_page)) {
+            $cases_url = get_permalink($cases_page[0]->ID);
+        } else {
+            $cases_url = home_url('/cases');
+        }
+        ?>
+        <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
+        <?php 
+        $blog_url = get_permalink(get_option('page_for_posts')) ?: home_url('/blog');
+        ?>
+        <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
     </div>
 </header>
 
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
     const header = document.getElementById('site-header');
+    if (!header) return;
+    
     const mobileToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     
-    // Scroll shadow
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 10) {
-            header.classList.add('scrolled');
+    // Check if this is the front page
+    const isFrontPage = document.body.classList.contains('home') || document.body.classList.contains('page-template-front-page');
+    
+    // Function to update header state
+    function updateHeaderState() {
+        if (isFrontPage) {
+            // Front page: toggle scrolled state based on scroll position
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         } else {
-            header.classList.remove('scrolled');
+            // All other pages: always show scrolled state (white background, dark text, shadow)
+            header.classList.add('scrolled');
+            header.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)';
         }
-    });
+    }
+    
+    // Run immediately
+    updateHeaderState();
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            updateHeaderState();
+            if (isFrontPage) {
+                window.addEventListener('scroll', updateHeaderState);
+            }
+        });
+    } else {
+        if (isFrontPage) {
+            window.addEventListener('scroll', updateHeaderState);
+        }
+    }
     
     // Mobile menu toggle
     if (mobileToggle && mobileMenu) {
-        mobileToggle.addEventListener('click', function() {
+        mobileToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const isActive = mobileMenu.classList.contains('active');
             mobileMenu.classList.toggle('active');
-            this.setAttribute('aria-expanded', mobileMenu.classList.contains('active'));
+            this.setAttribute('aria-expanded', !isActive);
+            
+            // Prevent body scroll when menu is open
+            if (!isActive) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (mobileMenu.classList.contains('active') && 
+                !mobileMenu.contains(e.target) && 
+                !mobileToggle.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
         });
     }
-});
+})();
 </script>

@@ -257,20 +257,37 @@ function twentytwentyfive_child_body_classes($classes) {
     if (is_front_page()) {
         $classes[] = 'nordicleads-frontpage';
     }
+    if (is_home() || is_archive() || is_page_template('page-blog.php')) {
+        $classes[] = 'nl-blog-page';
+    }
     return $classes;
 }
 add_filter('body_class', 'twentytwentyfive_child_body_classes');
 
 /**
- * Custom Excerpt Length
+ * Remove parent theme's content wrapper for blog pages
  */
-function twentytwentyfive_child_excerpt_length($length) {
-    return 30;
+function twentytwentyfive_child_remove_content_wrapper() {
+    if (is_home() || is_archive() || is_page_template('page-blog.php')) {
+        // Remove parent theme's content wrapper filters
+        remove_all_filters('the_content');
+    }
 }
-add_filter('excerpt_length', 'twentytwentyfive_child_excerpt_length');
+add_action('template_redirect', 'twentytwentyfive_child_remove_content_wrapper');
 
 /**
- * Custom Excerpt More
+ * Custom Excerpt Length for Blog Cards
+ */
+function twentytwentyfive_child_excerpt_length($length) {
+    if (is_home() || is_archive() || is_page_template('page-blog.php')) {
+        return 25;
+    }
+    return 30;
+}
+add_filter('excerpt_length', 'twentytwentyfive_child_excerpt_length', 999);
+
+/**
+ * Custom Excerpt More Text
  */
 function twentytwentyfive_child_excerpt_more($more) {
     return '...';
@@ -402,6 +419,239 @@ function twentytwentyfive_child_structured_data() {
     echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
 }
 add_action('wp_head', 'twentytwentyfive_child_structured_data', 1);
+
+/**
+ * Add Blog Post Structured Data & SEO Meta Tags
+ */
+function twentytwentyfive_child_blog_seo() {
+    // Only run on blog pages
+    if (!is_singular('post') && !is_home() && !is_archive() && !is_page_template('page-blog.php')) {
+        return;
+    }
+    
+    // Blog Archive / Home Page
+    if (is_home() || is_archive() || is_page_template('page-blog.php')) {
+        // Meta description
+        echo '<meta name="description" content="Læs vores blog om B2B lead generation, GDPR-compliance, cold email strategier og salgsoptimering. Praktiske tips til danske virksomheder.">' . "\n";
+        
+        // Open Graph
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta property="og:title" content="Blog - NordicLeads | Lead Generation Tips & Guides">' . "\n";
+        echo '<meta property="og:description" content="Tips, guides og indsigt om B2B lead generation, GDPR-compliance og salgsstrategier.">' . "\n";
+        echo '<meta property="og:url" content="' . esc_url(get_permalink(get_option('page_for_posts'))) . '">' . "\n";
+        
+        // Twitter Card
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:title" content="Blog - NordicLeads | Lead Generation Tips & Guides">' . "\n";
+        
+        // Canonical
+        echo '<link rel="canonical" href="' . esc_url(get_permalink(get_option('page_for_posts'))) . '">' . "\n";
+        
+        // Structured Data for Blog
+        $blog_schema = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Blog',
+            'name' => 'NordicLeads Blog',
+            'description' => 'Tips, guides og indsigt om B2B lead generation, GDPR-compliance og salgsstrategier.',
+            'url' => get_permalink(get_option('page_for_posts')),
+            'publisher' => array(
+                '@type' => 'Organization',
+                'name' => 'NordicLeads',
+                'url' => get_site_url(),
+                'logo' => array(
+                    '@type' => 'ImageObject',
+                    'url' => get_stylesheet_directory_uri() . '/assets/logo.svg'
+                )
+            ),
+            'inLanguage' => 'da-DK'
+        );
+        
+        echo '<script type="application/ld+json">' . wp_json_encode($blog_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+        
+        return;
+    }
+    
+    // Single Blog Post
+    if (is_singular('post')) {
+        global $post;
+        
+        // Get post data
+        $title = get_the_title();
+        $excerpt = has_excerpt() ? get_the_excerpt() : wp_trim_words(strip_tags(get_the_content()), 30);
+        $author = 'NordicLeads';
+        $published_date = get_the_date('c');
+        $modified_date = get_the_modified_date('c');
+        $permalink = get_permalink();
+        $featured_image = get_the_post_thumbnail_url($post, 'full');
+        
+        // Meta description
+        echo '<meta name="description" content="' . esc_attr($excerpt) . '">' . "\n";
+        
+        // Open Graph
+        echo '<meta property="og:type" content="article">' . "\n";
+        echo '<meta property="og:title" content="' . esc_attr($title) . ' | NordicLeads">' . "\n";
+        echo '<meta property="og:description" content="' . esc_attr($excerpt) . '">' . "\n";
+        echo '<meta property="og:url" content="' . esc_url($permalink) . '">' . "\n";
+        if ($featured_image) {
+            echo '<meta property="og:image" content="' . esc_url($featured_image) . '">' . "\n";
+        }
+        echo '<meta property="article:published_time" content="' . $published_date . '">' . "\n";
+        echo '<meta property="article:modified_time" content="' . $modified_date . '">' . "\n";
+        echo '<meta property="article:author" content="' . $author . '">' . "\n";
+        
+        // Twitter Card
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:title" content="' . esc_attr($title) . '">' . "\n";
+        echo '<meta name="twitter:description" content="' . esc_attr($excerpt) . '">' . "\n";
+        if ($featured_image) {
+            echo '<meta name="twitter:image" content="' . esc_url($featured_image) . '">' . "\n";
+        }
+        
+        // Canonical
+        echo '<link rel="canonical" href="' . esc_url($permalink) . '">' . "\n";
+        
+        // Structured Data for Article
+        $article_schema = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'BlogPosting',
+            'headline' => $title,
+            'description' => $excerpt,
+            'url' => $permalink,
+            'datePublished' => $published_date,
+            'dateModified' => $modified_date,
+            'author' => array(
+                '@type' => 'Organization',
+                'name' => $author,
+                'url' => get_site_url()
+            ),
+            'publisher' => array(
+                '@type' => 'Organization',
+                'name' => 'NordicLeads',
+                'url' => get_site_url(),
+                'logo' => array(
+                    '@type' => 'ImageObject',
+                    'url' => get_stylesheet_directory_uri() . '/assets/logo.svg'
+                )
+            ),
+            'mainEntityOfPage' => array(
+                '@type' => 'WebPage',
+                '@id' => $permalink
+            ),
+            'inLanguage' => 'da-DK'
+        );
+        
+        // Add image if available
+        if ($featured_image) {
+            $article_schema['image'] = array(
+                '@type' => 'ImageObject',
+                'url' => $featured_image
+            );
+        }
+        
+        // Add word count and reading time
+        $word_count = str_word_count(strip_tags(get_the_content()));
+        $article_schema['wordCount'] = $word_count;
+        
+        echo '<script type="application/ld+json">' . wp_json_encode($article_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+    }
+}
+add_action('wp_head', 'twentytwentyfive_child_blog_seo', 2);
+
+/**
+ * Add Case Study SEO & Structured Data
+ */
+function twentytwentyfive_child_case_study_seo() {
+    // Only run on case study pages
+    if (!is_page_template('page-case-study.php')) {
+        return;
+    }
+    
+    global $post;
+    
+    // Get page data
+    $title = get_the_title();
+    $excerpt = has_excerpt() ? get_the_excerpt() : wp_trim_words(strip_tags(get_the_content()), 30);
+    $permalink = get_permalink();
+    $featured_image = get_the_post_thumbnail_url($post, 'full');
+    
+    // Get custom fields (if using ACF)
+    $company_name = get_field('case_company_name') ?: '';
+    $quote = get_field('case_quote') ?: '';
+    $quote_author = get_field('case_quote_author') ?: '';
+    
+    // Meta description
+    echo '<meta name="description" content="' . esc_attr($excerpt) . '">' . "\n";
+    
+    // Open Graph
+    echo '<meta property="og:type" content="article">' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . ' | NordicLeads Case Study">' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($excerpt) . '">' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($permalink) . '">' . "\n";
+    if ($featured_image) {
+        echo '<meta property="og:image" content="' . esc_url($featured_image) . '">' . "\n";
+    }
+    
+    // Twitter Card
+    echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+    echo '<meta name="twitter:title" content="' . esc_attr($title) . '">' . "\n";
+    echo '<meta name="twitter:description" content="' . esc_attr($excerpt) . '">' . "\n";
+    if ($featured_image) {
+        echo '<meta name="twitter:image" content="' . esc_url($featured_image) . '">' . "\n";
+    }
+    
+    // Canonical
+    echo '<link rel="canonical" href="' . esc_url($permalink) . '">' . "\n";
+    
+    // Structured Data for Case Study
+    $case_schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'Article',
+        '@id' => $permalink . '#article',
+        'headline' => $title,
+        'description' => $excerpt,
+        'url' => $permalink,
+        'datePublished' => get_the_date('c'),
+        'dateModified' => get_the_modified_date('c'),
+        'author' => array(
+            '@type' => 'Organization',
+            'name' => 'NordicLeads',
+            'url' => get_site_url()
+        ),
+        'publisher' => array(
+            '@type' => 'Organization',
+            'name' => 'NordicLeads',
+            'url' => get_site_url(),
+            'logo' => array(
+                '@type' => 'ImageObject',
+                'url' => get_stylesheet_directory_uri() . '/assets/logo.svg'
+            )
+        ),
+        'mainEntityOfPage' => array(
+            '@type' => 'WebPage',
+            '@id' => $permalink
+        ),
+        'inLanguage' => 'da-DK'
+    );
+    
+    // Add image if available
+    if ($featured_image) {
+        $case_schema['image'] = array(
+            '@type' => 'ImageObject',
+            'url' => $featured_image
+        );
+    }
+    
+    // Add company mentioned if available
+    if ($company_name) {
+        $case_schema['mentions'] = array(
+            '@type' => 'Organization',
+            'name' => $company_name
+        );
+    }
+    
+    echo '<script type="application/ld+json">' . wp_json_encode($case_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+}
+add_action('wp_head', 'twentytwentyfive_child_case_study_seo', 2);
 
 /**
  * Remove Unnecessary WordPress Head Items (Performance & Security)
