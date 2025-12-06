@@ -14,37 +14,6 @@ get_header();
 
     <?php while (have_posts()) : the_post(); ?>
         
-        <!-- Breadcrumbs -->
-        <nav class="nl-breadcrumbs" aria-label="Breadcrumb">
-            <div class="nl-container">
-                <ol class="nl-breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="item">
-                            <span itemprop="name">Forside</span>
-                        </a>
-                        <meta itemprop="position" content="1" />
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <?php 
-                        $cases_page = get_pages(array(
-                            'meta_key' => '_wp_page_template',
-                            'meta_value' => 'page-cases.php'
-                        ));
-                        $cases_url = !empty($cases_page) ? get_permalink($cases_page[0]->ID) : home_url('/cases');
-                        ?>
-                        <a href="<?php echo esc_url($cases_url); ?>" itemprop="item">
-                            <span itemprop="name">Cases</span>
-                        </a>
-                        <meta itemprop="position" content="2" />
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <span itemprop="name"><?php the_title(); ?></span>
-                        <meta itemprop="position" content="3" />
-                    </li>
-                </ol>
-            </div>
-        </nav>
-        
         <!-- Case Study -->
         <article class="nl-case-study" itemscope itemtype="https://schema.org/Article">
             

@@ -4,6 +4,10 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.svg">
+    
     <?php if (is_front_page()): ?>
     <meta name="description" content="Tusindvis af kvalificerede B2B-leads leveret på under 24 timer. Verificerede emails, telefonnumre og adresser skræddersyet til din branche. 100% GDPR-compliant.">
     <meta name="robots" content="index, follow">
@@ -66,9 +70,10 @@
             <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
             <?php 
             $blog_url = get_permalink(get_option('page_for_posts')) ?: home_url('/blog');
+            $faq_url = home_url('/#faq');
             ?>
             <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
-            <a href="#faq">FAQ</a>
+            <a href="<?php echo esc_url($faq_url); ?>">FAQ</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
         
@@ -103,9 +108,10 @@
         <a href="<?php echo esc_url($cases_url); ?>">Cases</a>
         <?php 
         $blog_url = get_permalink(get_option('page_for_posts')) ?: home_url('/blog');
+        $faq_url = home_url('/#faq');
         ?>
         <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
-        <a href="#faq">FAQ</a>
+        <a href="<?php echo esc_url($faq_url); ?>">FAQ</a>
         <a href="#kontakt">Kontakt</a>
     </div>
 </header>

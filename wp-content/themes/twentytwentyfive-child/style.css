@@ -267,6 +267,7 @@ img {
     justify-content: center;
     padding: 10px 20px;
     min-height: 44px;
+    line-height: 1.1;
     background: var(--nl-primary);
     color: var(--nl-white);
     font-size: 14px;
@@ -274,6 +275,7 @@ img {
     border-radius: 8px;
     transition: background 0.2s ease;
     -webkit-tap-highlight-color: transparent;
+    flex-shrink: 0;
     white-space: nowrap;
 }
 
@@ -377,9 +379,10 @@ img {
     }
 
     .nl-btn-header {
-        padding: 8px 12px;
-        font-size: 13px;
-        min-height: 40px;
+        padding: 8px 10px;
+        font-size: 12px;
+        min-height: 36px;
+        line-height: 1.15;
     }
 
     .nl-mobile-toggle {
@@ -2671,6 +2674,9 @@ body.page:not(.home) #site-header.scrolled .nl-btn-header {
     padding: 1.5rem 0;
     background: var(--nl-white);
     border-bottom: 1px solid #e5e7eb;
+    margin-top: 72px;
+    position: relative;
+    z-index: 1;
 }
 
 .nl-breadcrumb-list {
@@ -3134,6 +3140,7 @@ body.page:not(.home) #site-header.scrolled .nl-btn-header {
     
     .nl-breadcrumbs {
         padding: 1rem 0;
+        margin-top: 64px;
     }
     
     .nl-single-post-header {
@@ -3197,11 +3204,28 @@ body.page:not(.home) #site-header.scrolled .nl-btn-header {
     padding: 8rem 0 6rem;
     text-align: center;
     color: var(--nl-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.nl-case-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 16, 46, 0.92) 0%,
+        rgba(0, 52, 104, 0.9) 55%,
+        rgba(0, 32, 72, 0.94) 100%
+    );
+    z-index: 0;
 }
 
 .nl-case-hero-content {
     max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .nl-case-logo {
@@ -3230,15 +3254,35 @@ body.page:not(.home) #site-header.scrolled .nl-btn-header {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: var(--nl-white);
+    color: #ffffff !important;
     letter-spacing: -0.02em;
+    text-shadow:
+        0 12px 36px rgba(0, 0, 0, 0.45),
+        0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
 .nl-case-hero-subtitle {
     font-size: 1.375rem;
     line-height: 1.65;
-    color: rgba(255, 255, 255, 0.95);
+    color: #ffffff !important;
     margin-bottom: 3rem;
+    text-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.45),
+        0 3px 8px rgba(0, 0, 0, 0.35);
+    opacity: 1 !important;
+}
+
+.nl-case-hero-subtitle * {
+    color: #ffffff !important;
+}
+
+.nl-case-hero p {
+    color: #ffffff !important;
+}
+
+.nl-case-company-name {
+    color: #ffffff !important;
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 /* Stats Bar */
