@@ -120,7 +120,7 @@ add_filter('wp_resource_hints', 'twentytwentyfive_child_resource_hints', 10, 2);
 function twentytwentyfive_child_security_headers() {
     if (!is_admin()) {
         // Content Security Policy
-        header("Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://www.facebook.com;");
+        header("Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://cdn.jsdelivr.net https://accounts.google.com https://stats.wp.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://region1.google-analytics.com https://www.facebook.com https://stats.wp.com;");
         
         // X-Frame-Options
         header('X-Frame-Options: SAMEORIGIN');
@@ -208,7 +208,7 @@ function twentytwentyfive_child_handle_contact_form() {
     }
     
     // Prepare email
-    $to = get_option('admin_email'); // Or use: info@nordicleads.dk
+    $to = 'info@nordicleads.dk'; // Send directly to info email
     $subject = 'Ny henvendelse fra ' . $name . ' (' . $company . ')';
     $body = "Navn: $name\n";
     $body .= "Virksomhed: $company\n";
@@ -218,7 +218,7 @@ function twentytwentyfive_child_handle_contact_form() {
     
     $headers = array(
         'Content-Type: text/plain; charset=UTF-8',
-        'From: ' . get_bloginfo('name') . ' <' . get_option('admin_email') . '>',
+        'From: NordicLeads Website <noreply@nordicleads.dk>',
         'Reply-To: ' . $name . ' <' . $email . '>'
     );
     

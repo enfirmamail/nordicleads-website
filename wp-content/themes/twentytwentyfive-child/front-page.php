@@ -598,9 +598,23 @@ get_header();
                             <label for="message">Besked (valgfri)</label>
                             <textarea id="message" name="message" rows="5" placeholder="Fortæl os om din branche, niche, ønsket antal leads og eventuelle særlige krav. Jo mere vi ved, jo bedre kan vi tilpasse løsningen til dig..."></textarea>
                     </div>
-                        <button type="submit" class="nl-form-submit">Få uforpligtende tilbud</button>
+                        <button type="submit" id="submit-btn" class="nl-form-submit">Få uforpligtende tilbud</button>
                         <p class="nl-form-disclaimer">Ved at indsende accepterer du vores <a href="#">privatlivspolitik</a>. Vi behandler dine data i henhold til GDPR.</p>
                     </form>
+                    
+                    <div id="form-success" class="nl-form-message nl-form-success hidden">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <p>Tak for din henvendelse! Vi kontakter dig inden for 24 timer.</p>
+                    </div>
+                    
+                    <div id="form-error" class="nl-form-message nl-form-error hidden">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                        <p>Der opstod en fejl. Prøv igen eller kontakt os på <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a></p>
+                    </div>
                 </div>
             </div>
         </div>

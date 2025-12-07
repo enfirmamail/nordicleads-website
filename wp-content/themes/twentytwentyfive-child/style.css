@@ -1605,6 +1605,64 @@ img {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
+/* Form Messages */
+.nl-form-message {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    animation: slideDown 0.3s ease;
+}
+
+.nl-form-message.hidden {
+    display: none !important;
+}
+
+.nl-form-success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+}
+
+.nl-form-success a {
+    color: #065f46;
+    text-decoration: underline;
+}
+
+.nl-form-error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.nl-form-error a {
+    color: #991b1b;
+    text-decoration: underline;
+}
+
+.nl-form-message svg {
+    flex-shrink: 0;
+}
+
+.nl-form-message p {
+    margin: 0;
+    color: inherit;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .nl-form-row {
     display: grid;
     grid-template-columns: 1fr;
