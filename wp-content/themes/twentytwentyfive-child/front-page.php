@@ -76,7 +76,10 @@ get_header();
                 <img 
                     src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/wmremove-transformed.jpeg'); ?>" 
                     alt="Professionelt B2B-team arbejder med leads og data"
+                    width="443"
+                    height="295"
                     loading="eager"
+                    fetchpriority="high"
                 >
         </div>
         </div>
@@ -93,7 +96,7 @@ get_header();
                     <!-- Dmify 1 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -125,7 +128,7 @@ get_header();
                     <!-- Dmify 2 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                     </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -156,7 +159,7 @@ get_header();
                     <!-- Dmify 3 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                     </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -192,7 +195,7 @@ get_header();
                     <!-- Dmify 4 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -226,7 +229,7 @@ get_header();
                     <!-- Dmify 1 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -258,7 +261,7 @@ get_header();
                     <!-- Dmify 2 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -289,7 +292,7 @@ get_header();
                     <!-- Dmify 3 -->
                     <a href="<?php echo esc_url(home_url('/cases')); ?>" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                         </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -325,7 +328,7 @@ get_header();
                     <!-- Dmify 4 -->
                     <a href="https://dmify.net" target="_blank" rel="noopener noreferrer" class="nl-logo-item" tabindex="-1">
                         <div class="nl-logo-content">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify logo" width="53" height="53" loading="lazy">
                             <span class="nl-logo-name">Dmify.net</span>
                     </div>
                         <span class="nl-logo-cta">Læs mere om denne case →</span>
@@ -798,7 +801,7 @@ get_header();
         <div class="nl-popup-content">
             <button class="nl-popup-close" type="button" id="nl-popup-close" aria-label="Luk popup">×</button>
             <h2 id="nl-popup-title">🎁 Gratis GDPR Compliance Check</h2>
-            <p class="nl-popup-desc">Har I en kundeliste I ikke har kontaktet i 1+ år? Vi laver en gratis audit og vurderer potentialet for genaktivering.</p>
+            <p class="nl-popup-desc">Har I en kundeliste I ikke får brugt? Vi laver en gratis audit og vurderer potentialet for genaktivering.</p>
             <ul class="nl-popup-benefits">
                 <li>✅ Gratis DNC-screening</li>
                 <li>✅ GDPR compliance audit</li>

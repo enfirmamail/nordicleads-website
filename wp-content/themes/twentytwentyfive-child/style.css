@@ -768,7 +768,8 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, visibility 0.25s ease;
-    padding: 1rem;
+    padding: 1.25rem;
+    overflow-y: auto;
 }
 
 .nl-popup-overlay.active {
@@ -784,6 +785,10 @@ img {
     width: 100%;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.18);
     position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 .nl-popup-close {
@@ -895,8 +900,14 @@ img {
 }
 
 @media (max-width: 540px) {
+    .nl-popup-overlay {
+        align-items: flex-start;
+        padding: 1rem;
+    }
     .nl-popup-content {
         padding: 1.5rem;
+        max-width: 100%;
+        max-height: calc(100vh - 1.5rem);
     }
 }
 
@@ -1673,15 +1684,18 @@ img {
     box-shadow: 0 4px 16px rgba(0, 102, 204, 0.35), 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
     font-family: 'Inter', sans-serif;
+    will-change: opacity;
     animation: pulse-badge 3s ease-in-out infinite;
 }
 
 @keyframes pulse-badge {
     0%, 100% {
-        box-shadow: 0 4px 16px rgba(0, 102, 204, 0.35), 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        transform: scale(1);
     }
     50% {
-        box-shadow: 0 4px 20px rgba(0, 102, 204, 0.5), 0 2px 8px rgba(0, 0, 0, 0.15);
+        opacity: 0.95;
+        transform: scale(1.02);
     }
 }
 

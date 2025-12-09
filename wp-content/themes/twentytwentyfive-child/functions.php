@@ -55,19 +55,14 @@ function twentytwentyfive_child_enqueue_assets() {
         '3.4.1'
     );
     
-    // Google Fonts - Inter
-    wp_enqueue_style(
-        'google-fonts-inter',
-        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
-        array(),
-        null
-    );
+    // Google Fonts - Inter (loaded asynchronously to avoid render blocking)
+    // Note: Font is also loaded in header.php with media="print" trick for faster loading
     
     // Child theme stylesheet
     wp_enqueue_style(
         'twentytwentyfive-child-style',
         get_stylesheet_directory_uri() . '/style.css',
-        array('twentytwentyfive-parent-style', 'tailwind-local', 'google-fonts-inter'),
+        array('twentytwentyfive-parent-style', 'tailwind-local'),
         wp_get_theme()->get('Version')
     );
     
@@ -92,9 +87,11 @@ add_action('wp_enqueue_scripts', 'twentytwentyfive_child_enqueue_assets');
 
 /**
  * Add Preconnect to External Domains for Performance
+ * Limited to 4 preconnect hints for optimal performance
  */
 function twentytwentyfive_child_resource_hints($urls, $relation_type) {
     if ($relation_type === 'preconnect') {
+        // Only add essential preconnects (max 4 recommended)
         $urls[] = array(
             'href' => 'https://fonts.googleapis.com',
             'crossorigin'
@@ -103,12 +100,8 @@ function twentytwentyfive_child_resource_hints($urls, $relation_type) {
             'href' => 'https://fonts.gstatic.com',
             'crossorigin'
         );
-        $urls[] = array(
-            'href' => 'https://www.google-analytics.com'
-        );
-        $urls[] = array(
-            'href' => 'https://www.googletagmanager.com'
-        );
+        // Google Analytics and Tag Manager are loaded async, so preconnect is less critical
+        // Removed to stay under 4 preconnect limit
     }
     return $urls;
 }

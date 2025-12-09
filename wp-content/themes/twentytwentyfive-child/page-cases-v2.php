@@ -80,7 +80,7 @@ get_header();
                 <article class="nl-case-card-v2">
                     <div class="nl-case-visual">
                         <div class="nl-case-image-placeholder dmify">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify" class="nl-case-logo-v2">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/logos/dmify.png'); ?>" alt="Dmify" class="nl-case-logo-v2" width="53" height="53" loading="lazy">
                         </div>
                     </div>
                     <div class="nl-case-content-v2">
