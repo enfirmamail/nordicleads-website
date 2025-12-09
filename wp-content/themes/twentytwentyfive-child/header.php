@@ -54,7 +54,26 @@
         
         <!-- Desktop Nav - Centered -->
         <nav class="nl-nav-desktop" role="navigation">
-            <a href="#hvordan">Sådan virker det</a>
+            <a href="#hvordan">Kold lead generering</a>
+            
+            <!-- Services Dropdown -->
+            <div class="nl-nav-dropdown">
+                <button class="nl-nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    Services
+                    <svg class="nl-dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="nl-nav-dropdown-menu">
+                    <a href="<?php echo home_url('/services/lead-generation'); ?>">Lead Generation</a>
+                    <a href="<?php echo home_url('/services/kunde-genaktivering'); ?>">Kunde Genaktivering</a>
+                    <a href="<?php echo home_url('/services/email-outreach'); ?>">Email Outreach</a>
+                    <a href="<?php echo home_url('/services/webudvikling'); ?>">Webudvikling</a>
+                    <a href="<?php echo home_url('/services/ai-integration-automation'); ?>">AI-Integration & Automation</a>
+                    <a href="<?php echo home_url('/services/custom-loesninger'); ?>">Custom Løsninger</a>
+                </div>
+            </div>
+            
             <?php 
             // Find cases page dynamically
             $cases_page = get_pages(array(
@@ -74,12 +93,12 @@
             ?>
             <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
             <a href="<?php echo esc_url($faq_url); ?>">FAQ</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="<?php echo esc_url(home_url('/#kontakt')); ?>">Kontakt</a>
         </nav>
         
         <!-- CTA -->
         <div class="nl-header-cta">
-            <a href="#kontakt" class="nl-btn-header">Få leads nu</a>
+            <a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="nl-btn-header">Få leads nu</a>
             
             <!-- Mobile Toggle -->
             <button id="mobile-menu-toggle" class="nl-mobile-toggle" aria-label="Menu" aria-expanded="false">
@@ -92,7 +111,26 @@
     
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="nl-mobile-menu">
-        <a href="#hvordan">Sådan virker det</a>
+        <a href="#hvordan">Kold lead generering</a>
+        
+        <!-- Services Mobile Dropdown -->
+        <div class="nl-mobile-dropdown">
+            <button class="nl-mobile-dropdown-toggle">
+                Services
+                <svg class="nl-dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="nl-mobile-dropdown-menu">
+                <a href="<?php echo home_url('/services/lead-generation'); ?>">Lead Generation</a>
+                <a href="<?php echo home_url('/services/kunde-genaktivering'); ?>">Kunde Genaktivering</a>
+                <a href="<?php echo home_url('/services/email-outreach'); ?>">Email Outreach</a>
+                <a href="<?php echo home_url('/services/webudvikling'); ?>">Webudvikling</a>
+                <a href="<?php echo home_url('/services/ai-integration-automation'); ?>">AI-Integration & Automation</a>
+                <a href="<?php echo home_url('/services/custom-loesninger'); ?>">Custom Løsninger</a>
+            </div>
+        </div>
+        
         <?php 
         // Find cases page dynamically
         $cases_page = get_pages(array(
@@ -112,7 +150,7 @@
         ?>
         <a href="<?php echo esc_url($blog_url); ?>">Blog</a>
         <a href="<?php echo esc_url($faq_url); ?>">FAQ</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="<?php echo esc_url(home_url('/#kontakt')); ?>">Kontakt</a>
     </div>
 </header>
 
@@ -198,5 +236,56 @@
             });
         });
     }
+    
+    // Desktop dropdown functionality
+    document.querySelectorAll('.nl-nav-dropdown').forEach(dropdown => {
+        const toggle = dropdown.querySelector('.nl-nav-dropdown-toggle');
+        const menu = dropdown.querySelector('.nl-nav-dropdown-menu');
+        
+        if (toggle && menu) {
+            // Toggle on click
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const isOpen = menu.classList.contains('active');
+                
+                // Close all other dropdowns
+                document.querySelectorAll('.nl-nav-dropdown-menu.active').forEach(m => {
+                    if (m !== menu) {
+                        m.classList.remove('active');
+                        m.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                // Toggle current dropdown
+                menu.classList.toggle('active');
+                toggle.setAttribute('aria-expanded', !isOpen);
+            });
+            
+            // Close on outside click
+            document.addEventListener('click', function(e) {
+                if (!dropdown.contains(e.target)) {
+                    menu.classList.remove('active');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
+    
+    // Mobile dropdown functionality
+    document.querySelectorAll('.nl-mobile-dropdown').forEach(dropdown => {
+        const toggle = dropdown.querySelector('.nl-mobile-dropdown-toggle');
+        const menu = dropdown.querySelector('.nl-mobile-dropdown-menu');
+        
+        if (toggle && menu) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle('active');
+                const isOpen = menu.classList.contains('active');
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
+        }
+    });
 })();
 </script>

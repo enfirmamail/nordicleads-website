@@ -321,7 +321,7 @@ mobileToggle.addEventListener('click', function() {
 **Trust Line:**
 ```html
 <p class="nl-hero-trust">
-    GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af 80+ virksomheder
+    GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af Nordiske & Internationale virksomheder
 </p>
 ```
 - **Font-size:** 0.8125rem (13px)
@@ -663,7 +663,7 @@ mobileToggle.addEventListener('click', function() {
    - **Icon:** Lock SVG
    - **Description:** "Alle leads er screenet mod Do-Not-Contact-lister..."
 
-8. **Brugt af 80+ danske virksomheder** (Index 7)
+8. **Brugt af Nordiske & Internationale virksomheder** (Index 7)
    - **Icon:** Layers/stack SVG
    - **Description:** "Over 80 danske virksomheder stoler allerede på os..."
 

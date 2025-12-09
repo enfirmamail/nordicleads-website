@@ -30,7 +30,7 @@ Sig velkommen til dine nye kunder.
 Tusindvis af kvalificerede B2B-leads leveret på under 24 timer. Verificerede emails, telefonnumre og adresser skræddersyet til din branche. 100% GDPR-compliant.
 
 ### Trust Line
-GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af 80+ virksomheder
+GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af Nordiske & Internationale virksomheder
 
 ---
 
@@ -57,8 +57,8 @@ Vi finder leads baseret på præcise søgekriterier og filtre. Fra start-ups til
 ### 7. DNC-screenet og opt-out-klar
 Alle leads er screenet mod Do-Not-Contact-lister. Unsubscribe-links inkluderet i hver kampagne – fuld compliance garanteret.
 
-### 8. Brugt af 80+ danske virksomheder
-Over 80 danske virksomheder stoler allerede på os til at levere kvalificerede B2B-leads. Bliv en del af et vækstfællesskab der faktisk virker.
+### 8. Brugt af Nordiske & Internationale virksomheder
+Nordiske & Internationale virksomheder virksomheder stoler allerede på os til at levere kvalificerede B2B-leads. Bliv en del af et vækstfællesskab der faktisk virker.
 
 ---
 
@@ -420,7 +420,7 @@ info@nordicleads.dk
 - GDPR Art. 6(1)(f) compliance
 - Legitim interesse
 - EU-hosting i Danmark
-- Brugt af 80+ virksomheder
+- Brugt af Nordiske & Internationale virksomheder
 - Verificerede leads
 - DNC-screening
 - Kun offentlige kilder
@@ -494,7 +494,7 @@ info@nordicleads.dk
 3. **Verificerede kontakter** - kun aktive leads
 4. **Skræddersyet** til specifikke behov
 5. **Levering på under 24 timer**
-6. **Brugt af 80+ virksomheder**
+6. **Brugt af Nordiske & Internationale virksomheder**
 7. **Valgfri outreach-service**
 8. **Team vurderer kvalitet** - ikke kun antal
 
@@ -652,7 +652,7 @@ Premium B2B Lead Generation Service for danske virksomheder
 5. Kun offentlige kilder - ingen tredjepartsdata
 6. Data slettes efter levering
 7. Valgfri outreach-service tilgængelig
-8. Brugt af 80+ danske virksomheder
+8. Brugt af Nordiske & Internationale virksomheder
 
 ### Tone & Kommunikation
 - Professionel og direkte

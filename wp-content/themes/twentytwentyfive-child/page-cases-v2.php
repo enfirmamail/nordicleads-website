@@ -45,7 +45,7 @@ get_header();
                         <span class="nl-case-industry">AI & SaaS</span>
                         <span class="nl-case-time">3 måneder</span>
                     </div>
-                    <h2 class="nl-case-title-v2">DentalDesk</h2>
+                    <h2 class="nl-case-title-v2"><a href="https://dentaldesk.dk" target="_blank" rel="noopener noreferrer">DentalDesk</a></h2>
                     <p class="nl-case-headline">Hvordan vi hjalp en dansk AI-startup med at finde deres første 50+ kunder</p>
                     <p class="nl-case-excerpt-v2">
                         En dansk startup med en AI-receptionist løsning havde et solidt produkt, men sad fast. De vidste ikke hvordan de skulle finde klinikker der rent faktisk havde brug for dem. Vi hjalp dem med at kontakte 300+ klinikker og udvide til nye brancher.
@@ -88,7 +88,7 @@ get_header();
                             <span class="nl-case-industry">SaaS & Tech</span>
                             <span class="nl-case-time">3 måneder</span>
                         </div>
-                        <h2 class="nl-case-title-v2">Dmify</h2>
+                        <h2 class="nl-case-title-v2"><a href="https://dmify.net" target="_blank" rel="noopener noreferrer">Dmify</a></h2>
                         <p class="nl-case-headline">Fra "hvem er vores kunde?" til 120+ SaaS kunder</p>
                         <p class="nl-case-excerpt-v2">
                             En dansk SaaS-virksomhed med et fleksibelt produkt kunne ikke finde ud af hvem de skulle sælge til. Vi testede 10.000+ leads på tværs af 6 segmenter og fandt deres sweet spot: Growth agencies.

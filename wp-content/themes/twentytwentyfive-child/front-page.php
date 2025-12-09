@@ -62,7 +62,7 @@ get_header();
                 
                 <!-- Trust Line -->
                 <p class="nl-hero-trust">
-                    GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Brugt af 80+ virksomheder
+                    GDPR Art. 6(1)(f) · Legitim interesse · EU-hosting · Nordiske & Internationale virksomheder
                 </p>
                 
                 <!-- Outreach Link -->
@@ -358,8 +358,73 @@ get_header();
         </div>
     </section>
 
+    <!-- Kunde Genaktivering CTA (placed after Trusted By) -->
+    <section class="nl-reactivation-cta">
+        <div class="nl-container">
+            <div class="nl-reactivation-content">
+                <div class="nl-reactivation-text">
+                    <h2 class="nl-reactivation-title">Har I gamle kundelister liggende?</h2>
+                    <p class="nl-reactivation-desc">
+                        Det er 5-10x lettere at sælge til en tidligere kunde end at finde en ny. Vi genaktiverer jeres dormant kunder – GDPR-compliant, multichannel og med skarpt fokus på ROI.
+                    </p>
+                    <ul class="nl-reactivation-benefits">
+                        <li>
+                            <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                            </svg>
+                            <span>GDPR-compliant audit & DNC-screening</span>
+                        </li>
+                        <li>
+                            <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                            </svg>
+                            <span>Multi-channel outreach (email, LinkedIn, telefon)</span>
+                        </li>
+                        <li>
+                            <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                            </svg>
+                            <span>Typisk 5-15% response rate</span>
+                        </li>
+                        <li>
+                            <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
+                            </svg>
+                            <span>Success-based pricing mulighed</span>
+                        </li>
+                    </ul>
+                    <a href="<?php echo esc_url(home_url('/services/kunde-genaktivering')); ?>" class="nl-btn-reactivation">
+                        Læs om Kunde Genaktivering
+                        <svg class="nl-btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nl-reactivation-stats">
+                    <div class="nl-stat-card">
+                        <div class="nl-stat-number">5-10x</div>
+                        <div class="nl-stat-label">Lettere at konvertere</div>
+                    </div>
+                    <div class="nl-stat-card">
+                        <div class="nl-stat-number">5-15%</div>
+                        <div class="nl-stat-label">Typisk response rate</div>
+                    </div>
+                    <div class="nl-stat-card">
+                        <div class="nl-stat-number">300-500%</div>
+                        <div class="nl-stat-label">Typisk ROI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section with Hover Effects -->
     <section class="nl-features">
+        <div class="nl-container">
+            <div class="nl-features-header">
+                <h2 class="nl-features-title">Kold lead generering</h2>
+            </div>
+        </div>
         <div class="nl-features-inner">
             <div class="nl-feature" data-index="0">
                 <div class="nl-feature-badge">Vores styrker</div>
@@ -473,9 +538,9 @@ get_header();
                 </div>
                 <div class="nl-feature-title">
                     <div class="nl-feature-indicator"></div>
-                    <span>Brugt af 80+ danske virksomheder</span>
+                    <span>Nordiske & Internationale virksomheder</span>
                 </div>
-                <p class="nl-feature-desc">Over 80 danske virksomheder stoler allerede på os til at levere kvalificerede B2B-leads. Bliv en del af et vækstfællesskab der faktisk virker.</p>
+                <p class="nl-feature-desc">Nordiske og Internationale virksomheder stoler allerede på os til at levere kvalificerede B2B-leads. Bliv en del af et vækstfællesskab der faktisk virker.</p>
             </div>
         </div>
     </section>
@@ -712,9 +777,165 @@ get_header();
         </div>
     </section>
 
+    <!-- Sticky Lead Gen Bar -->
+    <div class="nl-sticky-lead-bar" id="nl-sticky-lead-bar" aria-live="polite">
+        <div class="nl-container">
+            <div class="nl-sticky-content">
+                <div class="nl-sticky-text">
+                    <span class="nl-sticky-icon" aria-hidden="true">💡</span>
+                    <span><strong>Har I gamle kundelister?</strong> Få gratis GDPR audit & DNC-screening</span>
+                </div>
+                <div class="nl-sticky-actions">
+                    <button class="nl-btn-small nl-btn-white" type="button" id="nl-sticky-open">Få gratis audit</button>
+                    <button class="nl-sticky-close" type="button" id="nl-sticky-close" aria-label="Luk bar">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lead Gen Popup -->
+    <div id="nl-leadgen-popup" class="nl-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="nl-popup-title" aria-hidden="true">
+        <div class="nl-popup-content">
+            <button class="nl-popup-close" type="button" id="nl-popup-close" aria-label="Luk popup">×</button>
+            <h2 id="nl-popup-title">🎁 Gratis GDPR Compliance Check</h2>
+            <p class="nl-popup-desc">Har I en kundeliste I ikke har kontaktet i 1+ år? Vi laver en gratis audit og vurderer potentialet for genaktivering.</p>
+            <ul class="nl-popup-benefits">
+                <li>✅ Gratis DNC-screening</li>
+                <li>✅ GDPR compliance audit</li>
+                <li>✅ Vurdering af genaktiveringspotentiale</li>
+                <li>✅ Uforpligtende rapport</li>
+            </ul>
+            <form class="nl-popup-form" id="nl-popup-form">
+                <label class="nl-form-label" for="nl-popup-email">E-mail <span>*</span></label>
+                <input type="email" id="nl-popup-email" name="email" required placeholder="din@email.dk">
+
+                <label class="nl-form-label" for="nl-popup-message">Hvad vil du have auditeret?</label>
+                <textarea id="nl-popup-message" name="message" rows="4" placeholder="Fortæl kort om jeres liste, antal kontakter, sidste kontakt og jeres ønsker."></textarea>
+
+                <label class="nl-consent">
+                    <input type="checkbox" id="nl-popup-consent" required>
+                    <span>
+                        Jeg accepterer at blive kontaktet om audit-resultatet, modtage relevante tilbud og opdateringer fra NordicLeads, og bekræfter at jeg har læst jeres privatlivspolitik. Du kan altid framelde igen via linket i vores mails.
+                    </span>
+                </label>
+
+                <button type="submit" class="nl-btn-primary nl-btn-full">Få gratis audit</button>
+                <p class="nl-popup-small">100% gratis og uforpligtende</p>
+                <div class="nl-popup-status" id="nl-popup-status" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </div>
+
 </main>
 
 <script>
+// Lead Gen Popup & Sticky Bar - Hybrid trigger
+(function() {
+    const popup = document.getElementById('nl-leadgen-popup');
+    const stickyBar = document.getElementById('nl-sticky-lead-bar');
+    const openBtn = document.getElementById('nl-sticky-open');
+    const closeBarBtn = document.getElementById('nl-sticky-close');
+    const closePopupBtn = document.getElementById('nl-popup-close');
+    const form = document.getElementById('nl-popup-form');
+    const statusEl = document.getElementById('nl-popup-status');
+
+    let popupShown = false;
+    let exitIntentDetected = false;
+    let timeOnPage = 0;
+    let scrollPercent = 0;
+    const LS_POPUP_KEY = 'nl_popup_shown';
+    const LS_BAR_KEY = 'nl_sticky_closed';
+
+    // Helpers
+    const hasPopupSeen = () => localStorage.getItem(LS_POPUP_KEY) === '1';
+    const hasBarClosed = () => localStorage.getItem(LS_BAR_KEY) === '1';
+
+    function showPopup(force = false) {
+        if (!force && (popupShown || hasPopupSeen())) return;
+        popupShown = true;
+        localStorage.setItem(LS_POPUP_KEY, '1');
+        if (timeInterval) clearInterval(timeInterval);
+        popup.setAttribute('aria-hidden', 'false');
+        popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function hidePopup() {
+        popup.classList.remove('active');
+        popup.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    function hideBar() {
+        if (stickyBar) {
+            stickyBar.classList.add('hidden');
+            localStorage.setItem(LS_BAR_KEY, '1');
+        }
+    }
+
+    function checkConditions() {
+        if (popupShown || hasPopupSeen()) return;
+        // Show if: (20s & 40% scroll) OR (60% scroll) OR (exit intent after 8s)
+        const condition1 = timeOnPage >= 20 && scrollPercent >= 40;
+        const condition2 = scrollPercent >= 60;
+        const condition3 = exitIntentDetected && timeOnPage >= 8;
+        if (condition1 || condition2 || condition3) {
+            showPopup();
+        }
+    }
+
+    // Time tracker
+    const timeInterval = setInterval(() => {
+        timeOnPage += 1;
+        checkConditions();
+    }, 1000);
+
+    // Scroll tracker
+    window.addEventListener('scroll', () => {
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        scrollPercent = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+        checkConditions();
+    }, { passive: true });
+
+    // Exit intent
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY < 0) {
+            exitIntentDetected = true;
+            checkConditions();
+        }
+    });
+
+    // Sticky bar interactions
+    if (openBtn) openBtn.addEventListener('click', () => showPopup(true));
+    if (closeBarBtn) closeBarBtn.addEventListener('click', hideBar);
+    if (closePopupBtn) closePopupBtn.addEventListener('click', hidePopup);
+
+    // Form submission (client-side only)
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = form.querySelector('#nl-popup-email').value.trim();
+            const consent = form.querySelector('#nl-popup-consent').checked;
+            if (!email || !consent) {
+                statusEl.textContent = 'Udfyld email og accepter venligst samtykke.';
+                statusEl.className = 'nl-popup-status error';
+                return;
+            }
+            statusEl.textContent = 'Tak! Vi kontakter dig med en gratis audit.';
+            statusEl.className = 'nl-popup-status success';
+            form.reset();
+            setTimeout(hidePopup, 1200);
+        });
+    }
+
+    // Initial bar visibility
+    if (stickyBar && !hasBarClosed()) {
+        stickyBar.classList.remove('hidden');
+    } else if (stickyBar) {
+        stickyBar.classList.add('hidden');
+    }
+})();
+
 // FAQ Accordion
 document.querySelectorAll('.nl-faq-question').forEach(button => {
     button.addEventListener('click', () => {
