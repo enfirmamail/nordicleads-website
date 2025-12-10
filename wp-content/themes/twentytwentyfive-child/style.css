@@ -927,6 +927,303 @@ img {
     flex-direction: column;
 }
 
+/* =================================================================
+   Services - Lead Generation (page-services-lead-generation.php)
+   ================================================================= */
+.nl-service-page {
+    background: #f8fafc;
+    color: var(--nl-gray-900);
+}
+
+.nl-service-hero {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.nl-service-hero .nl-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .nl-service-hero .nl-container {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 3rem;
+    }
+}
+
+.nl-service-hero-title {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0.35rem 0 0.75rem;
+}
+
+.nl-service-hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--nl-gray-700);
+    margin-bottom: 1.5rem;
+}
+
+.nl-service-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    background: #e0f2fe;
+    color: #0ea5e9;
+    font-weight: 700;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.nl-service-hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.nl-service-hero-image {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.nl-service-illustration {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Features */
+.nl-service-features {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.nl-service-features .nl-section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.nl-features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+    .nl-features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.nl-feature-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.nl-feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #e0f2fe;
+    color: #0ea5e9;
+    display: grid;
+    place-items: center;
+}
+
+.nl-feature-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.nl-feature-card p {
+    color: var(--nl-gray-700);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Process */
+.nl-service-process {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: #ffffff;
+}
+
+.nl-service-process .nl-section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.nl-process-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 960px) {
+    .nl-process-steps {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.nl-process-step {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.nl-process-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #0ea5e9;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.nl-process-step h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+}
+
+.nl-process-step p {
+    margin: 0;
+    color: var(--nl-gray-700);
+    line-height: 1.6;
+}
+
+/* Tech stack */
+.nl-service-tech {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: #f8fafc;
+}
+
+.nl-tech-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 900px) {
+    .nl-tech-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.nl-tech-item {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.nl-tech-item h4 {
+    margin: 0 0 0.4rem;
+}
+
+.nl-tech-item p {
+    margin: 0;
+    color: var(--nl-gray-700);
+    line-height: 1.5;
+}
+
+/* Results */
+.nl-service-results {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: #ffffff;
+}
+
+.nl-results-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 720px) {
+    .nl-results-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.nl-result-stat {
+    background: #0f172a;
+    color: #e0f2fe;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+}
+
+.nl-result-stat .nl-stat-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.nl-result-stat .nl-stat-label {
+    margin-top: 0.35rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* CTA */
+.nl-service-cta {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: linear-gradient(135deg, #0f172a, #0b3a7a);
+    color: #fff;
+}
+
+.nl-service-cta-content {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.nl-service-cta-content h2 {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    margin: 0 0 0.75rem;
+}
+
+.nl-service-cta-content p {
+    color: #e2e8f0;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.nl-service-cta-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nl-service-cta .nl-btn-secondary {
+    border: 1.5px solid rgba(255,255,255,0.4);
+}
+
+@media (max-width: 640px) {
+    .nl-service-hero-cta a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 .nl-mobile-dropdown-toggle {
     display: flex;
     align-items: center;
@@ -4826,6 +5123,468 @@ body.page:not(.home) #site-header.scrolled .nl-btn-header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* =================================================================
+   LEAD GENERATION PAGE - Ultra Modern & Creative Design
+   ================================================================= */
+
+.nl-leadgen-page {
+    background: var(--nl-white);
+}
+
+/* Hero Section - Bold & Visual */
+.nl-leadgen-hero {
+    position: relative;
+    padding: 10rem 2rem 6rem;
+    background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.nl-leadgen-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.nl-leadgen-hero-inner {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.nl-leadgen-badge {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--nl-white);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 50px;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nl-leadgen-title {
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    font-weight: 900;
+    color: var(--nl-white);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin: 0 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nl-leadgen-title-line {
+    display: block;
+}
+
+.nl-leadgen-title-accent {
+    display: block;
+    background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.nl-leadgen-subtitle {
+    font-size: 1.375rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 750px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* Stats Bar - Floating Cards */
+.nl-leadgen-stats-bar {
+    padding: 0 2rem;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nl-leadgen-stats-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.nl-leadgen-stat-card {
+    background: var(--nl-white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nl-leadgen-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nl-leadgen-stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--nl-primary) 0%, #003366 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nl-white);
+    flex-shrink: 0;
+}
+
+.nl-leadgen-stat-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.nl-leadgen-stat-content {
+    flex: 1;
+}
+
+.nl-leadgen-stat-number {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--nl-gray-900);
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+}
+
+.nl-leadgen-stat-label {
+    font-size: 0.9375rem;
+    color: var(--nl-gray-600);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Content Section - Modern Layout */
+.nl-leadgen-content {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
+}
+
+.nl-leadgen-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nl-leadgen-main {
+    width: 100%;
+}
+
+.nl-leadgen-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Intro Card */
+.nl-leadgen-intro-card {
+    background: linear-gradient(135deg, var(--nl-primary) 0%, #003366 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    color: var(--nl-white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 102, 204, 0.2);
+}
+
+.nl-leadgen-intro-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.nl-leadgen-intro-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: var(--nl-white);
+}
+
+.nl-leadgen-intro-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.nl-leadgen-lead {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Section Cards */
+.nl-leadgen-section-card {
+    background: var(--nl-white);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--nl-gray-200);
+    transition: all 0.3s ease;
+}
+
+.nl-leadgen-section-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.nl-leadgen-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--nl-gray-100);
+}
+
+.nl-leadgen-section-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--nl-primary);
+    line-height: 1;
+    opacity: 0.15;
+    font-variant-numeric: tabular-nums;
+    min-width: 80px;
+}
+
+.nl-leadgen-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--nl-gray-900);
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.nl-leadgen-section-content {
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    .nl-leadgen-section-content {
+        padding-left: 6.5rem;
+    }
+}
+
+.nl-leadgen-section-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--nl-gray-700);
+    margin: 0 0 1.5rem 0;
+}
+
+.nl-leadgen-section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ROI Flow Section */
+.nl-leadgen-roi-flow {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border: 2px solid var(--nl-gray-200);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nl-leadgen-roi-flow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.nl-leadgen-roi-step {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--nl-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--nl-gray-200);
+    min-width: 200px;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.nl-leadgen-roi-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.nl-leadgen-roi-step.nl-leadgen-roi-final {
+    background: linear-gradient(135deg, var(--nl-primary) 0%, #003366 100%);
+    color: var(--nl-white);
+    border-color: var(--nl-primary);
+}
+
+.nl-leadgen-roi-step.nl-leadgen-roi-final .nl-leadgen-roi-number {
+    color: var(--nl-white);
+}
+
+.nl-leadgen-roi-step.nl-leadgen-roi-final .nl-leadgen-roi-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.nl-leadgen-roi-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--nl-primary);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.nl-leadgen-roi-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--nl-gray-700);
+    font-weight: 500;
+}
+
+.nl-leadgen-roi-arrow {
+    font-size: 2rem;
+    color: var(--nl-primary);
+    font-weight: 300;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .nl-leadgen-roi-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* Form Select Styling */
+.nl-contact-form select {
+    width: 100%;
+    border: 1px solid var(--nl-gray-200);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    background: var(--nl-white);
+    color: var(--nl-gray-900);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23334155' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.nl-contact-form select:focus {
+    border-color: var(--nl-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+.nl-contact-form select option {
+    padding: 0.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nl-leadgen-hero {
+        padding: 8rem 1.5rem 4rem;
+        min-height: 60vh;
+    }
+    
+    .nl-leadgen-stats-bar {
+        padding: 0 1.5rem;
+        margin-top: -3rem;
+    }
+    
+    .nl-leadgen-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .nl-leadgen-stat-card {
+        padding: 1.5rem;
+    }
+    
+    .nl-leadgen-content {
+        padding: 4rem 1.5rem;
+    }
+    
+    .nl-leadgen-intro-card {
+        padding: 2rem;
+    }
+    
+    .nl-leadgen-lead {
+        font-size: 1.25rem;
+    }
+    
+    .nl-leadgen-section-card {
+        padding: 2rem;
+    }
+    
+    .nl-leadgen-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .nl-leadgen-section-number {
+        font-size: 2.5rem;
+        min-width: auto;
+    }
+    
+    .nl-leadgen-heading {
+        font-size: 1.75rem;
+    }
+    
+    .nl-leadgen-section-content {
+        padding-left: 0;
+    }
+    
+    .nl-leadgen-section-content p {
+        font-size: 1.0625rem;
+    }
 }
 
 .nl-case-logo-img-v2 {

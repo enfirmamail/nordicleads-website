@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Services - Lead Generation
- * Description: Lead Generation service page with detailed product information
+ * Description: Lead Generation service page - Ultra clean, modern design
  *
  * @package Twenty_Twenty_Five_Child
  * @since 1.0.0
@@ -10,262 +10,313 @@
 get_header();
 ?>
 
-<main id="main-content" role="main" class="nl-service-page">
+<main id="main-content" role="main" class="nl-leadgen-page">
 
-    <!-- Hero Section -->
-    <section class="nl-service-hero">
+    <!-- Hero Section - Bold & Visual -->
+    <section class="nl-leadgen-hero">
+        <div class="nl-leadgen-hero-bg"></div>
         <div class="nl-container">
-            <div class="nl-service-hero-content">
-                <span class="nl-service-badge">Services</span>
-                <h1 class="nl-service-hero-title">Lead Generation</h1>
-                <p class="nl-service-hero-subtitle">
-                    Tusindvis af verificerede B2B-leads leveret på under 24 timer med vores avancerede AI-drevne lead generation platform
+            <div class="nl-leadgen-hero-inner">
+                <span class="nl-leadgen-badge">Lead Generation</span>
+                <h1 class="nl-leadgen-title">
+                    <span class="nl-leadgen-title-line">Avanceret AI-drevet lead generation</span>
+                    <span class="nl-leadgen-title-accent">som ingen andre i Norden</span>
+                    <span class="nl-leadgen-title-line">kan levere</span>
+                </h1>
+                <p class="nl-leadgen-subtitle">
+                    Vores proprietære machine learning-algoritmer og neural network-baserede sorting-system 
+                    leverer verificerede B2B-leads af en kvalitet, du ikke finder andre steder i Norden.
                 </p>
-                <div class="nl-service-hero-cta">
-                    <a href="#kontakt" class="nl-btn-primary nl-btn-large">Kom i gang nu</a>
-                    <a href="#how-it-works" class="nl-btn-secondary nl-btn-large">Se hvordan det virker</a>
-                </div>
-            </div>
-            
-            <!-- Hero Image Placeholder -->
-            <div class="nl-service-hero-image">
-                <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="nl-service-illustration">
-                    <defs>
-                        <linearGradient id="leadGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#0066cc" stop-opacity="0.8"/>
-                            <stop offset="100%" stop-color="#003366" stop-opacity="0.9"/>
-                        </linearGradient>
-                        <linearGradient id="leadGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
-                            <stop offset="100%" stop-color="#059669" stop-opacity="0.9"/>
-                        </linearGradient>
-                    </defs>
-                    
-                    <!-- Background -->
-                    <rect width="800" height="600" fill="#f8fafc"/>
-                    
-                    <!-- Database/Server representation -->
-                    <rect x="50" y="150" width="200" height="300" rx="20" fill="url(#leadGrad1)" opacity="0.1"/>
-                    <circle cx="150" cy="200" r="40" fill="url(#leadGrad1)"/>
-                    <circle cx="150" cy="300" r="40" fill="url(#leadGrad1)" opacity="0.7"/>
-                    <circle cx="150" cy="400" r="40" fill="url(#leadGrad1)" opacity="0.5"/>
-                    
-                    <!-- AI Processing (center) -->
-                    <circle cx="400" cy="300" r="80" fill="url(#leadGrad2)"/>
-                    <text x="400" y="310" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">AI</text>
-                    
-                    <!-- Output/Results -->
-                    <rect x="550" y="150" width="200" height="300" rx="20" fill="url(#leadGrad1)" opacity="0.1"/>
-                    
-                    <!-- Lead cards -->
-                    <rect x="570" y="180" width="160" height="60" rx="10" fill="#ffffff" stroke="url(#leadGrad1)" stroke-width="2"/>
-                    <rect x="570" y="260" width="160" height="60" rx="10" fill="#ffffff" stroke="url(#leadGrad1)" stroke-width="2"/>
-                    <rect x="570" y="340" width="160" height="60" rx="10" fill="#ffffff" stroke="url(#leadGrad1)" stroke-width="2"/>
-                    
-                    <!-- Connection lines -->
-                    <line x1="190" y1="200" x2="320" y2="300" stroke="url(#leadGrad1)" stroke-width="3" opacity="0.3" stroke-dasharray="5,5"/>
-                    <line x1="190" y1="300" x2="320" y2="300" stroke="url(#leadGrad1)" stroke-width="3" opacity="0.3" stroke-dasharray="5,5"/>
-                    <line x1="190" y1="400" x2="320" y2="300" stroke="url(#leadGrad1)" stroke-width="3" opacity="0.3" stroke-dasharray="5,5"/>
-                    
-                    <line x1="480" y1="300" x2="570" y2="210" stroke="url(#leadGrad2)" stroke-width="3" opacity="0.3"/>
-                    <line x1="480" y1="300" x2="570" y2="290" stroke="url(#leadGrad2)" stroke-width="3" opacity="0.3"/>
-                    <line x1="480" y1="300" x2="570" y2="370" stroke="url(#leadGrad2)" stroke-width="3" opacity="0.3"/>
-                    
-                    <!-- Checkmarks -->
-                    <path d="M 580 205 L 590 215 L 610 190" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M 580 285 L 590 295 L 610 270" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M 580 365 L 590 375 L 610 350" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
             </div>
         </div>
     </section>
 
-    <!-- Features Grid -->
-    <section class="nl-service-features">
+    <!-- Stats Bar - Floating Cards -->
+    <section class="nl-leadgen-stats-bar">
         <div class="nl-container">
-            <div class="nl-section-header">
-                <h2>Vores In-House Developed Lead Generation Platform</h2>
-                <p>Bygget af vores team med avanceret AI-teknologi og multi-source datahentning</p>
-            </div>
-            
-            <div class="nl-features-grid">
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
-                        </svg>
-                    </div>
-                    <h3>AI-Powered Multi-Source Scraping</h3>
-                    <p>Vores proprietære AI-system indsamler leads fra over 50+ kilder: CVR-registret, Google Maps, LinkedIn, brancheregistre, firmahjemmesider, sociale medier, og offentlige databaser. Alt køres automatisk gennem vores advanced machine learning pipeline.</p>
-                </div>
-                
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
+            <div class="nl-leadgen-stats-grid">
+                <div class="nl-leadgen-stat-card">
+                    <div class="nl-leadgen-stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
+                            <polyline points="12 6 12 12 16 14"/>
                         </svg>
                     </div>
-                    <h3>Real-Time Verification & Validation</h3>
-                    <p>Hver enkelt email og telefonnummer verificeres i real-time gennem vores AI-verification engine. Vi bruger advanced pattern recognition, SMTP validation, og social proof algorithms for at garantere 95%+ accuracy rate på alle kontakter.</p>
+                    <div class="nl-leadgen-stat-content">
+                        <div class="nl-leadgen-stat-number">24 timer</div>
+                        <div class="nl-leadgen-stat-label">Gennemsnitlig leveringstid</div>
+                    </div>
                 </div>
-                
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
+                <div class="nl-leadgen-stat-card">
+                    <div class="nl-leadgen-stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3>Intelligent Lead Scoring System</h3>
-                    <p>Vores AI-lead-scoring algoritme analyserer over 100+ datapunkter per lead: company size, industry relevance, decision-maker identification, engagement likelihood, conversion probability og historical performance data for at ranke hver lead.</p>
+                    <div class="nl-leadgen-stat-content">
+                        <div class="nl-leadgen-stat-number">95%+</div>
+                        <div class="nl-leadgen-stat-label">Email verification accuracy</div>
+                    </div>
                 </div>
-                
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
+                <div class="nl-leadgen-stat-card">
+                    <div class="nl-leadgen-stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         </svg>
                     </div>
-                    <h3>100% GDPR Compliance Engine</h3>
-                    <p>Alle leads håndteres gennem vores GDPR-compliance system med built-in legitim interesse vurdering (Art. 6(1)(f)), automatic DNC-screening, opt-out management, og full audit trail. EU-hosted på danske servere.</p>
-                </div>
-                
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                        </svg>
+                    <div class="nl-leadgen-stat-content">
+                        <div class="nl-leadgen-stat-number">100%</div>
+                        <div class="nl-leadgen-stat-label">GDPR-compliant</div>
                     </div>
-                    <h3>Advanced Data Enrichment</h3>
-                    <p>Vores AI enrichment system tilføjer 30+ extra datapunkter til hver lead: company revenue estimates, employee count, technology stack, social media presence, funding status, growth signals, og industry-specific metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section - Modern Layout -->
+    <section class="nl-leadgen-content">
+        <div class="nl-container">
+            <div class="nl-leadgen-content-wrapper">
+                
+                <!-- Main Content -->
+                <div class="nl-leadgen-main">
+                    <article class="nl-leadgen-article">
+                        <div class="nl-leadgen-intro-card">
+                            <div class="nl-leadgen-intro-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <p class="nl-leadgen-lead">
+                                Vores avancerede AI-drevne lead generation platform kombinerer deep learning-algoritmer, 
+                                neural network-baseret dataenrichment og proprietære machine learning-modeller for at 
+                                levere B2B-leads af en kvalitet og præcision, der ikke findes andre steder i Norden. 
+                                Hver enkelt lead gennemgår vores multi-layered verification pipeline med avancerede 
+                                pattern recognition-algoritmer og real-time validation engines.
+                            </p>
+                        </div>
+
+                        <div class="nl-leadgen-section-card">
+                            <div class="nl-leadgen-section-header">
+                                <div class="nl-leadgen-section-number">01</div>
+                                <h2 class="nl-leadgen-heading">Avanceret AI Sorting & Machine Learning</h2>
+                            </div>
+                            <div class="nl-leadgen-section-content">
+                                <p>
+                                    Vores proprietære AI-sorting system anvender state-of-the-art machine learning-algoritmer 
+                                    og neural network-arkitektur til at analysere og rangere hver enkelt lead baseret på 
+                                    hundredvis af datapunkter. Vi bruger deep learning-modeller til at identificere 
+                                    decision-makers, vurdere purchase intent og beregne conversion probability med en 
+                                    præcision, der overgår traditionelle lead generation-metoder.
+                                </p>
+                                <p>
+                                    Vores avancerede algoritmer gennemgår kontinuerligt millioner af datapunkter fra CVR-registret, 
+                                    Google Maps API, LinkedIn Sales Navigator, brancheregistre og offentlige databaser. 
+                                    Hver lead bliver processeret gennem vores multi-stage AI-pipeline med natural language 
+                                    processing, sentiment analysis og behavioral pattern recognition for at sikre maksimal 
+                                    kvalitet og relevans.
+                                </p>
+                                <p>
+                                    <strong>Dette er teknologi, du ikke finder andre steder i Norden.</strong> Vores team har 
+                                    udviklet proprietære algoritmer og AI-modeller specifikt til nordiske markeder, hvilket 
+                                    giver os en unik fordel i at levere leads af højeste kvalitet.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="nl-leadgen-section-card">
+                            <div class="nl-leadgen-section-header">
+                                <div class="nl-leadgen-section-number">02</div>
+                                <h2 class="nl-leadgen-heading">ROI der taler for sig selv</h2>
+                            </div>
+                            <div class="nl-leadgen-section-content">
+                                <p>
+                                    Lad os tale konkret om hvad din investering i vores lead generation service kan give dig. 
+                                    Her er en realistisk case baseret på vores kunders resultater:
+                                </p>
+                                <div class="nl-leadgen-roi-flow">
+                                    <div class="nl-leadgen-roi-step">
+                                        <div class="nl-leadgen-roi-number">2.000</div>
+                                        <div class="nl-leadgen-roi-text">høj kvalitet B2B-leads købt og leveret med personaliseret, lovlig outreach</div>
+                                    </div>
+                                    <div class="nl-leadgen-roi-arrow">→</div>
+                                    <div class="nl-leadgen-roi-step">
+                                        <div class="nl-leadgen-roi-number">1.000</div>
+                                        <div class="nl-leadgen-roi-text">åbner din email (50% open rate med vores avancerede personalisering)</div>
+                                    </div>
+                                    <div class="nl-leadgen-roi-arrow">→</div>
+                                    <div class="nl-leadgen-roi-step">
+                                        <div class="nl-leadgen-roi-number">100-200</div>
+                                        <div class="nl-leadgen-roi-text">afprøver demo, hører mere eller spørger nærmere til produktet</div>
+                                    </div>
+                                    <div class="nl-leadgen-roi-arrow">→</div>
+                                    <div class="nl-leadgen-roi-step nl-leadgen-roi-final">
+                                        <div class="nl-leadgen-roi-number">20-40</div>
+                                        <div class="nl-leadgen-roi-text">nye betalende kunder (afhænger af produkt og pris)</div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Dette er ikke teoretisk – det er resultater, vores kunder oplever. Vores avancerede AI-sorting 
+                                    sikrer, at hver lead er høj kvalitet og har maksimal potentiale for konvertering. 
+                                    <strong>Din investering i lead generation bliver direkte til nye kunder og omsætning.</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="nl-leadgen-section-card">
+                            <div class="nl-leadgen-section-header">
+                                <div class="nl-leadgen-section-number">03</div>
+                                <h2 class="nl-leadgen-heading">Niche-specifik optimering & algoritme-tuning</h2>
+                            </div>
+                            <div class="nl-leadgen-section-content">
+                                <p>
+                                    Vi sætter os ikke bare ind i din branche – vi dybdeanalyserer den. Vores team af data scientists 
+                                    og lead generation-eksperter undersøger hvilke typer leads der faktisk konverterer i din specifikke 
+                                    niche. Vi analyserer decision-making patterns, purchase behavior og conversion signals specifikt 
+                                    for din branche.
+                                </p>
+                                <p>
+                                    Baseret på denne analyse justerer vi vores AI-algoritmer og machine learning-modeller til din 
+                                    niche. Vores neural networks bliver trænet på data specifikt for din branche, hvilket betyder at 
+                                    vores sorting-algoritmer prioriterer leads med højst sandsynlighed for at blive lukkede kunder 
+                                    i din specifikke kontekst.
+                                </p>
+                                <p>
+                                    Dette er ikke en one-size-fits-all løsning. Vores platform tilpasser sig kontinuerligt baseret på 
+                                    dine feedback og resultater. Jo mere data vi får om hvad der virker for dig, jo bedre bliver vores 
+                                    algoritmer til at levere præcist de leads, der konverterer til betalende kunder.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="nl-leadgen-section-card">
+                            <div class="nl-leadgen-section-header">
+                                <div class="nl-leadgen-section-number">04</div>
+                                <h2 class="nl-leadgen-heading">Enterprise-grade GDPR compliance & databeskyttelse</h2>
+                            </div>
+                            <div class="nl-leadgen-section-content">
+                                <p>
+                                    Vores GDPR-compliance engine er bygget med enterprise-grade sikkerhed og compliance-automation. 
+                                    Alle leads håndteres gennem vores proprietære compliance pipeline, der automatisk vurderer legitim 
+                                    interesse i henhold til GDPR Artikel 6(1)(f) med avancerede legal assessment-algoritmer.
+                                </p>
+                                <p>
+                                    Vores system gennemfører kontinuerlig DNC-screening mod alle relevante Do-Not-Contact-registre, 
+                                    automatisk opt-out management og fuld audit trail-dokumentation. Alle data håndteres på EU-hosted 
+                                    servere i Danmark med end-to-end encryption og ISO 27001-kompatible sikkerhedsprotokoller.
+                                </p>
+                                <p>
+                                    Vi anvender kun offentlige datakilder som CVR-registret, Google Maps API og offentlige 
+                                    firmahjemmesider. Vores avancerede web scraping-teknologi respekterer robots.txt og 
+                                    rate limiting-protokoller, mens vores data enrichment-algoritmer sikrer at alle informationer 
+                                    er verificerede og aktuelle.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="nl-leadgen-section-card">
+                            <div class="nl-leadgen-section-header">
+                                <div class="nl-leadgen-section-number">05</div>
+                                <h2 class="nl-leadgen-heading">Tilfredshedsgaranti & kontinuerlig optimering</h2>
+                            </div>
+                            <div class="nl-leadgen-section-content">
+                                <p>
+                                    Vi står bag vores leads. Hvis du ikke er tilfreds med kvaliteten af de leads, vi leverer, 
+                                    arbejder vi sammen med dig for at justere vores algoritmer og kriterier indtil vi rammer 
+                                    præcist det, du har brug for. Vores mål er ikke bare at levere leads – det er at levere 
+                                    leads der konverterer til kunder.
+                                </p>
+                                <p>
+                                    Vores platform lærer kontinuerligt. Baseret på dine resultater og feedback justerer vores 
+                                    machine learning-modeller sig automatisk for at forbedre lead quality og conversion rates. 
+                                    Dette betyder, at jo længere du arbejder med os, jo bedre bliver vores algoritmer til at 
+                                    levere præcist de leads, der virker for din virksomhed.
+                                </p>
+                                <p>
+                                    Vi leverer typisk inden for 24 timer i et rent, struktureret format (CSV eller Excel) klar 
+                                    til import i dit CRM-system. Alle leads er gennemgået vores multi-stage AI-verification pipeline 
+                                    og er klar til at blive brugt med det samme.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="kontakt" class="nl-section nl-section-dark">
+        <div class="nl-container">
+            <div class="nl-contact-grid">
+                <div class="nl-contact-text">
+                    <h2>Få et skræddersyet tilbud – inden for 24 timer</h2>
+                    <p>Vi prissætter efter din branche, niche, ønsket antal leads og kvalitet. Priser og antal leads varierer alt efter hvad du har brug for – fra små specialiserede lister til store volumen-indsamlinger.</p>
+                    <p>Fortæl os kort hvad du leder efter – så sender vi et uforpligtende tilbud. Vores salgsteam finder den bedste løsning der passer præcist til dine behov.</p>
+                    <p class="nl-contact-email">
+                        Eller kontakt os direkte:<br>
+                        <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a>
+                    </p>
                 </div>
                 
-                <div class="nl-feature-card">
-                    <div class="nl-feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-                            <polyline points="7 10 12 15 17 10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
+                <div class="nl-contact-form-wrapper">
+                    <form id="contact-form" class="nl-contact-form">
+                        <div class="nl-form-row">
+                            <div class="nl-form-group">
+                                <label for="name">Navn <span>*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Dit navn">
+                            </div>
+                            <div class="nl-form-group">
+                                <label for="company">Virksomhed <span>*</span></label>
+                                <input type="text" id="company" name="company" required placeholder="Din virksomhed">
+                            </div>
+                        </div>
+                        <div class="nl-form-row">
+                            <div class="nl-form-group">
+                                <label for="email">E-mail <span>*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="din@email.dk">
+                            </div>
+                            <div class="nl-form-group">
+                                <label for="phone">Telefon <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+45 XX XX XX XX">
+                            </div>
+                        </div>
+                        <div class="nl-form-group">
+                            <label for="service">Relateret service <span>*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">Vælg en service</option>
+                                <option value="lead-generation">Lead Generation</option>
+                                <option value="kunde-genaktivering">Kunde Genaktivering</option>
+                                <option value="email-outreach">Email Outreach</option>
+                                <option value="webudvikling">Webudvikling</option>
+                                <option value="ai-integration-automation">AI-Integration & Automation</option>
+                                <option value="custom-loesninger">Custom Løsninger</option>
+                                <option value="andet">Andet</option>
+                            </select>
+                        </div>
+                        <div class="nl-form-group">
+                            <label for="message">Besked (valgfri)</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Fortæl os om din branche, niche, ønsket antal leads og eventuelle særlige krav. Jo mere vi ved, jo bedre kan vi tilpasse løsningen til dig..."></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="nl-form-submit">Få uforpligtende tilbud</button>
+                        <p class="nl-form-disclaimer">Ved at indsende accepterer du vores <a href="#">privatlivspolitik</a>. Vi behandler dine data i henhold til GDPR.</p>
+                    </form>
+                    
+                    <div id="form-success" class="nl-form-message nl-form-success hidden">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
+                        <p>Tak for din henvendelse! Vi kontakter dig inden for 24 timer.</p>
                     </div>
-                    <h3>Instant Export & Integration</h3>
-                    <p>Export leads instant til CSV, Excel, eller JSON. Native integration med alle major CRM-systemer (HubSpot, Salesforce, Pipedrive), email marketing tools (Mailchimp, SendGrid), og custom API endpoints. Vores team har bygget seamless data pipelines.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="nl-service-process">
-        <div class="nl-container">
-            <div class="nl-section-header">
-                <h2>Sådan Virker Vores System</h2>
-                <p>Fra dataindsamling til levering af verificerede leads på under 24 timer</p>
-            </div>
-            
-            <div class="nl-process-steps">
-                <div class="nl-process-step">
-                    <div class="nl-process-number">1</div>
-                    <h3>Multi-Source Data Aggregation</h3>
-                    <p>Vores AI-crawler system scanner 50+ kilder simultant: CVR, Google Maps API, LinkedIn Sales Navigator, industry databases, company websites, social media platforms og public records. Alt køres through advanced web scraping og API integration pipelines.</p>
-                </div>
-                
-                <div class="nl-process-step">
-                    <div class="nl-process-number">2</div>
-                    <h3>AI-Driven Verification & Cleaning</h3>
-                    <p>Hver lead processeres through vores machine learning verification engine: email validation via SMTP, phone number verification, duplicate detection algorithms, data normalization, og spam-trap identification. 95%+ accuracy guaranteed.</p>
-                </div>
-                
-                <div class="nl-process-step">
-                    <div class="nl-process-number">3</div>
-                    <h3>Intelligent Filtering & Segmentation</h3>
-                    <p>AI-powered segmentation based on: industry classification, company size brackets, geographic targeting, decision-maker role identification, firmographic data, og behavioral signals. Hyper-targeted lead lists custom-built til din niche.</p>
-                </div>
-                
-                <div class="nl-process-step">
-                    <div class="nl-process-number">4</div>
-                    <h3>Real-Time Delivery & Support</h3>
-                    <p>Instant access til din lead database via secure download portal eller API integration. Full customer success support fra vores team, der har udviklet systemet. Ongoing updates og refresh cycles inkluderet.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section class="nl-service-tech">
-        <div class="nl-container">
-            <div class="nl-section-header">
-                <h2>Built by Our Team med Cutting-Edge Technology</h2>
-                <p>Samme team der driver din lead generation platform</p>
-            </div>
-            
-            <div class="nl-tech-grid">
-                <div class="nl-tech-item">
-                    <h4>AI & Machine Learning</h4>
-                    <p>TensorFlow, PyTorch, scikit-learn, NLP processing, neural networks</p>
-                </div>
-                <div class="nl-tech-item">
-                    <h4>Data Processing</h4>
-                    <p>Apache Spark, Pandas, NumPy, Redis caching, real-time pipelines</p>
-                </div>
-                <div class="nl-tech-item">
-                    <h4>Web Scraping</h4>
-                    <p>Scrapy, Selenium, BeautifulSoup, proxy rotation, anti-detection</p>
-                </div>
-                <div class="nl-tech-item">
-                    <h4>Infrastructure</h4>
-                    <p>AWS/Azure cloud, Kubernetes, Docker, CI/CD, EU-hosted servers</p>
-                </div>
-                <div class="nl-tech-item">
-                    <h4>Security & Compliance</h4>
-                    <p>End-to-end encryption, GDPR engines, audit logs, ISO compliance</p>
-                </div>
-                <div class="nl-tech-item">
-                    <h4>API Integration</h4>
-                    <p>RESTful APIs, GraphQL, webhooks, OAuth, CRM connectors</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="nl-service-results">
-        <div class="nl-container">
-            <div class="nl-section-header">
-                <h2>Resultater Der Taler For Sig Selv</h2>
-            </div>
-            
-            <div class="nl-results-grid">
-                <div class="nl-result-stat">
-                    <div class="nl-stat-number">10M+</div>
-                    <div class="nl-stat-label">Verificerede leads i database</div>
-                </div>
-                <div class="nl-result-stat">
-                    <div class="nl-stat-number">95%</div>
-                    <div class="nl-stat-label">Email verification accuracy</div>
-                </div>
-                <div class="nl-result-stat">
-                    <div class="nl-stat-number">24h</div>
-                    <div class="nl-stat-label">Gennemsnitlig leveringstid</div>
-                </div>
-                <div class="nl-result-stat">
-                    <div class="nl-stat-number">50+</div>
-                    <div class="nl-stat-label">Datakilder integreret</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="kontakt" class="nl-service-cta">
-        <div class="nl-container">
-            <div class="nl-service-cta-content">
-                <h2>Klar Til at Skalere Din Lead Generation?</h2>
-                <p>Få adgang til vores AI-drevne platform og start med at generere kvalificerede B2B-leads i dag. Vores team står klar til at hjælpe dig.</p>
-                <div class="nl-service-cta-buttons">
-                    <a href="#kontakt-form" class="nl-btn-primary nl-btn-large">Book en demo</a>
-                    <a href="mailto:info@nordicleads.dk" class="nl-btn-secondary nl-btn-large">Kontakt os</a>
+                    
+                    <div id="form-error" class="nl-form-message nl-form-error hidden">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                        <p>Der opstod en fejl. Prøv igen eller kontakt os på <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,4 +327,3 @@ get_header();
 <?php
 get_footer();
 ?>
-
