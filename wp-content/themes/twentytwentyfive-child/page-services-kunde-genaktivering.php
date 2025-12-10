@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Services - Lead Generation
- * Description: Lead Generation service page - Ultra clean, modern design
+ * Template Name: Services - Kunde Genaktivering
+ * Description: Kunde Genaktivering service page - Ultra clean, modern design
  *
  * @package Twenty_Twenty_Five_Child
  * @since 1.0.0
@@ -17,15 +17,15 @@ get_header();
         <div class="nl-leadgen-hero-bg"></div>
         <div class="nl-container">
             <div class="nl-leadgen-hero-inner">
-                <span class="nl-leadgen-badge">Lead Generation</span>
+                <span class="nl-leadgen-badge">Kunde Genaktivering</span>
                 <h1 class="nl-leadgen-title">
-                    <span class="nl-leadgen-title-line">Avanceret AI-drevet lead generation</span>
-                    <span class="nl-leadgen-title-accent">som ingen andre i Norden</span>
-                    <span class="nl-leadgen-title-line">kan levere</span>
+                    <span class="nl-leadgen-title-line">Genaktiver jeres gamle kunder</span>
+                    <span class="nl-leadgen-title-accent">5-10x lettere end nye leads</span>
+                    <span class="nl-leadgen-title-line">konvertere til salg</span>
                 </h1>
                 <p class="nl-leadgen-subtitle">
-                    Vores avancerede AI og avancerede sorteringssystemer kombineret med avanceret data enrichment 
-                    leverer verificerede B2B-leads af en kvalitet, du ikke finder andre steder i Norden.
+                    Vi tager jeres gamle kundelister, gamle kunder eller mail-lister og aktiverer dem med GDPR-compliance, 
+                    DNC-audit og skræddersyede kampagner der konverterer til nye bookinger og salg.
                 </p>
             </div>
         </div>
@@ -38,13 +38,12 @@ get_header();
                 <div class="nl-leadgen-stat-card">
                     <div class="nl-leadgen-stat-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                         </svg>
                     </div>
                     <div class="nl-leadgen-stat-content">
-                        <div class="nl-leadgen-stat-number">24 timer</div>
-                        <div class="nl-leadgen-stat-label">Gennemsnitlig leveringstid</div>
+                        <div class="nl-leadgen-stat-number">5-10x</div>
+                        <div class="nl-leadgen-stat-label">Lettere at konvertere end nye leads</div>
                     </div>
                 </div>
                 <div class="nl-leadgen-stat-card">
@@ -54,8 +53,8 @@ get_header();
                         </svg>
                     </div>
                     <div class="nl-leadgen-stat-content">
-                        <div class="nl-leadgen-stat-number">95%+</div>
-                        <div class="nl-leadgen-stat-label">Email verification accuracy</div>
+                        <div class="nl-leadgen-stat-number">5-15%</div>
+                        <div class="nl-leadgen-stat-label">Typisk response rate</div>
                     </div>
                 </div>
                 <div class="nl-leadgen-stat-card">
@@ -84,39 +83,36 @@ get_header();
                         <div class="nl-leadgen-intro-card">
                             <div class="nl-leadgen-intro-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                                 </svg>
                             </div>
                             <p class="nl-leadgen-lead">
-                                Vores avancerede AI-drevne lead generation platform kombinerer avancerede algoritmer, 
-                                AI-baseret data enrichment og intelligente sorteringssystemer for at levere B2B-leads 
-                                af en kvalitet og præcision, der ikke findes andre steder i Norden. Hver enkelt lead 
-                                gennemgår vores omfattende verification-proces med avanceret dataanalyse og real-time 
-                                validering for at sikre maksimal kvalitet.
+                                Har I gamle kundelister liggende i jeres CRM, som I ikke har kontaktet i årevis? 
+                                Vi hjælper jer med at genaktivere jeres dormant kunder gennem GDPR-compliant proces, 
+                                avanceret dataanalyse og skræddersyede kampagner. Det er 5-10x lettere at sælge til 
+                                en tidligere kunde end at finde en ny – og det er præcis det, vi hjælper jer med.
                             </p>
                         </div>
 
                         <div class="nl-leadgen-section-card">
                             <div class="nl-leadgen-section-header">
                                 <div class="nl-leadgen-section-number">01</div>
-                                <h2 class="nl-leadgen-heading">Avanceret AI Sorting & Sorteringssystemer</h2>
+                                <h2 class="nl-leadgen-heading">Hvorfor gamle kunder er guld værd</h2>
                             </div>
                             <div class="nl-leadgen-section-content">
                                 <p>
-                                    Vores avancerede AI-sorteringssystem anvender state-of-the-art algoritmer og intelligent 
-                                    dataanalyse til at analysere og rangere hver enkelt lead baseret på hundredvis af datapunkter.
+                                    Gamle kunder er jeres bedste investering fordi de allerede kender jer, har købt før 
+                                    og har tillid til jer. Det er 5-10x lettere at konvertere en tidligere kunde end at 
+                                    finde en helt ny. De har allerede bevist, at de er interesserede i jeres produkt eller 
+                                    service – de har bare været inaktive i et stykke tid.
                                 </p>
                                 <p>
-                                    Vores avancerede algoritmer gennemgår kontinuerligt millioner af datapunkter fra CVR-registret, 
-                                    Google Maps API, LinkedIn Sales Navigator, brancheregistre og offentlige databaser. 
-                                    Hver lead bliver processeret gennem vores omfattende AI-pipeline med avanceret dataanalyse, 
-                                    behavioral pattern recognition og intelligent filtrering for at sikre maksimal kvalitet og relevans.
-                                </p>
-                                <p>
-                                    <strong>Dette er teknologi, du ikke finder andre steder i Norden.</strong> Vores team har 
-                                    udviklet avancerede algoritmer og AI-systemer specifikt til nordiske markeder, hvilket 
-                                    giver os en unik fordel i at levere leads af højeste kvalitet.
+                                    Når vi genaktiverer jeres gamle kunder, ser I typisk langt højere response rates og 
+                                    hurtigere salg end med nye leads. Customer Acquisition Cost (CAC) er minimal, og 
+                                    sales cycle er kortere. Det er det lavthængende frugt i jeres salgspipeline.
                                 </p>
                             </div>
                         </div>
@@ -124,38 +120,35 @@ get_header();
                         <div class="nl-leadgen-section-card">
                             <div class="nl-leadgen-section-header">
                                 <div class="nl-leadgen-section-number">02</div>
-                                <h2 class="nl-leadgen-heading">ROI der taler for sig selv</h2>
+                                <h2 class="nl-leadgen-heading">Vores proces til genaktivering</h2>
                             </div>
                             <div class="nl-leadgen-section-content">
                                 <p>
-                                    Lad os tale konkret om hvad din investering i vores lead generation service kan give dig. 
-                                    Her er en realistisk case baseret på vores kunders resultater:
+                                    <strong>1. GDPR Compliance & DNC Audit:</strong> Vi starter med at gennemgå jeres 
+                                    kundeliste og verificere GDPR-compliance. Vi screener mod alle relevante Do-Not-Contact-registre, 
+                                    identificerer inaktive kunder (typisk 12+ måneder uden kontakt) og renser invalid data 
+                                    som bounced emails og ugyldige telefonnumre.
                                 </p>
-                                <div class="nl-leadgen-roi-flow">
-                                    <div class="nl-leadgen-roi-step">
-                                        <div class="nl-leadgen-roi-number">2.000</div>
-                                        <div class="nl-leadgen-roi-text">høj kvalitet B2B-leads købt og leveret med personaliseret, lovlig outreach</div>
-                                    </div>
-                                    <div class="nl-leadgen-roi-arrow">→</div>
-                                    <div class="nl-leadgen-roi-step">
-                                        <div class="nl-leadgen-roi-number">1.000</div>
-                                        <div class="nl-leadgen-roi-text">åbner din email (50% open rate med vores avancerede personalisering, meget variende kommer an på produktet og outreach men en meget høj openrate anses for at være 20+%)</div>
-                                    </div>
-                                    <div class="nl-leadgen-roi-arrow">→</div>
-                                    <div class="nl-leadgen-roi-step">
-                                        <div class="nl-leadgen-roi-number">100-200</div>
-                                        <div class="nl-leadgen-roi-text">afprøver demo, hører mere eller spørger nærmere til produktet</div>
-                                    </div>
-                                    <div class="nl-leadgen-roi-arrow">→</div>
-                                    <div class="nl-leadgen-roi-step nl-leadgen-roi-final">
-                                        <div class="nl-leadgen-roi-number">20-40</div>
-                                        <div class="nl-leadgen-roi-text">nye betalende kunder (afhænger af produkt og pris)</div>
-                                    </div>
-                                </div>
                                 <p>
-                                    Dette er ikke teoretisk – dette er tal du kan opnå. Vores avancerede AI-sorting 
-                                    sikrer, at hver lead er høj kvalitet og har maksimal potentiale for konvertering. 
-                                    <strong>Din investering i lead generation bliver direkte til nye kunder og omsætning.</strong>
+                                    <strong>2. Analyse af listen og niche:</strong> Vi sætter os dybt ind i jeres niche og 
+                                    analyserer hvilke typer kunder der faktisk konverterer. Vi undersøger tidligere købs-værdi, 
+                                    produkt/service de købte, og hvordan vi bedst kan genaktivere dem.
+                                </p>
+                                <p>
+                                    <strong>3. Segmentering & strategi:</strong> Vi opdeler kunderne i grupper baseret på 
+                                    hvor længe siden de var aktive, tidligere værdi og type. Hver gruppe får sin egen tilgang 
+                                    og messaging strategi – fordi en kunde der købte for 3 måneder siden skal kontaktes anderledes 
+                                    end en der købte for 3 år siden.
+                                </p>
+                                <p>
+                                    <strong>4. Skræddersyede kampagner:</strong> Vi laver professionelle, personaliserede 
+                                    mail kampagner til hvert segment. Beskederne er value-first og fokuserer på at genoprette 
+                                    kontakt, ikke bare at sælge igen. Vi hjælper med alt fra email-tekster til follow-up sequences.
+                                </p>
+                                <p>
+                                    <strong>5. Multi-channel outreach:</strong> Vi kan kontakte gennem email, LinkedIn og 
+                                    telefon for at maksimere chancerne for genaktivering. Alt er GDPR-compliant med unsubscribe-links 
+                                    og fuld dokumentation.
                                 </p>
                             </div>
                         </div>
@@ -163,24 +156,24 @@ get_header();
                         <div class="nl-leadgen-section-card">
                             <div class="nl-leadgen-section-header">
                                 <div class="nl-leadgen-section-number">03</div>
-                                <h2 class="nl-leadgen-heading">Niche-specifik optimering & algoritme-tuning</h2>
+                                <h2 class="nl-leadgen-heading">Resultater der taler for sig selv</h2>
                             </div>
                             <div class="nl-leadgen-section-content">
                                 <p>
-                                    Vi sætter os ikke bare ind i din branche – vi dybdeanalyserer den. Vores team af data scientists 
-                                    og lead generation-eksperter undersøger hvilke typer leads der faktisk konverterer i din specifikke 
-                                    niche.
+                                    Vores kunde genaktivering-kampagner ser typisk 5-15% response rate – langt højere end 
+                                    kold outreach til nye leads. Men det er ikke kun response rate der tæller – det er også 
+                                    hvor hurtigt salgene lukkes.
                                 </p>
                                 <p>
-                                    Baseret på denne analyse justerer vi vores AI-algoritmer og avancerede sorteringssystemer til din 
-                                    niche. Vores system bliver optimeret på data specifikt for din branche, hvilket betyder at 
-                                    vores sorteringsalgoritmer prioriterer leads med højst sandsynlighed for at blive lukkede kunder 
-                                    i din specifikke kontekst.
+                                    Eksempel: En kundeliste med 1.000 gamle kunder gennemgår vores proces. Efter GDPR-audit 
+                                    og datarensning er der måske 800 kontakter tilbage. Af disse ser vi typisk 40-120 der 
+                                    responderer positivt (5-15% response rate). Af disse ender med 8-24 nye bookinger eller 
+                                    salg – alt afhænger af jeres produkt og prissætning.
                                 </p>
                                 <p>
-                                    Dette er ikke en one-size-fits-all løsning. Vores platform tilpasser sig kontinuerligt baseret på 
-                                    dine feedback og resultater. Jo mere data vi får om hvad der virker for dig, jo bedre bliver vores 
-                                    algoritmer til at levere præcist de leads, der konverterer til betalende kunder.
+                                    <strong>Dette er ikke teoretisk – dette er tal du kan opnå.</strong> Gamle kunder konverterer 
+                                    hurtigere og til lavere omkostninger end nye leads. Det er simpelthen det smarteste sted 
+                                    at starte, hvis I har dormant kunder i jeres systemer.
                                 </p>
                             </div>
                         </div>
@@ -188,23 +181,22 @@ get_header();
                         <div class="nl-leadgen-section-card">
                             <div class="nl-leadgen-section-header">
                                 <div class="nl-leadgen-section-number">04</div>
-                                <h2 class="nl-leadgen-heading">100% GDPR-sikker og compliant</h2>
+                                <h2 class="nl-leadgen-heading">100% GDPR-compliant proces</h2>
                             </div>
                             <div class="nl-leadgen-section-content">
                                 <p>
-                                    Vi tager databeskyttelse og compliance alvorligt. Alle leads håndteres gennem vores omfattende 
-                                    compliance-proces, der automatisk vurderer legitim interesse i henhold til GDPR Artikel 6(1)(f). 
-                                    Du kan være sikker på, at alle leads er lovlige at kontakte.
+                                    Vi tager GDPR-compliance alvorligt. Alle jeres kundelister gennemgår en omfattende 
+                                    compliance-check før vi starter. Vi verificerer at I har lovlig grundlag til at kontakte 
+                                    dem, screener mod DNC-lister og sikrer at alle processer er i overensstemmelse med GDPR.
                                 </p>
                                 <p>
-                                    Vores system gennemfører kontinuerlig DNC-screening mod alle relevante Do-Not-Contact-registre, 
-                                    automatisk opt-out management og fuld dokumentation. Alle data håndteres på EU-hosted servere 
-                                    i Danmark med kryptering og sikkerhedsprotokoller, der sikrer dine og dine leads' data.
+                                    Alle kampagner inkluderer unsubscribe-links og fuld dokumentation. Vi sikrer at data håndteres 
+                                    sikkert og kun bruges til formålet. Hvis der er nogle kunder I ikke må kontakte, identificerer 
+                                    vi dem i vores audit og udelader dem fra kampagnerne.
                                 </p>
                                 <p>
-                                    Vi anvender kun offentlige datakilder som CVR-registret, Google Maps API og offentlige 
-                                    firmahjemmesider. Vores avancerede datahentning respekterer alle relevante regler og protokoller, 
-                                    mens vores data enrichment-algoritmer sikrer at alle informationer er verificerede og aktuelle.
+                                    Vi arbejder udelukkende med jeres eksisterende data – vi køber eller indsamler ikke nye 
+                                    oplysninger. Vi hjælper jer bare med at aktivere det, I allerede har.
                                 </p>
                             </div>
                         </div>
@@ -212,25 +204,18 @@ get_header();
                         <div class="nl-leadgen-section-card">
                             <div class="nl-leadgen-section-header">
                                 <div class="nl-leadgen-section-number">05</div>
-                                <h2 class="nl-leadgen-heading">Tilfredshedsgaranti & kontinuerlig optimering</h2>
+                                <h2 class="nl-leadgen-heading">Success-based pricing mulighed</h2>
                             </div>
                             <div class="nl-leadgen-section-content">
                                 <p>
-                                    Vi står bag vores leads. Hvis du ikke er tilfreds med kvaliteten af de leads, vi leverer, 
-                                    arbejder vi sammen med dig for at justere vores algoritmer og kriterier indtil vi rammer 
-                                    præcist det, du har brug for. Vores mål er ikke bare at levere leads – det er at levere 
-                                    leads der konverterer til kunder.
+                                    Vi ved at kunde genaktivering virker, og vi er villige til at stå bag det. Derfor tilbyder 
+                                    vi success-based pricing som en mulighed – hvor I kun betaler baseret på faktiske resultater 
+                                    som bookinger, demoer eller salg. Det betyder, at vi er på samme side, og vores succes er 
+                                    jeres succes.
                                 </p>
                                 <p>
-                                    Vores platform lærer kontinuerligt. Baseret på dine resultater og feedback justerer vores 
-                                    AI-systemer sig automatisk for at forbedre lead quality og conversion rates. Dette betyder, 
-                                    at jo længere du arbejder med os, jo bedre bliver vores algoritmer til at levere præcist 
-                                    de leads, der virker for din virksomhed.
-                                </p>
-                                <p>
-                                    Vi leverer typisk inden for 24 timer i et rent, struktureret format (CSV eller Excel) klar 
-                                    til import i dit CRM-system. Alle leads er gennemgået vores omfattende verification-proces 
-                                    og er klar til at blive brugt med det samme.
+                                    Alternativt kan I vælge fast pris for hele kampagnen. Vi finder altid den bedste løsning 
+                                    der passer til jeres situation og budget.
                                 </p>
                             </div>
                         </div>
@@ -243,11 +228,11 @@ get_header();
                                 </svg>
                             </div>
                             <div class="nl-leadgen-guarantee-content">
-                                <h3 class="nl-leadgen-guarantee-title">Penge tilbage garanti</h3>
+                                <h3 class="nl-leadgen-guarantee-title">Gratis GDPR audit</h3>
                                 <p class="nl-leadgen-guarantee-text">
-                                    Fejler alt og du slet ikke er tilfreds, eller vi ser at vi måske skal tage en anden approach, 
-                                    tilbyder vi penge tilbage garanti. Vi er så sikre på vores leads, at vi står bag dem 100%. 
-                                    Hvis det ikke virker for dig, får du dine penge tilbage.
+                                    Vi tilbyder en gratis GDPR-compliance audit af jeres kundeliste. Vi gennemgår listen, 
+                                    identificerer potentiale og giver jer en rapport uden nogen forpligtelse. Det er 100% gratis 
+                                    og uforpligtende – så I kan se hvad der er muligt, før I beslutter jer.
                                 </p>
                             </div>
                         </div>
@@ -264,8 +249,8 @@ get_header();
             <div class="nl-contact-grid">
                 <div class="nl-contact-text">
                     <h2>Få et skræddersyet tilbud – inden for 24 timer</h2>
-                    <p>Vi prissætter efter din branche, niche, ønsket antal leads og kvalitet. Priser og antal leads varierer alt efter hvad du har brug for – fra små specialiserede lister til store volumen-indsamlinger.</p>
-                    <p>Fortæl os kort hvad du leder efter – så sender vi et uforpligtende tilbud. Vores salgsteam finder den bedste løsning der passer præcist til dine behov.</p>
+                    <p>Vi tilbyder en gratis GDPR audit af jeres kundeliste og vurderer potentialet for genaktivering. Priser afhænger af størrelse på liste, omfang af kampagne og om I vælger success-based pricing.</p>
+                    <p>Fortæl os kort om jeres kundeliste – så sender vi et uforpligtende tilbud. Vi vurderer potentialet og finder den bedste løsning der passer præcist til jeres behov.</p>
                     <p class="nl-contact-email">
                         Eller kontakt os direkte:<br>
                         <a href="mailto:info@nordicleads.dk">info@nordicleads.dk</a>
@@ -309,7 +294,7 @@ get_header();
                         </div>
                         <div class="nl-form-group">
                             <label for="message">Besked (valgfri)</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Fortæl os om din branche, niche, ønsket antal leads og eventuelle særlige krav. Jo mere vi ved, jo bedre kan vi tilpasse løsningen til dig..."></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Fortæl os om jeres kundeliste – hvor mange kontakter, sidste kontakt, branche og hvad I håber at opnå. Jo mere vi ved, jo bedre kan vi vurdere potentialet..."></textarea>
                         </div>
                         <button type="submit" id="submit-btn" class="nl-form-submit">Få uforpligtende tilbud</button>
                         <p class="nl-form-disclaimer">Ved at indsende accepterer du vores <a href="#">privatlivspolitik</a>. Vi behandler dine data i henhold til GDPR.</p>
@@ -338,3 +323,4 @@ get_header();
 <?php
 get_footer();
 ?>
+
