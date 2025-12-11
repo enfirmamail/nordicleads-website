@@ -127,7 +127,7 @@ get_header();
                     <h2 class="nl-case-title-v2">Auto Specialisterne</h2>
                     <p class="nl-case-headline">20 nye autoværksteder på 4 måneder</p>
                     <p class="nl-case-excerpt-v2">
-                        Et marketing bureau ville sælge til autoværksteder, men fandt kun 5-10 om måneden. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 til nye kunder.
+                        Et marketing bureau ville sælge til autoværksteder, men fandt maks 1 om måneden og stalede deres indkomst. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 leads til nye kunder.
                     </p>
                         <div class="nl-case-stats-v2">
                             <div class="nl-stat-item-v2">

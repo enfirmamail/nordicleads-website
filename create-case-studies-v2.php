@@ -278,14 +278,7 @@ $auto_content = <<<'EOT'
 <li>Mobile mekanikere</li>
 </ul>
 
-<p>Hver record indeholdt:</p>
-<ul>
-<li>Virksomhedsnavn og CVR</li>
-<li>Navn på ejer eller daglig leder</li>
-<li>Direkte email og telefonnummer</li>
-<li>Antal medarbejdere</li>
-<li>Specialisering (mærke/service)</li>
-</ul>
+<p>Hver record indeholdt præcist det de havde brug for til at nå ud til de rigtige beslutningstagere: Komplet virksomhedsdata, kontaktinformation til relevante personer, og branchespecifikke detaljer der gjorde hver lead så værdifuld som muligt.</p>
 
 <p>Alt blev DNC-screened og leveret i en struktureret Excel-fil klar til brug.</p>
 
@@ -295,7 +288,7 @@ $auto_content = <<<'EOT'
 
 <p>Men vi stoppede ikke ved research. Vi overtog også deres outreach.</p>
 
-<p>Vi skrev personlige emails til værkstedsejere. Subject lines som "Thomas, mangler I kunder til jeres værksted i Roskilde?" fungerede langt bedre end generiske sales-emails.</p>
+<p>Vi skrev personlige emails til værkstedsejere. Subject lines der var skræddersyet til hver enkelt modtager og appellerede til deres specifikke situation fungerede langt bedre end generiske sales-emails. Vi personificerede hver email baseret på virksomhedens placering, størrelse og behov.</p>
 
 <p>Vi fokuserede på deres pain points: Tomme kalendere i lavsæson. Svingende kundeflow. Manglende online synlighed.</p>
 

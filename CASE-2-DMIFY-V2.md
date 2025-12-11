@@ -13,7 +13,7 @@ En dansk SaaS-virksomhed med et fleksibelt produkt havde et klassisk problem: De
 - **10.000+** leads testet
 
 ## Quote
-"Vi anede ikke hvor vi skulle starte. Skulle vi gå efter e-commerce? Agencies? SaaS startups? NordicLeads testede det hele, fandt vores sweet spot og skaffede os 120+ SaaS-kunder. De blev en del af vores go-to-market strategi."
+"Vi anede ikke hvor vi skulle starte. Skulle vi gå efter e-commerce? Agencies? SaaS startups? NordicLeads testede det hele, fandt vores sweet spot og skaffede os 120+ SaaS kunder. De blev en del af vores go-to-market strategi."
 
 **— Oliver, Co-Founder, Dmify**
 
@@ -67,7 +67,7 @@ På 3 måneder havde Dmify lukket 120+ SaaS kunder og testet 10.000+ leads på t
 
 Men det vigtigste? De havde fundet deres målgruppe.
 
-Det var ikke e-commerce. Det var ikke SaaS. Det var **growth agencies** – virksomheder der hjalp andre med at skalere, og som havde brug for bedre værktøjer til at håndtere det.
+Det var ikke e-commerce. Det var ikke SaaS. Det var **Growth agencies** – virksomheder der hjalp andre med at skalere, og som havde brug for bedre værktøjer til at håndtere det.
 
 Dmify kunne nu fokusere 100% af deres marketing og sales på én klar målgruppe. Deres messaging blev skarpere. Deres produkt blev mere målrettet. Og deres pipeline blev fyldt med kvalificerede leads.
 

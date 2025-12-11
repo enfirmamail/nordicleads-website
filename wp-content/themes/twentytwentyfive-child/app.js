@@ -723,6 +723,7 @@ document.addEventListener('DOMContentLoaded', function() {
     FAQ.init();
     MobileMenu.init();
     SmoothScroll.init();
+    UnsubscribeHandler.init();
     ScrollTracking.init();
     ClickTracking.init();
     Accessibility.init();
@@ -739,6 +740,86 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // =================================================================
+// Unsubscribe Form Handler
+// =================================================================
+const UnsubscribeHandler = {
+    init: function() {
+        const form = document.getElementById('unsubscribe-form');
+        if (!form) return;
+        
+        form.addEventListener('submit', this.handleSubmit.bind(this));
+    },
+    
+    handleSubmit: async function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const emailInput = form.querySelector('#unsubscribe-email');
+        const submitBtn = form.querySelector('#unsubscribe-submit');
+        const errorDiv = document.getElementById('unsubscribe-error');
+        const successDiv = document.getElementById('unsubscribe-success');
+        
+        const email = emailInput.value.trim();
+        
+        // Validate email
+        if (!email || !this.validateEmail(email)) {
+            errorDiv.textContent = 'Indtast venligst en gyldig email adresse.';
+            errorDiv.classList.remove('hidden');
+            return;
+        }
+        
+        // Disable submit button
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Afmelder...';
+        errorDiv.classList.add('hidden');
+        
+        try {
+            const response = await fetch(window.nordicleadsData.ajaxurl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    action: 'nordicleads_unsubscribe',
+                    nonce: window.nordicleadsData.nonce,
+                    email: email
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                form.classList.add('hidden');
+                successDiv.classList.remove('hidden');
+                
+                // Track unsubscribe event
+                if (window.gtag) {
+                    window.gtag('event', 'unsubscribe', {
+                        'event_category': 'Email',
+                        'event_label': 'Unsubscribe'
+                    });
+                }
+            } else {
+                errorDiv.textContent = data.data.message || 'Der opstod en fejl. Prøv igen.';
+                errorDiv.classList.remove('hidden');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Afmeld mig';
+            }
+        } catch (error) {
+            errorDiv.textContent = 'Der opstod en fejl. Prøv igen eller kontakt os på info@nordicleads.dk';
+            errorDiv.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Afmeld mig';
+        }
+    },
+    
+    validateEmail: function(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+};
+
+// =================================================================
 // Export for debugging (Development only)
 // =================================================================
 if (typeof window !== 'undefined') {
@@ -749,7 +830,8 @@ if (typeof window !== 'undefined') {
         FAQ,
         MobileMenu,
         ScrollTracking,
-        ClickTracking
+        ClickTracking,
+        UnsubscribeHandler
     };
 }
 

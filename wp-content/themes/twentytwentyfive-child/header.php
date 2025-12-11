@@ -4,11 +4,22 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.svg">
-    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.svg">
+    <!-- Favicon & Site Icons -->
+    <?php 
+    $favicon_url = get_stylesheet_directory_uri() . '/assets/favicon.svg';
+    $logo_url = get_stylesheet_directory_uri() . '/assets/logo.svg';
+    ?>
+    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url($favicon_url); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url($favicon_url); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url($favicon_url); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url($logo_url); ?>">
+    <link rel="manifest" href="<?php echo esc_url(home_url('/site.webmanifest')); ?>">
+    <meta name="theme-color" content="#003366">
     
-    <?php if (is_front_page()): ?>
+    <?php 
+    $logo_url = get_stylesheet_directory_uri() . '/assets/logo.svg';
+    if (is_front_page()): 
+    ?>
     <meta name="description" content="Tusindvis af kvalificerede B2B-leads leveret på under 24 timer. Verificerede emails, telefonnumre og adresser skræddersyet til din branche. 100% GDPR-compliant.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="<?php echo esc_url(home_url('/')); ?>">
@@ -16,7 +27,13 @@
     <meta property="og:url" content="<?php echo esc_url(home_url('/')); ?>">
     <meta property="og:title" content="NordicLeads – Tusindvis af kvalificerede B2B-leads på under 24 timer">
     <meta property="og:description" content="Tusindvis af verificerede B2B-leads skræddersyet til din branche. Leveret på under 24 timer, 100% GDPR-compliant.">
+    <meta property="og:image" content="<?php echo esc_url($logo_url); ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NordicLeads Logo">
     <meta property="og:locale" content="da_DK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="<?php echo esc_url($logo_url); ?>">
     <link rel="alternate" hreflang="da-DK" href="<?php echo esc_url(home_url('/')); ?>">
     <?php endif; ?>
     

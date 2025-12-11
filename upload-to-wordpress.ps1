@@ -2,10 +2,10 @@
 # This script uploads the twentytwentyfive-child theme to your WordPress hosting
 
 param(
-    [string]$FtpHost = "",
-    [string]$FtpUser = "",
-    [string]$FtpPass = "",
-    [string]$BasePath = "",
+    [string]$FtpHost = "linux101.unoeuro.com",
+    [string]$FtpUser = "nordicleads.dk",
+    [string]$FtpPass = "gbDay4REGwxF5kmtfHh9",
+    [string]$BasePath = "/public_html",
     [string]$FtpPath = "/wp-content/themes/twentytwentyfive-child"
 )
 

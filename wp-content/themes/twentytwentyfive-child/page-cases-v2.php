@@ -53,15 +53,11 @@ get_header();
                     <div class="nl-case-stats-v2">
                         <div class="nl-stat-item-v2">
                             <span class="nl-stat-number-v2">50+</span>
-                            <span class="nl-stat-label-v2">bookinger</span>
+                            <span class="nl-stat-label-v2">nordiske bookninger</span>
                         </div>
                         <div class="nl-stat-item-v2">
                             <span class="nl-stat-number-v2">300+</span>
-                            <span class="nl-stat-label-v2">klinikker</span>
-                        </div>
-                        <div class="nl-stat-item-v2">
-                            <span class="nl-stat-number-v2">18%</span>
-                            <span class="nl-stat-label-v2">conversion</span>
+                            <span class="nl-stat-label-v2">demoer udsendt</span>
                         </div>
                     </div>
                     <a href="<?php echo esc_url(get_page_link(get_page_by_path('dentaldesk-case')->ID ?? '#')); ?>" class="nl-case-link-v2">
@@ -95,16 +91,12 @@ get_header();
                         </p>
                         <div class="nl-case-stats-v2">
                             <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">127</span>
-                                <span class="nl-stat-label-v2">kunder</span>
+                                <span class="nl-stat-number-v2">120+</span>
+                                <span class="nl-stat-label-v2">SaaS kunder</span>
                             </div>
                             <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">1200+</span>
+                                <span class="nl-stat-number-v2">10.000+</span>
                                 <span class="nl-stat-label-v2">leads testet</span>
-                            </div>
-                            <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">41%</span>
-                                <span class="nl-stat-label-v2">open rate</span>
                             </div>
                         </div>
                         <a href="<?php echo esc_url(get_page_link(get_page_by_path('dmify-case')->ID ?? '#')); ?>" class="nl-case-link-v2">
@@ -137,20 +129,16 @@ get_header();
                         <h2 class="nl-case-title-v2">Auto Specialisterne</h2>
                         <p class="nl-case-headline">20 nye autoværksteder på 4 måneder</p>
                         <p class="nl-case-excerpt-v2">
-                            Et marketing bureau ville sælge til autoværksteder, men fandt kun 5-10 om måneden. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 til nye kunder.
+                            Et marketing bureau ville sælge til autoværksteder, men fandt maks 1 om måneden og stalede deres indkomst. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 leads til nye kunder.
                         </p>
                         <div class="nl-case-stats-v2">
                             <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">127</span>
-                                <span class="nl-stat-label-v2">salg</span>
+                                <span class="nl-stat-number-v2">20</span>
+                                <span class="nl-stat-label-v2">nye værksteder</span>
                             </div>
                             <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">800+</span>
+                                <span class="nl-stat-number-v2">1000+</span>
                                 <span class="nl-stat-label-v2">leads</span>
-                            </div>
-                            <div class="nl-stat-item-v2">
-                                <span class="nl-stat-number-v2">22%</span>
-                                <span class="nl-stat-label-v2">booking rate</span>
                             </div>
                         </div>
                         <a href="<?php echo esc_url(get_page_link(get_page_by_path('auto-specialisterne-case')->ID ?? '#')); ?>" class="nl-case-link-v2">

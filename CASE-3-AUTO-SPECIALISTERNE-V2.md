@@ -4,7 +4,7 @@
 **Auto Specialisterne – Hvordan et marketing bureau fik 20 nye autoværksteder på 4 måneder**
 
 ## Excerpt (kort)
-Et dansk marketing agency ville sælge leadgeneration-løsninger til autoværksteder, men fandt kun 5-10 værksteder om måneden gennem manuelle søgninger. Vi skaffede dem 1000+ verificerede leads og hjalp dem med at konvertere 20 til nye kunder.
+Et marketing bureau ville sælge til autoværksteder, men fandt maks 1 om måneden og stalede deres indkomst. Vi leverede 1000+ verificerede leads og hjalp dem med at konvertere 20 leads til nye kunder.
 
 ---
 
@@ -33,7 +33,7 @@ De kunne ikke finde nok værksteder at sælge til.
 
 De prøvede manuelle søgninger på Google Maps. Det var tidskrævende og gav måske 10-15 værksteder om ugen. De prøvede LinkedIn prospecting, men de fleste værkstedsejere var ikke aktive der. De ringede koldt, men svar-raten var lav.
 
-Efter 6 måneder havde de lukket 30 kunder. Det var okay. Men de ville vokse hurtigere.
+Efter 6 måneder havde de lukket nogle kunder, men processen var for langsom. De ville vokse hurtigere.
 
 ### Hvad vi gjorde
 
@@ -46,12 +46,7 @@ Vi byggede en database med 1000+ autoværksteder i Danmark. Vi fokuserede på Sj
 - Dækcentre og specialister
 - Mobile mekanikere
 
-Hver record indeholdt:
-- Virksomhedsnavn og CVR
-- Navn på ejer eller daglig leder
-- Direkte email og telefonnummer
-- Antal medarbejdere
-- Specialisering (mærke/service)
+Hver record indeholdt præcist det de havde brug for til at nå ud til de rigtige beslutningstagere: Komplet virksomhedsdata, kontaktinformation til relevante personer, og branchespecifikke detaljer der gjorde hver lead så værdifuld som muligt.
 
 Alt blev DNC-screened og leveret i en struktureret Excel-fil klar til brug.
 
@@ -59,7 +54,7 @@ Alt blev DNC-screened og leveret i en struktureret Excel-fil klar til brug.
 
 Men vi stoppede ikke ved research. Vi overtog også deres outreach.
 
-Vi skrev personlige emails til værkstedsejere. Subject lines som "Thomas, mangler I kunder til jeres værksted i Roskilde?" fungerede langt bedre end generiske sales-emails.
+Vi skrev personlige emails til værkstedsejere. Subject lines der var skræddersyet til hver enkelt modtager og appellerede til deres specifikke situation fungerede langt bedre end generiske sales-emails. Vi personificerede hver email baseret på virksomhedens placering, størrelse og behov.
 
 Vi fokuserede på deres pain points: Tomme kalendere i lavsæson. Svingende kundeflow. Manglende online synlighed.
 

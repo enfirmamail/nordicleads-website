@@ -131,13 +131,36 @@ function twentytwentyfive_child_security_headers() {
 add_action('send_headers', 'twentytwentyfive_child_security_headers');
 
 /**
- * Add Favicon Support
+ * Add Favicon Support (Enhanced)
  */
 function twentytwentyfive_child_favicon() {
     $favicon_path = get_stylesheet_directory_uri() . '/assets/favicon.svg';
-    echo '<link rel="icon" href="' . esc_url($favicon_path) . '" type="image/svg+xml">';
+    $logo_path = get_stylesheet_directory_uri() . '/assets/logo.svg';
+    
+    // Multiple favicon sizes for better compatibility
+    echo '<link rel="icon" type="image/svg+xml" href="' . esc_url($favicon_path) . '">' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="192x192" href="' . esc_url($logo_path) . '">' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="512x512" href="' . esc_url($logo_path) . '">' . "\n";
+    echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url($logo_path) . '">' . "\n";
 }
 add_action('wp_head', 'twentytwentyfive_child_favicon', 5);
+
+/**
+ * Add Default Open Graph Image for all pages
+ */
+function twentytwentyfive_child_default_og_image() {
+    // Only add if not already set (e.g. on front page or blog posts)
+    if (!is_front_page() && !is_singular('post')) {
+        $logo_url = get_stylesheet_directory_uri() . '/assets/logo.svg';
+        echo '<meta property="og:image" content="' . esc_url($logo_url) . '">' . "\n";
+        echo '<meta property="og:image:width" content="1200">' . "\n";
+        echo '<meta property="og:image:height" content="630">' . "\n";
+        echo '<meta property="og:image:alt" content="NordicLeads Logo">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:image" content="' . esc_url($logo_url) . '">' . "\n";
+    }
+}
+add_action('wp_head', 'twentytwentyfive_child_default_og_image', 3);
 
 /**
  * Disable Emojis (Performance Optimization)
@@ -700,4 +723,116 @@ function twentytwentyfive_child_admin_footer() {
     echo 'NordicLeads Theme v' . wp_get_theme()->get('Version');
 }
 add_filter('admin_footer_text', 'twentytwentyfive_child_admin_footer');
+
+/**
+ * Unsubscribe / DNC List Management
+ */
+
+/**
+ * Get Unsubscribe/DNC List File Path
+ */
+function twentytwentyfive_child_get_unsubscribe_file() {
+    $upload_dir = wp_upload_dir();
+    $file_path = $upload_dir['basedir'] . '/nordicleads-unsubscribe.txt';
+    
+    // Create directory if it doesn't exist
+    if (!file_exists($upload_dir['basedir'])) {
+        wp_mkdir_p($upload_dir['basedir']);
+    }
+    
+    // Create file if it doesn't exist
+    if (!file_exists($file_path)) {
+        file_put_contents($file_path, '');
+        // Make file readable
+        chmod($file_path, 0644);
+    }
+    
+    return $file_path;
+}
+
+/**
+ * Add Email to Unsubscribe/DNC List
+ */
+function twentytwentyfive_child_add_to_unsubscribe($email) {
+    $file_path = twentytwentyfive_child_get_unsubscribe_file();
+    $email = strtolower(trim($email));
+    
+    // Read existing emails
+    $existing = array();
+    if (file_exists($file_path)) {
+        $content = file_get_contents($file_path);
+        if ($content) {
+            $lines = explode("\n", $content);
+            $existing = array_filter(array_map('trim', $lines));
+            $existing = array_map('strtolower', $existing);
+        }
+    }
+    
+    // Add email if not already in list
+    if (!in_array($email, $existing)) {
+        $existing[] = $email;
+        // Sort alphabetically for easier management
+        sort($existing);
+        file_put_contents($file_path, implode("\n", $existing) . "\n", LOCK_EX);
+    }
+    
+    return true;
+}
+
+/**
+ * Check if Email is Unsubscribed/DNC
+ */
+function twentytwentyfive_child_is_unsubscribed($email) {
+    $file_path = twentytwentyfive_child_get_unsubscribe_file();
+    $email = strtolower(trim($email));
+    
+    if (!file_exists($file_path)) {
+        return false;
+    }
+    
+    $content = file_get_contents($file_path);
+    if (!$content) {
+        return false;
+    }
+    
+    $emails = array_map('trim', explode("\n", $content));
+    $emails = array_map('strtolower', $emails);
+    
+    return in_array($email, $emails);
+}
+
+/**
+ * AJAX Handler for Unsubscribe
+ */
+function twentytwentyfive_child_handle_unsubscribe() {
+    // Verify nonce
+    check_ajax_referer('nordicleads_nonce', 'nonce');
+    
+    // Get and sanitize email
+    $email = sanitize_email($_POST['email']);
+    
+    // Validate email
+    if (!is_email($email)) {
+        wp_send_json_error(array('message' => 'Ugyldig e-mail adresse.'));
+        return;
+    }
+    
+    // Add to unsubscribe/DNC list
+    twentytwentyfive_child_add_to_unsubscribe($email);
+    
+    // Log unsubscribe (optional hook for analytics)
+    do_action('nordicleads_unsubscribe', array(
+        'email' => $email,
+        'timestamp' => current_time('mysql'),
+        'ip' => $_SERVER['REMOTE_ADDR'] ?? ''
+    ));
+    
+    wp_send_json_success(array(
+        'message' => 'Du er nu afmeldt vores nyhedsbrev.'
+    ));
+    
+    wp_die();
+}
+add_action('wp_ajax_nordicleads_unsubscribe', 'twentytwentyfive_child_handle_unsubscribe');
+add_action('wp_ajax_nopriv_nordicleads_unsubscribe', 'twentytwentyfive_child_handle_unsubscribe');
 

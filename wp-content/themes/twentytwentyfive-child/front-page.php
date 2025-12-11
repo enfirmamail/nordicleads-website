@@ -67,7 +67,7 @@ get_header();
                 
                 <!-- Outreach Link -->
                 <p class="nl-hero-outreach">
-                    <a href="/outreach">Har du også brug for outreach? <span>→</span></a>
+                    <a href="<?php echo esc_url(home_url('/services/email-outreach')); ?>">Har du også brug for outreach? <span>→</span></a>
                 </p>
             </div>
             
@@ -381,7 +381,7 @@ get_header();
                             <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
                                 <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="currentColor"/>
                             </svg>
-                            <span>Multi-channel outreach (email, LinkedIn, telefon)</span>
+                            <span>Multi-channel outreach (email, linkedin, m.m)</span>
                         </li>
                         <li>
                             <svg class="nl-check-icon" viewBox="0 0 20 20" fill="none">
@@ -566,7 +566,7 @@ get_header();
                     <div class="nl-step-number">2</div>
                     <h3>Ønsker du, at vi kontakter dem for dig?</h3>
                     <p>Vi kan sende professionelle, personaliserede e-mails på dansk med unsubscribe og fuld compliance – eller du bruger bare listen selv. Vælger du outreach, klarer vi alt fra A-Z.</p>
-                    <a href="#kontakt" class="nl-outreach-link">→ Læs mere om vores outreach-pakker</a>
+                    <a href="<?php echo esc_url(home_url('/services/email-outreach')); ?>" class="nl-outreach-link">→ Læs mere om vores outreach-pakker</a>
                 </div>
                 <div class="nl-step">
                     <div class="nl-step-number">3</div>

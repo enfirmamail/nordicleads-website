@@ -5,10 +5,10 @@
 # - security.txt goes to /public_html/.well-known/security.txt
 
 param(
-    [string]$FtpHost = "",
-    [string]$FtpUser = "",
+    [string]$FtpHost = "linux101.unoeuro.com",
+    [string]$FtpUser = "nordicleads.dk",
     [string]$FtpPass = "",
-    [string]$BasePath = ""
+    [string]$BasePath = "/public_html"
 )
 
 # If credentials not provided, ask for them

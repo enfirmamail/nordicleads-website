@@ -1,0 +1,28 @@
+{
+    "name": "NordicLeads",
+    "short_name": "NordicLeads",
+    "description": "GDPR-sikker lead generation til danske virksomheder",
+    "icons": [
+        {
+            "src": "/wp-content/themes/twentytwentyfive-child/assets/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/wp-content/themes/twentytwentyfive-child/assets/logo.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/wp-content/themes/twentytwentyfive-child/assets/logo.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#003366",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
+

@@ -4,7 +4,7 @@
 **DentalDesk – Hvordan vi hjalp en dansk AI-startup med at finde deres første 50+ kunder**
 
 ## Excerpt (kort)
-En dansk startup med en AI-receptionist løsning havde et solidt produkt, men sad fast. De vidste ikke hvordan de skulle finde klinikker der rent faktisk havde brug for dem. Vi hjalp.
+En dansk startup med en AI-receptionist løsning havde et solidt produkt, men sad fast. De vidste ikke hvordan de skulle finde klinikker der rent faktisk havde brug for dem. Vi hjalp dem med at kontakte 300+ klinikker og udvide til nye brancher.
 
 ---
 

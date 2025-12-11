@@ -40,24 +40,51 @@
             
             <!-- Quick Links -->
             <div>
-                <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Navigation</h3>
+                <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Hurtige links</h3>
                 <ul class="space-y-3">
-                    <li><a href="#hvordan-virker-det" class="text-sm text-gray-400 hover:text-white transition-colors">Sådan virker det</a></li>
-                    <li><a href="#resultater" class="text-sm text-gray-400 hover:text-white transition-colors">Resultater</a></li>
-                    <li><a href="#priser" class="text-sm text-gray-400 hover:text-white transition-colors">Priser</a></li>
-                    <li><a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-                    <li><a href="#kontakt" class="text-sm text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+                    <?php 
+                    // Find cases page dynamically
+                    $cases_page = get_pages(array(
+                        'meta_key' => '_wp_page_template',
+                        'meta_value' => 'page-cases.php'
+                    ));
+                    if (!empty($cases_page)) {
+                        $cases_url = get_permalink($cases_page[0]->ID);
+                    } else {
+                        $cases_url = home_url('/cases');
+                    }
+                    
+                    $blog_url = get_permalink(get_option('page_for_posts')) ?: home_url('/blog');
+                    ?>
+                    <li><a href="<?php echo esc_url($cases_url); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Cases</a></li>
+                    <li><a href="<?php echo esc_url($blog_url); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/#hvordan')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Sådan virker det</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/#faq')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/#kontakt')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
                 </ul>
             </div>
             
             <!-- Legal -->
             <div>
-                <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Juridisk</h3>
+                <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Juridisk & Compliance</h3>
                 <ul class="space-y-3">
-                    <li><a href="/privacy-policy.php" class="text-sm text-gray-400 hover:text-white transition-colors">Privatlivspolitik</a></li>
-                    <li><a href="/terms-and-conditions.php" class="text-sm text-gray-400 hover:text-white transition-colors">Handelsbetingelser</a></li>
-                    <li><a href="/gdpr-info.php" class="text-sm text-gray-400 hover:text-white transition-colors">GDPR Information</a></li>
-                    <li><a href="/cookie-policy.php" class="text-sm text-gray-400 hover:text-white transition-colors">Cookie Politik</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Privatlivspolitik</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/terms-and-conditions')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Handelsbetingelser</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/gdpr-info')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">GDPR Information</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/cookie-policy')); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Cookie Politik</a></li>
+                    <?php
+                    // Find unsubscribe page
+                    $unsubscribe_page = get_pages(array(
+                        'meta_key' => '_wp_page_template',
+                        'meta_value' => 'page-unsubscribe.php'
+                    ));
+                    if (!empty($unsubscribe_page)) {
+                        $unsubscribe_url = get_permalink($unsubscribe_page[0]->ID);
+                    } else {
+                        $unsubscribe_url = home_url('/unsubscribe');
+                    }
+                    ?>
+                    <li><a href="<?php echo esc_url($unsubscribe_url); ?>" class="text-sm text-gray-400 hover:text-white transition-colors">Afmeld nyhedsbrev</a></li>
                 </ul>
             </div>
         </div>
